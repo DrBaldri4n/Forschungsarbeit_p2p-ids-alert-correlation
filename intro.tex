@@ -1,0 +1,137 @@
+%TODO: Follow the next instructions and examples to create important elements for your thesis. 
+
+%% ==============================
+\chapter{Introduction to \LaTeX} %TODO: If you want to write your Thesis in German, you should change the chapter's name.
+Since \LaTeX\ is widely used in academia and industry, there exists a plethora of freely accessible introductions to the language.
+Reading through the guide at \url{https://en.wikibooks.org/wiki/LaTeX} serves as a comprehensive overview of most of the functionality and is highly recommended before starting with a thesis in \LaTeX.
+\label{ch:Introduction}           
+%% ==============================
+
+This is a nice little introduction with a reference to Figure~\ref{fig:IA_Envrionment}. %NOTE: this reference uses a label which you can create when you include graphics, create tables, chapters, equations etc. like in the following examples.
+
+\begin{figure}[htp] %NOTE: This command creates a figure environment. An environment always starts with a \begin{} command and ends with an \end{} command. 
+	\begin{center} %<-- this command aligns your figure as desired, here the figure will be centered.
+		\includegraphics[width = 0.5\textwidth]{figures/ImNDT.png} %this includes you graphic stored in your figures folder. Upload works via the upload button on the left side.
+		\caption{This is a figure with a caption adapted from \cite{Gall2021}.}%this command creates a caption.
+		\label{fig:IA_Envrionment}% this is the aforementioned label, which can be now referred by name. Here it would be \ref{fig:valuchain}. 
+	\end{center}
+\end{figure} 
+
+Arguments have to be cited with the cite-command:%NOTE: To use citations, you have to save the information about the cited work in the file called references.bib. See the references.bib file for more instructions. 
+
+A citation may either appear at the end of a sentence or paragraph representing where the idea/research comes from. For example: Scatterplot matrices, parallel coordinate diagrams, and dimensionality reduction techniques are some possibilities to display multiple dimensions simultaneously \cite{Munzner2014}. Or you can cite the author(s) within the sentence. For example: Further information about Immersive Analytics can be found in the work of Gall et al.~\cite{Gall2025a}.
+Sometimes you may need a direct quotation like: Start of sentence
+``[...] random citation [...]'' as described by \cite{Gall2025}. 
+
+
+%% ==============
+\chapter{Content Section 1} %TODO: Rename the chapters and labels according to your needs. Follow the instructions in the text.
+\label{ch:section1}
+%% ==============
+
+Of course, the content chapters of your thesis should be renamed. The number of chapters you need to write depends on the specific task(s) of your thesis and cannot be said in general.
+
+
+%% ===========================
+\section{Subsection 1}
+\label{ch:section1:sec:subsection1}
+%% ===========================
+
+You can reference any chapter, section or subsection by its label: looking forward to Section~\ref{ch:section1:sec:subsection2}. You can also reference Appendix~\ref{AppendixA} and add footnotes if necessary.\footnote{This is a footnote ending with a full stop.} 
+
+\dots
+
+%% ===========================
+\section{Subsection 2}
+\label{ch:section1:sec:subsection2}
+%% ===========================
+You can add tables by using the following commands. There is no need for a list of tables or a list of figures in this paper-style thesis. But you should always reference tables and figures in the text (see Table~\ref{tab:prices}). 
+\begin{table}[htb]%<-- this command starts the table environment which allows you to place your actual table (tabular) with parameters e.g. h for here.
+	\centering
+	\begin{tabular}{llr}
+		\toprule
+		\multicolumn{2}{c}{Item} \\
+		\cmidrule(r){1-2}
+		Animal    & Description & Price (\$) \\
+		\midrule
+		Gnat      & per gram    & 13.65      \\
+		& each        & 0.01       \\
+		Gnu       & stuffed     & 92.50      \\
+		Emu       & stuffed     & 33.33      \\
+		Armadillo & frozen      & 8.99       \\
+		\bottomrule
+	\end{tabular}
+	\caption{A table that lists items \cite{Becker2009}}
+	\label{tab:prices}
+\end{table}
+
+
+%% ==============
+\chapter{Content Section 2}
+\label{ch:section2}
+%% ==============
+
+During the writing of your thesis, you may want to highlight some parts or take notes. This is accomplished by using the following command for highlighting or taking notes in the text. \todo[inline]{This is a note in the text}
+
+
+If you want to take notes on the side, use the following command.\todo{This is a marginal note} Also make sure that you remove all your notes before submission.
+
+
+
+%% ===========================
+\section{Subsection 1}
+\label{ch:section2:sec:subsection1}
+%% ===========================
+Adding formulas is easy. Either inline formulas like $E=mc^3$ or unnumbered equations like $$E=mc^3$$ or a single numbered equation like 
+
+\begin{equation}
+E=mc^3
+\end{equation}
+
+or multiple numbered equations that are aligned like
+
+\begin{align}
+E &=mc^3\label{eq:energy}\\
+a^2 &=b^2 + c^2\label{eq:thales}.
+\end{align}
+
+You can also reference the equations if you set a label. Our approach is captured by the fundamental equations \eqref{eq:energy} and \eqref{eq:thales}.
+
+
+%% ===========================
+\section{Subsection 2}
+\label{ch:section2:sec:subsection2}
+%% ===========================
+
+\dots 
+
+
+
+%% ==================
+\chapter{Discussion}
+\label{ch:Discussion}
+%% ==================
+
+\dots
+
+%% ===============================
+\section{Subsection 1}
+\label{ch:discussion:sec:subsection1}
+%% ===============================
+
+\dots
+
+%% ===============================
+\section{Subsection 2}
+\label{ch:discussion:sec:subsection2}
+%% ===============================
+
+\dots
+
+%% ==================
+\chapter{Conclusion}
+\label{ch:conclusion}
+%% ==================
+
+\dots
+

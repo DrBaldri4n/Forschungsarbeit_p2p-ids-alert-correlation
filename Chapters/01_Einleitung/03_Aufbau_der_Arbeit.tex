@@ -1,0 +1,38 @@
+\subsection{Aufbau der Arbeit}
+
+	Zunächst wird die Systemarchitektur im zur Verfügung stehenden Peer-to-Peer-Netzwerk beschrieben
+	sowie die implementierten Detektionen und die Datenakquise über Prometheus erläutert.
+
+	Darauf folgend wird die Konzeption des Threat Reporters vorgestellt, welcher die Detektionsergebnisse
+	in einem standardisierten Format aggregiert und über definierte Schnittstellen zwischen den Nodes überträgt.
+
+	Anschließend werden die theoretischen Grundlagen der Informationsfusion präsentiert.
+	%TODO: Sollte hier wissenschaftlich begründet werden, warum die Wahl auf eine Kombination
+	%      aus Deep Sets und Attention-Mechanismen gefallen ist?
+
+	Darauf folgend wird die Methodik der gewichteten Aggregation mittels Utility Theory beschrieben.
+	%TODO: Die Formel der Utility Theory wurde nicht originär für Gewichtungsfunktionen entwickelt.
+	%      Wie problematisch ist das? Sollte dies in der Diskussion thematisiert oder direkt
+	%      eine alternative Methode verwendet werden?
+
+	Anschließend werden der Versuchsaufbau sowie die Erstellung eines aussagekräftigen Datensatzes
+	beschrieben. Auf dieser Grundlage werden die Ergebnisse der Detektionsgenauigkeit sowie ein
+	Vergleich der Aggregationsergebnisse präsentiert.
+	%TODO: Aktuell werden eigene Messdaten mit verschiedenen Angriffsszenarien verwendet.
+	%      Wissenschaftlich fundierter wäre die Einbeziehung eines öffentlichen Datensatzes.
+	%      Gibt es konkrete Empfehlungen oder Suchkriterien für geeignete Datensätze
+	%      (z.\,B. ICS/SCADA-spezifische Anomalie-Datensätze, EV-Charging-Protokolle)?
+
+	Die anschließende Diskussion der Ergebnisse führt zur Identifikation einer Forschungslücke,
+	welche in zukünftigen Arbeiten weiter untersucht werden sollte.
+	%TODO: Ist die optimale Gewichtungsfunktion tatsächlich die zentrale Forschungslücke,
+	%      oder liegt diese eher in der Entwicklung neuartiger Aggregationsmethoden?
+	%      Für eine Folgearbeit wäre ein Paper zu diesem Thema denkbar – konkrete Themenvorschläge
+	%      sind willkommen.
+
+	Abschließend wird erörtert, wie die Report-Generierung nicht nur für die interne Nutzung der Nodes
+	von Nutzen ist, sondern durch die Anbindung eines Large Language Models~(LLM) auch zur Aufbereitung
+	menschenlesbarer Cyber Threat Intelligence~(CTI)-Reports beitragen kann.
+	%TODO: Dieses Ziel wurde initial diskutiert, jedoch nicht umgesetzt. Es bleibt ein vielversprechender
+	%      Anknüpfungspunkt für nachfolgende Arbeiten.
+
