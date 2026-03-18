@@ -193,14 +193,12 @@
 \newpage
 
 \section{Systemarchitektur und Detection Framework}
-    \subsection{Architektur des Multi-Node-Systems}
+\label{sec:systemarchitektur}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex}
     % TODO: Hier das Bild der Architektur einfügen
-    \subsection{Analyse der implementierten Detections}
-        \subsubsection{IDS Power und Temperature Monitoring}
-        \subsubsection{Weitere Kern-Detections (6er Set)}
-    \subsection{Datenakquise und Feature-Extraktion via Prometheus}
-        \subsubsection{Prometheus Exporter Design}
-        \subsubsection{Metriken: Durchschnitt, Min, Max und Median}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex}
+	\input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquiseund_Feature-Extraktion_via_Prometheus.tex}
+    
 
 \newpage
 
@@ -230,10 +228,15 @@
 
 \newpage
 
-\section{Evaluierung und Ergebnisse}
+\section{Aufbau und Begründung des Datensatzes}
     \subsection{Versuchsaufbau und Datensatz-Wahl}
+	\subsection{Welche Angriffe wurden Gefahren und über welchen zeitraum?}
+
+\newpage
+
+\section{Evaluation der Aggregationsmethoden}
     \subsection{Analyse der Detection-Genauigkeit (Binary vs. Probabilistic)}
-    \subsection{Vergleich der Aggregationsergebnisse}
+    \subsection{Vergleich der Aggregationsergebnisse Besser oder schlechter mit Agg CTI-Reports?}
 
 \newpage
 

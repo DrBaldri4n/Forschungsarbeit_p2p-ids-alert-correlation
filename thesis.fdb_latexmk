@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1773136208.71055 "thesis.aux" "thesis.bbl" "thesis" 1773136211.20331 0
-  "./references.bib" 1760532836 3117 a9ef7e31232f33ebf43030268ada2e68 ""
+["bibtex thesis"] 1773842598.97938 "thesis.aux" "thesis.bbl" "thesis" 1773842601.68175 0
+  "./references.bib" 1773137869.85691 8585 fee0bc8cbb59fcd23353e3241d0b12fa ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "thesis.aux" 1773136210.87663 30771 17b68e3e477f8e65fb2d25cfdada616b "pdflatex"
+  "thesis.aux" 1773842601.3475 33115 9939b8e8e778e16359fb68c5581c98e4 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1773136208.7956 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1773136211.20351 0
+["pdflatex"] 1773842599.12762 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1773842601.68218 0
   "/etc/texmf/web2c/texmf.cnf" 1722698732.88771 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1773136198.59879 13732 614a196d5c11f6cb497db0a98f8f4903 ""
+  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1773842559.10266 10970 82532adc8324a1e079ba73e492671ffa ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -228,15 +228,18 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1760951661.5498 5349413 046856ee3e43ff75d057e91c15ab5c94 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1760951674 6831114 59826e9c7e128be5404a4134d71038a6 ""
-  "Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex" 1773136139.28753 44 2946d1a08534268478ca37057a00f269 ""
-  "Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex" 1773136123.20152 279 58dbaafb06ef1ca5d695a66bbf3fdb49 ""
+  "Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex" 1773841271.83453 1301 35b1eedd21b9ed41bfe71f7569f417df ""
+  "Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex" 1773842598.05151 1086 5f268045fad9a4db6c1fdd8dad88f19e ""
   "Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex" 1773136056.33547 2509 2620d13129c231790a6de06a84aee9c5 ""
+  "Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex" 1773842380.84834 47 c4a3ca61000012cd7ff5cf651d74d649 ""
+  "Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex" 1773842430.76515 170 207f5dd9a241edf2a8df90ab783cf34f ""
+  "Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquiseund_Feature-Extraktion_via_Prometheus.tex" 1773842492.77491 182 92f085ecf36420d4ec47e68a61d040f2 ""
   "logos/oth-logo.png" 1491634092 72704 28cd978a7a026ba33f822ab10581c80a ""
-  "thesis.aux" 1773136210.87663 30771 17b68e3e477f8e65fb2d25cfdada616b "pdflatex"
-  "thesis.bbl" 1773136208.79066 49 0eba253fc001332e731e8aba3f23127b "bibtex thesis"
-  "thesis.out" 1773136210.33664 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.tex" 1773136198.59879 13732 614a196d5c11f6cb497db0a98f8f4903 ""
-  "thesis.toc" 1773136210.88463 4627 db97771be6a86f8373d377b8604e0045 "pdflatex"
+  "thesis.aux" 1773842601.3475 33115 9939b8e8e778e16359fb68c5581c98e4 "pdflatex"
+  "thesis.bbl" 1773842599.12051 49 0eba253fc001332e731e8aba3f23127b "bibtex thesis"
+  "thesis.out" 1773842600.8075 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.tex" 1773842559.10266 10970 82532adc8324a1e079ba73e492671ffa ""
+  "thesis.toc" 1773842601.3565 4913 715c2f3f1266096caa36b5691423c5f2 "pdflatex"
   "thesisclass.cls" 1760532836 7338 846104f6b6832a0fb61015bbee24f22d ""
   (generated)
   "thesis.aux"
