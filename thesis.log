@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  18 MAR 2026 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  19 MAR 2026 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1020,7 +1020,12 @@ Overfull \hbox (46.51353pt too wide) in paragraph at lines 29--29
  [][] [][]\T1/ptm/m/n/11.04124 Die Gewich-tungs-formel: $\OML/ztmcm/m/it/11.04124 w\OT1/ztmcm/m/n/11.04124 (\OML/ztmcm/m/it/11.04124 n\OT1/ztmcm/m/n/11.04124 ) = \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT \OT1/ztmcm/m/n/11.04124 + (\OML/ztmcm/m/it/11.04124 MAX[]WEIGHT \OMS/ztmcm/m/n/11.04124 ^^@ 
  []
 
-[2])
+[2]
+Overfull \hbox (6.40909pt too wide) in paragraph at lines 43--43
+ [][] [][]\T1/ptm/m/n/11.04124 Untersuchung des Ein-flusses von Report-Aggregation auf De-tec-tion-sergeb- 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1048,11 +1053,6 @@ Overfull \hbox (1.16277pt too wide) in paragraph at lines 2--3
  []
 
 ) (./Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex
-Overfull \hbox (7.07pt too wide) in paragraph at lines 4--1
-\T1/ptm/m/n/11.04124 wer-den. Die En-twick-lung und Va-li-dierung dieser sta-bilen Kommunikations- und Ve-r-ar-beitungsplat-
- []
-
-
 Overfull \hbox (16.58734pt too wide) in paragraph at lines 3--5
 []\T1/ptm/m/n/11.04124 Zunächst wird die Sys-temar-chitek-tur im zur Ver-fü-gung ste-hen-den Peer-to-Peer-Netzwerk beschrieben
  []
@@ -1066,24 +1066,29 @@ Overfull \hbox (5.12672pt too wide) in paragraph at lines 13--17
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 	D
-       ie anschlieÃŸende Diskussion der Ergebnisse fÃ¼hrt zur Identifikation... [1
+l.18 	A
+       nschlieÃŸend wird die erweiterte Architektur und umsetzung der Vorges... [1
 
-])
+]
+Overfull \hbox (17.83496pt too wide) in paragraph at lines 18--24
+[]\T1/ptm/m/n/11.04124 Anschlieÿend wird die er-weit-erte Ar-chitek-tur und um-set-zung der Vorgestell-ten Methodik beschrieben.
+ []
+
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.193 \newpage
-               [2] (./Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex) (./Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex) (./Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquiseund_Feature-Extraktion_via_Prometheus.tex)
+               [2] (./Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex) (./Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex) (./Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquise_und_Feature-Extraktion_via_Prometheus.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203 \newpage
+l.202 \newpage
                [3]
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 \newpage
+l.209 \newpage
                [4] [5]
 Overfull \hbox (24.33778pt too wide) in paragraph at lines 225--225
 []\T1/ptm/m/n/11.04124 Die Gewich-tungs-formel: $\OML/ztmcm/m/it/11.04124 w\OT1/ztmcm/m/n/11.04124 (\OML/ztmcm/m/it/11.04124 n\OT1/ztmcm/m/n/11.04124 ) = \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT \OT1/ztmcm/m/n/11.04124 + (\OML/ztmcm/m/it/11.04124 MAX[]WEIGHT \OMS/ztmcm/m/n/11.04124 ^^@ \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT\OT1/ztmcm/m/n/11.04124 ) \OMS/ztmcm/m/n/11.04124 ^^B
@@ -1109,7 +1114,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 225.
 
-[6] [7] [8] [9] [10] [11] (./thesis.bbl
+[6] [7] [8]
+Overfull \hbox (24.7148pt too wide) in paragraph at lines 249--249
+[]\T1/ptm/m/n/13.24945 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die Report-Qualität 
+ []
+
+[9] [10] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1121,98 +1131,98 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 3.
 
-) [12]
-Overfull \hbox (22.25372pt too wide) in alignment at lines 273--278
+) [11]
+Overfull \hbox (22.25372pt too wide) in alignment at lines 274--279
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 278--284
+Overfull \hbox (22.25372pt too wide) in alignment at lines 279--285
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 284--286
+Overfull \hbox (22.25372pt too wide) in alignment at lines 285--287
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 286--288
+Overfull \hbox (22.25372pt too wide) in alignment at lines 287--289
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
 []|\T1/ptm/m/n/11.04124 Grammatik- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 []|\T1/ptm/m/n/11.04124 Der gener-ierte Out-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 wurde auss-chlieÿlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 zur Über-prü-fung und
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 290--291
+Underfull \hbox (badness 1960) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 Op-ti-mierung der Gram-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 matik, Rechtschrei-bung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 und Les-barkeit ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 wen-det. Sämtliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 y-sen, In-ter-pre-ta-tio-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 und wis-senschaftliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T1/ptm/m/n/11.04124 Schlussfol-gerun-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 []|\T1/ptm/m/n/11.04124 Umformulierung von
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 \T1/ptm/m/n/11.04124 Sätzen zur besseren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 \T1/ptm/m/n/11.04124 Ver-ständlichkeit und
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 288--292
+Overfull \hbox (22.25372pt too wide) in alignment at lines 289--293
  [] [] [] [] [] 
  []
 
@@ -1221,7 +1231,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 298.
+(scrbook)              This could result in several error messages on input line 299.
 
 [1] (./thesis.aux)
  ***********
@@ -1232,18 +1242,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29442 strings out of 476106
- 560948 string characters out of 5793932
+ 29437 strings out of 476106
+ 560910 string characters out of 5793932
  1941975 words of memory out of 5000000
- 50828 multiletter control sequences out of 15000+600000
+ 50824 multiletter control sequences out of 15000+600000
  603850 words of font info for 113 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,9n,121p,10968b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (17 pages, 171859 bytes).
+Output written on thesis.pdf (16 pages, 171726 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 358 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 62 named destinations out of 1000 (max. 500000)
  378 words of extra memory for PDF output out of 10000 (max. 10000000)
 

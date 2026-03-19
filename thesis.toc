@@ -28,19 +28,19 @@
 \contentsline {subsection}{\numberline {0.5.2}Mathematische Modellierung}{6}{subsection.0.5.2}%
 \contentsline {subsubsection}{\numberline {0.5.2.1}Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp (-K \cdot n))$}{6}{subsubsection.0.5.2.1}%
 \contentsline {subsubsection}{\numberline {0.5.2.2}Parameteranalyse: Monotonie und Diminishing Returns}{6}{subsubsection.0.5.2.2}%
+\contentsline {subsubsection}{\numberline {0.5.2.3}Abgrenzung zur originären Utility Theory}{6}{subsubsection.0.5.2.3}%
 \contentsline {subsection}{\numberline {0.5.3}Implementierung des Attention-basierten Selektionsmodells}{6}{subsection.0.5.3}%
-\contentsline {section}{\numberline {0.6}Aufbau und Begründung des Datensatzes}{7}{section.0.6}%
-\contentsline {subsection}{\numberline {0.6.1}Versuchsaufbau und Datensatz-Wahl}{7}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {0.6.2}Welche Angriffe wurden Gefahren und über welchen zeitraum?}{7}{subsection.0.6.2}%
-\contentsline {section}{\numberline {0.7}Evaluation der Aggregationsmethoden}{8}{section.0.7}%
-\contentsline {subsection}{\numberline {0.7.1}Analyse der Detection-Genauigkeit (Binary vs. Probabilistic)}{8}{subsection.0.7.1}%
-\contentsline {subsection}{\numberline {0.7.2}Vergleich der Aggregationsergebnisse Besser oder schlechter mit Agg CTI-Reports?}{8}{subsection.0.7.2}%
-\contentsline {section}{\numberline {0.8}Diskussion und Forschungslücke}{9}{section.0.8}%
-\contentsline {subsection}{\numberline {0.8.1}Identifikation der Forschungslücke: Optimale Gewichtungsfunktionen}{9}{subsection.0.8.1}%
-\contentsline {subsection}{\numberline {0.8.2}Potenzial für zukünftige Optimierungen im Sommer-Paper}{9}{subsection.0.8.2}%
-\contentsline {section}{\numberline {0.9}Ausblick: KI-gestützte Report-Generierung}{10}{section.0.9}%
-\contentsline {subsection}{\numberline {0.9.1}LLM-basierte Aufbereitung von CTI-Reports}{10}{subsection.0.9.1}%
-\contentsline {subsection}{\numberline {0.9.2}Automatisierung nach dem AGIR-Framework}{10}{subsection.0.9.2}%
-\contentsline {section}{\numberline {0.10}Zusammenfassung und Fazit}{11}{section.0.10}%
-\contentsline {chapter}{Bibliography}{12}{section*.3}%
+\contentsline {section}{\numberline {0.6}Erweiterung der Systemarchitektur und Implementierung}{7}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Generierte Threat Reports: Format und Struktur}{7}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Integration von Threat Reporter und Aggregationslogik}{7}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}Architektur der Fusionskomponente im P2P-Netzwerk}{7}{subsection.0.6.3}%
+\contentsline {section}{\numberline {0.7}Evaluation}{8}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}Qualität der aggregierten Threat Reports}{8}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {0.7.2}Nützlichkeit für die interne Nutzung der Knoten}{8}{subsection.0.7.2}%
+\contentsline {section}{\numberline {0.8}Diskussion und Forschungslücken}{9}{section.0.8}%
+\contentsline {subsection}{\numberline {0.8.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{9}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {0.8.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{9}{subsection.0.8.2}%
+\contentsline {subsection}{\numberline {0.8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{9}{subsection.0.8.3}%
+\contentsline {section}{\numberline {0.9}Zusammenfassung und Fazit}{10}{section.0.9}%
+\contentsline {chapter}{Bibliography}{11}{section*.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

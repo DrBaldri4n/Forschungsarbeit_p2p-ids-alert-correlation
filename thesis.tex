@@ -186,9 +186,9 @@
 \newpage
 
 \section{Einleitung}
-	\input{Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex}
-	\input{Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex}
-	\input{Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex}
+    \input{Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex}
+    \input{Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex}
+    \input{Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex}
 
 \newpage
 
@@ -197,8 +197,7 @@
     \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex}
     % TODO: Hier das Bild der Architektur einfügen
     \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex}
-	\input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquiseund_Feature-Extraktion_via_Prometheus.tex}
-    
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquise_und_Feature-Extraktion_via_Prometheus.tex}
 
 \newpage
 
@@ -216,6 +215,7 @@
         \subsubsection{Bayes-basierte Konsensmodelle}
         \subsubsection{Gewichtetes Voting}
     \subsection{State-of-the-Art: Deep Sets und Attention Mechanismen}
+    % TODO: Wissenschaftliche Begründung der Methodenwahl (Deep Sets + Attention) hier einarbeiten
 
 \newpage
 
@@ -224,37 +224,38 @@
     \subsection{Mathematische Modellierung}
         \subsubsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
         \subsubsection{Parameteranalyse: Monotonie und Diminishing Returns}
+        \subsubsection{Abgrenzung zur originären Utility Theory}
+        % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
+        %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
     \subsection{Implementierung des Attention-basierten Selektionsmodells}
 
 \newpage
 
-\section{Aufbau und Begründung des Datensatzes}
-    \subsection{Versuchsaufbau und Datensatz-Wahl}
-	\subsection{Welche Angriffe wurden Gefahren und über welchen zeitraum?}
+\section{Erweiterung der Systemarchitektur und Implementierung}
+    \subsection{Generierte Threat Reports: Format und Struktur}
+    \subsection{Integration von Threat Reporter und Aggregationslogik}
+    \subsection{Architektur der Fusionskomponente im P2P-Netzwerk}
+    % TODO Grafik einfügen wie die Architektur nun verändert wurde
+    
+\newpage
+
+\section{Evaluation}
+    \subsection{Qualität der aggregierten Threat Reports}
+    \subsection{Nützlichkeit für die interne Nutzung der Knoten}
 
 \newpage
 
-\section{Evaluation der Aggregationsmethoden}
-    \subsection{Analyse der Detection-Genauigkeit (Binary vs. Probabilistic)}
-    \subsection{Vergleich der Aggregationsergebnisse Besser oder schlechter mit Agg CTI-Reports?}
-
-\newpage
-
-\section{Diskussion und Forschungslücke}
-    \subsection{Identifikation der Forschungslücke: Optimale Gewichtungsfunktionen}
-    \subsection{Potenzial für zukünftige Optimierungen im Sommer-Paper}
-
-\newpage
-
-\section{Ausblick: KI-gestützte Report-Generierung}
-    \subsection{LLM-basierte Aufbereitung von CTI-Reports}
-    \subsection{Automatisierung nach dem AGIR-Framework}
+\section{Diskussion und Forschungslücken}
+    \subsection{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
+    \subsection{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
+    \subsection{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
 
 \newpage
 
 \section{Zusammenfassung und Fazit}
 
 \newpage
+
 
 % References Style
 \iflanguage{english}

@@ -1,10 +1,10 @@
 \subsection{Aufbau der Arbeit}
 
 	Zunächst wird die Systemarchitektur im zur Verfügung stehenden Peer-to-Peer-Netzwerk beschrieben
-	sowie die implementierten Detektionen und die Datenakquise über Prometheus erläutert.
+	sowie die implementierten Detektionen und die Datenakquise über Prometheus empirisch erläutert und differenziert.
 
 	Darauf folgend wird die Konzeption des Threat Reporters vorgestellt, welcher die Detektionsergebnisse
-	in einem standardisierten Format aggregiert und über definierte Schnittstellen zwischen den Nodes überträgt.
+	in einem standardisierten Format aggregiert und über definierte Schnittstellen zwischen den Knoten überträgt.
 
 	Anschließend werden die theoretischen Grundlagen der Informationsfusion präsentiert.
 	%TODO: Sollte hier wissenschaftlich begründet werden, warum die Wahl auf eine Kombination
@@ -15,9 +15,8 @@
 	%      Wie problematisch ist das? Sollte dies in der Diskussion thematisiert oder direkt
 	%      eine alternative Methode verwendet werden?
 
-	Anschließend werden der Versuchsaufbau sowie die Erstellung eines aussagekräftigen Datensatzes
-	beschrieben. Auf dieser Grundlage werden die Ergebnisse der Detektionsgenauigkeit sowie ein
-	Vergleich der Aggregationsergebnisse präsentiert.
+	Anschließend wird die erweiterte Architektur und umsetzung der Vorgestellten Methodik beschrieben.
+	Die Daraus generierten Threat Reports werden präsentiert und hinsichtlich ihrer Qualität und Nützlichkeit für die interne Nutzung der Knoten bewertet.
 	%TODO: Aktuell werden eigene Messdaten mit verschiedenen Angriffsszenarien verwendet.
 	%      Wissenschaftlich fundierter wäre die Einbeziehung eines öffentlichen Datensatzes.
 	%      Gibt es konkrete Empfehlungen oder Suchkriterien für geeignete Datensätze
@@ -25,14 +24,8 @@
 
 	Die anschließende Diskussion der Ergebnisse führt zur Identifikation einer Forschungslücke,
 	welche in zukünftigen Arbeiten weiter untersucht werden sollte.
-	%TODO: Ist die optimale Gewichtungsfunktion tatsächlich die zentrale Forschungslücke,
-	%      oder liegt diese eher in der Entwicklung neuartiger Aggregationsmethoden?
-	%      Für eine Folgearbeit wäre ein Paper zu diesem Thema denkbar – konkrete Themenvorschläge
-	%      sind willkommen.
-
-	Abschließend wird erörtert, wie die Report-Generierung nicht nur für die interne Nutzung der Nodes
-	von Nutzen ist, sondern durch die Anbindung eines Large Language Models~(LLM) auch zur Aufbereitung
-	menschenlesbarer Cyber Threat Intelligence~(CTI)-Reports beitragen kann.
-	%TODO: Dieses Ziel wurde initial diskutiert, jedoch nicht umgesetzt. Es bleibt ein vielversprechender
-	%      Anknüpfungspunkt für nachfolgende Arbeiten.
+	%TODO: Mögliche Forschungslücken:
+	%      - Untersuchung der Auswirkungen von unterschiedlichen Gewichtungsstrategien Aggregation auf die Qualität der aggregierten Reports
+	%      - Erweiterung um die LLM gestützte Aufbereitung der Reports für die externe Nutzung
+	% 	   - Untersuchung ob der vorgestellte ablauf, erstellen der reports, aggregieren und nutzung der nachbar reports wirklich zu verbesserten Detectionsergebnissen führt (Echo-Chamber-Effekt?).
 

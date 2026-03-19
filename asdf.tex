@@ -1,0 +1,72 @@
+\newpage
+
+\section{Einleitung}
+    \input{Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex}
+    \input{Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex}
+    \input{Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex}
+
+\newpage
+
+\section{Systemarchitektur und Detection Framework}
+\label{sec:systemarchitektur}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex}
+    % TODO: Hier das Bild der Architektur einfügen
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquise_und_Feature-Extraktion_via_Prometheus.tex}
+
+\newpage
+
+\section{Konzeption des Threat Reporters}
+    \subsection{Standardisierung durch den Threat Report (CSV/STIX)}
+    \subsection{Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}
+    \subsection{Schnittstellendesign für den Datentransfer zwischen Nodes}
+
+\newpage
+
+\section{Theoretische Grundlagen der Informationsfusion}
+    \subsection{Vergleich von Aggregationsmethoden}
+        \subsubsection{Dempster-Shafer-Evidenztheorie}
+        \subsubsection{Fuzzy-basierte Fusion}
+        \subsubsection{Bayes-basierte Konsensmodelle}
+        \subsubsection{Gewichtetes Voting}
+    \subsection{State-of-the-Art: Deep Sets und Attention-Mechanismen}
+    % TODO: Wissenschaftliche Begründung der Methodenwahl (Deep Sets + Attention) hier einarbeiten
+
+\newpage
+
+\section{Methodik: Gewichtete Aggregation mittels Utility Theory}
+    \subsection{Anforderungen an die Gewichtungsfunktion}
+    \subsection{Mathematische Modellierung}
+        \subsubsection{Die Gewichtungsformel: $w(n) = \text{BASE\_WEIGHT} + (\text{MAX\_WEIGHT} - \text{BASE\_WEIGHT}) \times (1 - \exp(-K \cdot n))$}
+        \subsubsection{Parameteranalyse: Monotonie und Diminishing Returns}
+        \subsubsection{Abgrenzung zur originären Utility Theory}
+        % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
+        %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
+    \subsection{Implementierung des Attention-basierten Selektionsmodells}
+
+\newpage
+
+\section{Erweiterung der Systemarchitektur und Implementierung}
+    \subsection{Generierte Threat Reports: Format und Struktur}
+    \subsection{Integration von Threat Reporter und Aggregationslogik}
+    \subsection{Architektur der Fusionskomponente im P2P-Netzwerk}
+    % TODO Grafik einfügen wie die Architektur nun verändert wurde
+    
+\newpage
+
+\section{Evaluation}
+    \subsection{Qualität der aggregierten Threat Reports}
+    \subsection{Nützlichkeit für die interne Nutzung der Knoten}
+
+\newpage
+
+\section{Diskussion und Forschungslücken}
+    \subsection{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
+    \subsection{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
+    \subsection{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
+
+\newpage
+
+\section{Zusammenfassung und Fazit}
+
+\newpage
