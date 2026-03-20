@@ -6,9 +6,7 @@ das \textbf{Cloud Dashboard} zur zentralen Visualisierung und Auswertung.
 Beide Domänen sind über ein privates Peer-to-Peer-Netzwerk auf Basis des
 \textit{InterPlanetary File System} (IPFS) lose gekoppelt. Anstelle direkter
 IP-zu-IP-Verbindungen erfolgt der Datenaustausch über inhaltsadressierte
-Bezeichner (\textit{Content Identifier}, CIDs), wodurch keine einzelne
-Ausfallstelle existiert und die Kommunikation robust gegenüber
-netzwerktopologischen Veränderungen ist.
+Bezeichner (\textit{Content Identifier}, CIDs).
 
 \begin{figure}[h]
     \centering
@@ -19,18 +17,12 @@ netzwerktopologischen Veränderungen ist.
 \end{figure}
 
 Abbildung~\ref{fig:system_overview} zeigt die Gesamtarchitektur des Systems
-mit Fokus auf die in jeder Wallbox eingebettete Detection Unit, die auf einem
-Raspberry Pi Zero 2~W unter einem Ubuntu-Raspbian-Server-Betriebssystem
-betrieben wird. Als zentrales Laufzeitmodul fungiert der \textit{Data
-Aggregator}, der die erfassten Sensordaten der Wallbox über Prometheus
+mit Fokus auf die in jeder Wallbox eingebettete Detection Unit. Als zentrales Laufzeitmodul fungiert der \textit{DataAggregator}, der die erfassten Sensordaten der Wallbox über Prometheus
 bereitstellt und sowohl den Cybersecurity- und Detection-Modulen als auch
 Werkzeugen zur Datenaufbereitung zugänglich macht.
 
 Die Architektur ist auf kollaborative Angriffserkennung ausgelegt: Über den
-\textit{ipfs-wrapper} und dessen \textbf{Publish-Subscribe-Mechanismus} (detailliert in Abbildung~\ref{fig:ipfs_network}) teilen Ladesäulen sicherheitsrelevante
-Kontextinformationen mit allen Netzwerkteilnehmern und erhöhen so die
-situative Wahrnehmung (\textit{Situational Awareness}) über die gesamte
-Ladeinfrastruktur hinweg.
+\textit{ipfs-wrapper} und dessen \textbf{Publish-Subscribe-Mechanismus} (detailliert in Abbildung~\ref{fig:ipfs_network}) teilen Ladesäulen Kontextinformationen mit allen Netzwerkteilnehmern und können somit die situative Wahrnehmung über die gesamte Ladeinfrastruktur hinweg verbessern.
 
 \subsection{Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch}
 
@@ -60,12 +52,7 @@ Systemarchitektur eingebunden ist.
 
 Für die Benachrichtigung über neue Daten wird der
 \textbf{Publish-Subscribe-Mechanismus} von IPFS genutzt: Sobald eine
-Detection Unit neue Messdaten veröffentlicht, sendet sie die zugehörige CID
-zusammen mit der eigenen MADDR über einen gemeinsam abonnierten Kanal an
-alle Teilnehmer. Die Empfänger rufen die Datei daraufhin direkt beim
-Ursprungs-Peer ab. Da eine CID dem kryptografischen Hash des jeweiligen
-Inhalts entspricht, ist die Datenintegrität implizit gewährleistet, ohne
-dass zusätzliche Signaturmechanismen erforderlich sind.
+Detection Unit neue Messdaten veröffentlicht, sendet sie die zugehörige CID zusammen mit der eigenen MADDR über einen gemeinsam abonnierten Kanal an alle Teilnehmer. Die Empfänger rufen die Datei daraufhin direkt beim Ursprungs-Peer ab. Da eine CID dem kryptografischen Hash des jeweiligen Inhalts entspricht, ist die Datenintegrität implizit gewährleistet, ohne dass zusätzliche Signaturmechanismen erforderlich sind.
 
 \subsection{End-to-End-Datenfluss}
 
@@ -86,13 +73,13 @@ Der vollständige Datenfluss vom Sensor bis zur Visualisierung lässt sich in dr
 \end{figure}
 
 \paragraph{Datenerhebung (Charging Station)}
-Der \textit{Aggregator} innerhalb des Detection-Clients sammelt Messdaten aus drei Quellen: EVSE-spezifische Daten werden über die \textit{Lokale API} des IoT-Moduls bezogen, Systemmetriken des Hosts über einen \textit{Node Exporter}, sowie interne Detektionsergebnisse über interne Komponenten. Prometheus scraped alle Exporter in konfigurierbaren Intervallen. Der \textit{Reporter} liest die aggregierten Daten aus der Prometheus-Datenbank und übermittelt sie per \textbf{HTTP POST} an den \texttt{ipfs-wrapper}.
+Der \textit{Aggregator} innerhalb des Detection-Clients sammelt die Messdaten. Prometheus scraped alle Exporter in konfigurierbaren Intervallen. Der \textit{Reporter} liest die aggregierten Daten aus der Prometheus-Datenbank und übermittelt sie an den \texttt{ipfs-wrapper}.
 
 \paragraph{Transport (IPFS-Netzwerk)}
 Der \texttt{ipfs-wrapper} nimmt die Datei entgegen, publiziert sie im lokalen IPFS-Node und erhält eine CID zurück. Anschließend wird die CID zusammen mit der eigenen MADDR über den konfigurierten \textbf{Publish-Subscribe-Mechanismus} im privaten IPFS-Netz verbreitet. Die eigentlichen Messdaten werden dabei nicht aktiv gepusht, lediglich der Zeiger (CID) wird distribuiert.
 
 \paragraph{Persistierung und Visualisierung (Cloud Dashboard)}
-Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des \texttt{ipfs-wrapper} die CID und MADDR und leitet diese per \textbf{WebSocket} an den \textit{Collector} weiter. Der Collector fordert daraufhin die vollständige Datei über den lokalen IPFS-Peer an, der sie in Chunks vom Ursprungs-Peer abruft. Der \textit{File Extractor} verarbeitet die Rohdaten und persistiert die Messwerte in \textbf{InfluxDB}. Grafana greift auf InfluxDB zu und stellt die Zeitreihendaten im Dashboard dar (vgl. Abbildung~\ref{fig:cloud_dashboard}).
+Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des \texttt{ipfs-wrapper} die CID und MADDR und leitet diese per \textbf{WebSocket} an den Collector weiter. Der Collector fordert daraufhin die vollständige Datei über den lokalen IPFS-Peer an, der sie in Chunks vom Ursprungs-Peer abruft. Der \textit{File Extractor} verarbeitet die Rohdaten und persistiert die Messwerte in \textbf{InfluxDB}. Grafana greift auf InfluxDB zu und stellt die Zeitreihendaten im Dashboard dar (vgl. Abbildung~\ref{fig:cloud_dashboard}).
 
 \begin{figure}[H]
     \centering
@@ -100,3 +87,5 @@ Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des 
     \caption{Komponenten des Cloud Dashboards: IPFS-Peer, File Extractor, InfluxDB und Grafana}
     \label{fig:cloud_dashboard}
 \end{figure}
+
+\todohl{}{Warum genau habe ich das jz beschrieben noch ein abschließender Satz}

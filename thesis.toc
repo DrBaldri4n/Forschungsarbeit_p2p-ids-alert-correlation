@@ -8,10 +8,10 @@
 \contentsline {chapter}{\numberline {3}Systemarchitektur und Detection Framework}{4}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Systemüberblick und verteilte Kommunikation}{4}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch}{5}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}End-to-End-Datenfluss}{6}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}End-to-End-Datenfluss}{5}{subsection.3.1.2}%
 \contentsline {paragraph}{\nonumberline Datenerhebung (Charging Station)}{6}{paragraph*.16}%
 \contentsline {paragraph}{\nonumberline Transport (IPFS-Netzwerk)}{6}{paragraph*.18}%
-\contentsline {paragraph}{\nonumberline Persistierung und Visualisierung (Cloud Dashboard)}{7}{paragraph*.20}%
+\contentsline {paragraph}{\nonumberline Persistierung und Visualisierung (Cloud Dashboard)}{6}{paragraph*.20}%
 \contentsline {section}{\numberline {3.2}Physische Testumgebung}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Detection Units der Ladeinfrastruktur}{8}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}{8}{subsection.3.3.1}%
@@ -48,5 +48,5 @@
 \contentsline {section}{\numberline {9.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{14}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{14}{section.9.3}%
 \contentsline {chapter}{\numberline {10}Zusammenfassung und Fazit}{15}{chapter.10}%
-\contentsline {chapter}{Bibliography}{16}{section*.22}%
+\contentsline {chapter}{Bibliography}{16}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
