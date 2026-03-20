@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  19 MAR 2026 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  20 MAR 2026 13:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -722,33 +722,59 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 Package: xparse 2023-10-10 L3 Experimental document command parser
 ))
 Class scrbook Info: amsthm's \deferred@thm@head patched.
- (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks49
+\SOUL@lasttoken=\toks50
+\SOUL@syllable=\toks51
+\SOUL@cmds=\toks52
+\SOUL@buffer=\toks53
+\SOUL@token=\toks54
+\SOUL@syllgoal=\dimen294
+\SOUL@syllwidth=\dimen295
+\SOUL@charkern=\dimen296
+\SOUL@hyphkern=\dimen297
+\SOUL@dimen=\dimen298
+\SOUL@dimeni=\dimen299
+\SOUL@minus=\count326
+\SOUL@comma=\count327
+\SOUL@apo=\count328
+\SOUL@grave=\count329
+\SOUL@spaceskip=\skip93
+\SOUL@ttwidth=\dimen300
+\SOUL@uldp=\dimen301
+\SOUL@ulht=\dimen302
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
 Package: todonotes 2024/01/05
  (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks49
-\XKV@tempa@toks=\toks50
+\XKV@toks=\toks55
+\XKV@tempa@toks=\toks56
 )
-\XKV@depth=\count326
+\XKV@depth=\count330
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count327
-\calc@Bcount=\count328
-\calc@Adimen=\dimen294
-\calc@Bdimen=\dimen295
-\calc@Askip=\skip93
-\calc@Bskip=\skip94
+\calc@Acount=\count331
+\calc@Bcount=\count332
+\calc@Adimen=\dimen303
+\calc@Bdimen=\dimen304
+\calc@Askip=\skip94
+\calc@Bskip=\skip95
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count329
-\calc@Cskip=\skip95
+\calc@Ccount=\count333
+\calc@Cskip=\skip96
 )
-\c@@todonotes@numberoftodonotes=\count330
+\c@@todonotes@numberoftodonotes=\count334
 ) (/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
@@ -807,76 +833,76 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box74
 )
-\tc@llx=\dimen296
-\tc@lly=\dimen297
-\tc@urx=\dimen298
-\tc@ury=\dimen299
+\tc@llx=\dimen305
+\tc@lly=\dimen306
+\tc@urx=\dimen307
+\tc@ury=\dimen308
 Package trimclip Info: Using driver 'tc-pdftex.def'.
  (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen300
-\adjbox@Height=\dimen301
-\adjbox@Depth=\dimen302
-\adjbox@Totalheight=\dimen303
-\adjbox@pwidth=\dimen304
-\adjbox@pheight=\dimen305
-\adjbox@pdepth=\dimen306
-\adjbox@ptotalheight=\dimen307
+\adjbox@Width=\dimen309
+\adjbox@Height=\dimen310
+\adjbox@Depth=\dimen311
+\adjbox@Totalheight=\dimen312
+\adjbox@pwidth=\dimen313
+\adjbox@pheight=\dimen314
+\adjbox@pdepth=\dimen315
+\adjbox@ptotalheight=\dimen316
  (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count331
+\c@checkoddpage=\count335
 ) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box75
-\sift@deathcycles=\count332
-\@vwid@loff=\dimen308
-\@vwid@roff=\dimen309
+\sift@deathcycles=\count336
+\@vwid@loff=\dimen317
+\@vwid@roff=\dimen318
 )) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen310
-\captionmargin=\dimen311
-\caption@leftmargin=\dimen312
-\caption@rightmargin=\dimen313
-\caption@width=\dimen314
-\caption@indent=\dimen315
-\caption@parindent=\dimen316
-\caption@hangindent=\dimen317
+\caption@tempdima=\dimen319
+\captionmargin=\dimen320
+\caption@leftmargin=\dimen321
+\caption@rightmargin=\dimen322
+\caption@width=\dimen323
+\caption@indent=\dimen324
+\caption@parindent=\dimen325
+\caption@hangindent=\dimen326
 Package caption Info: KOMA-Script document class detected.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption-koma.sto
 File: caption-koma.sto 2023/09/08 v2.0e Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count333
-\c@continuedfloat=\count334
+\c@caption@flags=\count337
+\c@continuedfloat=\count338
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: KOMA-Script scrextend package detected.
-\caption@addmargin@hsize=\dimen318
-\caption@addmargin@linewidth=\dimen319
+\caption@addmargin@hsize=\dimen327
+\caption@addmargin@linewidth=\dimen328
 Package caption Info: subfigure package is loaded.
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip96
-\LTright=\skip97
-\LTpre=\skip98
-\LTpost=\skip99
-\LTchunksize=\count335
-\LTcapwidth=\dimen320
+\LTleft=\skip97
+\LTright=\skip98
+\LTpre=\skip99
+\LTpost=\skip100
+\LTchunksize=\count339
+\LTcapwidth=\dimen329
 \LT@head=\box76
 \LT@firsthead=\box77
 \LT@foot=\box78
 \LT@lastfoot=\box79
 \LT@gbox=\box80
-\LT@cols=\count336
-\LT@rows=\count337
-\c@LT@tables=\count338
-\c@LT@chunks=\count339
-\LT@p@ftn=\toks51
+\LT@cols=\count340
+\LT@rows=\count341
+\c@LT@tables=\count342
+\c@LT@chunks=\count343
+\LT@p@ftn=\toks57
 )
-Class scrbook Info: longtable captions redefined on input line 46.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 83.
+Class scrbook Info: longtable captions redefined on input line 49.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -887,54 +913,54 @@ LaTeX Warning: Unused global option(s):
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-Package scrbase Info: activating english \partname on input line 83.
-Package scrbase Info: activating english \chaptername on input line 83.
-Package scrbase Info: activating english \appendixname on input line 83.
-Package scrbase Info: activating english \figurename on input line 83.
-Package scrbase Info: activating english \tablename on input line 83.
-Package scrbase Info: activating english \contentsname on input line 83.
-Package scrbase Info: activating english \listfigurename on input line 83.
-Package scrbase Info: activating english \listtablename on input line 83.
-Package scrbase Info: activating english \bibname on input line 83.
-Package scrbase Info: activating english \indexname on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+Package scrbase Info: activating english \partname on input line 85.
+Package scrbase Info: activating english \chaptername on input line 85.
+Package scrbase Info: activating english \appendixname on input line 85.
+Package scrbase Info: activating english \figurename on input line 85.
+Package scrbase Info: activating english \tablename on input line 85.
+Package scrbase Info: activating english \contentsname on input line 85.
+Package scrbase Info: activating english \listfigurename on input line 85.
+Package scrbase Info: activating english \listtablename on input line 85.
+Package scrbase Info: activating english \bibname on input line 85.
+Package scrbase Info: activating english \indexname on input line 85.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
-\scratchdimen=\dimen321
+\scratchcounter=\count344
+\scratchdimen=\dimen330
 \scratchbox=\box81
-\nofMPsegments=\count341
-\nofMParguments=\count342
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count343
-\MPscratchDim=\dimen322
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
-\everyMPtoPDFconversion=\toks53
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count347
+\MPscratchDim=\dimen331
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks59
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 85.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -946,12 +972,12 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 83.
+(scrbook)           before \begin{document} on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count346
+\BKM@id=\count350
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: longtable package is loaded.
@@ -962,39 +988,39 @@ Package caption Info: End \AtBeginDocument code.
 <logos/oth-logo.png, id=7, 1091.5179pt x 189.5883pt>
 File: logos/oth-logo.png Graphic file (type png)
 <use logos/oth-logo.png>
-Package pdftex.def Info: logos/oth-logo.png  used on input line 100.
+Package pdftex.def Info: logos/oth-logo.png  used on input line 102.
 (pdftex.def)             Requested size: 213.71576pt x 37.11855pt.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 104.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 106.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Font Info:    Calculating math sizes for size <15.89941> on input line 137.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 137.
+LaTeX Font Info:    Calculating math sizes for size <15.89941> on input line 139.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 137.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 137.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 137.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 137.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15.89941> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.76564> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.53973> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
  [1
 
 
@@ -1005,27 +1031,27 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 157.
+(scrbook)              This could result in several error messages on input line 159.
 
 (./thesis.toc
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 3.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.17058> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.6248> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 
-Overfull \hbox (46.51353pt too wide) in paragraph at lines 29--29
+Overfull \hbox (33.51457pt too wide) in paragraph at lines 18--18
+ [][] [][]\T1/ptm/m/n/11.04124 Physikalische Signal- und Tem-per-aturüberwachung (de-tec-tion_power_temperature)[] [][]  
+ []
+
+
+Overfull \hbox (1.24435pt too wide) in paragraph at lines 35--35
  [][] [][]\T1/ptm/m/n/11.04124 Die Gewich-tungs-formel: $\OML/ztmcm/m/it/11.04124 w\OT1/ztmcm/m/n/11.04124 (\OML/ztmcm/m/it/11.04124 n\OT1/ztmcm/m/n/11.04124 ) = \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT \OT1/ztmcm/m/n/11.04124 + (\OML/ztmcm/m/it/11.04124 MAX[]WEIGHT \OMS/ztmcm/m/n/11.04124 ^^@ 
  []
 
-[2]
-Overfull \hbox (6.40909pt too wide) in paragraph at lines 43--43
- [][] [][]\T1/ptm/m/n/11.04124 Untersuchung des Ein-flusses von Report-Aggregation auf De-tec-tion-sergeb- 
- []
-
-)
+[2])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1035,16 +1061,31 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 160.
+(scrbook)              This could result in several error messages on input line 162.
 
 [4] (./Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 2.
+
 Overfull \hbox (6.7051pt too wide) in paragraph at lines 2--3
 \T1/ptm/m/n/11.04124 Rate) sowie die Ro-bus-theit des Gesamt-sys-tems weiter zu steigern. Lokale Anoma-lieerken-nungsver-
  []
 
+
+LaTeX Warning: Marginpar on page 1 moved.
+
 ) (./Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex
 Overfull \hbox (4.78488pt too wide) in paragraph at lines 4--1
 \T1/ptm/m/n/11.04124 Ladepunk-ten er-möglicht, Kon-tex-tin-for-ma-tio-nen be-nach-barter Knoten in den Entschei-dungsprozess
+ []
+
+
+Overfull \hbox (0.30156pt too wide) in paragraph at lines 4--1
+\T1/ptm/m/n/11.04124 einzubeziehen. Es wird ver-mutet, dass durch diesen kol-lab-o-ra-tiven Ansatz räum-liche und zeitliche
+ []
+
+
+Overfull \hbox (0.2578pt too wide) in paragraph at lines 4--1
+\T1/ptm/m/n/11.04124 hoft eine präzis-ere Dif-feren-zierung zwis-chen glob-alen Schwankun-gen und lokalen Sicher-heitsvor-
  []
 
 
@@ -1058,68 +1099,150 @@ Overfull \hbox (16.58734pt too wide) in paragraph at lines 3--5
  []
 
 
-Overfull \hbox (5.12672pt too wide) in paragraph at lines 13--17
-[]\T1/ptm/m/n/11.04124 Darauf fol-gend wird die Methodik der gewichteten Ag-gre-ga-tion mit-tels Util-ity The-ory beschrieben. 
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 	A
-       nschlieÃŸend wird die erweiterte Architektur und umsetzung der Vorges... [1
+l.13 
+      [1
 
 ]
-Overfull \hbox (17.83496pt too wide) in paragraph at lines 18--24
-[]\T1/ptm/m/n/11.04124 Anschlieÿend wird die er-weit-erte Ar-chitek-tur und um-set-zung der Vorgestell-ten Methodik beschrieben.
+Overfull \hbox (5.12672pt too wide) in paragraph at lines 17--18
+[][]\T1/ptm/m/n/11.04124 Da[]-[]rauf[] [][][]fol[]-[]gend[] [][][]wird[] [][][]die[] [][][]Methodik[] [][][]der[] [][][]gewichteten[] [][][]Ag[]-[]gre[]-[]ga[]-[]tion[] [][][]mit[]-[]tels[] [][][]Util[]-[]ity[] [][][]The[]-[]ory[] [][][]beschrieben.[][][] 
  []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (17.83496pt too wide) in paragraph at lines 21--22
+[][]\T1/ptm/m/n/11.04124 An[]-[]schlieÿend[] [][][]wird[] [][][]die[] [][][]er[]-[]weit[]-[]erte[] [][][]Ar[]-[]chitek[]-[]tur[] [][][]und[] [][][]um[]-[]set[]-[]zung[] [][][]der[] [][][]Vorgestell[]-[]ten[] [][][]Methodik[] [][][]beschrieben.[]
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+Overfull \hbox (13.71332pt too wide) in paragraph at lines 23--23
+\T1/ptm/m/n/11.04124 Forschungslücke?[]  
+ []
+
+
+Overfull \hbox (13.71332pt too wide) in paragraph at lines 23--23
+\T1/ptm/m/n/11.04124 Forschungslücke?[]  
+ []
+
+
+Overfull \hbox (17.40105pt too wide) in paragraph at lines 28--28
+\T1/ptm/m/n/11.04124 Forschungslücken: 
+ []
+
+
+Overfull \hbox (17.40105pt too wide) in paragraph at lines 28--28
+\T1/ptm/m/n/11.04124 Forschungslücken: 
+ []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
 
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.193 \newpage
-               [2] (./Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex) (./Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex) (./Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquise_und_Feature-Extraktion_via_Prometheus.tex)
+l.200 \newpage
+               [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.202 \newpage
+l.205 \newpage
                [3]
+Overfull \hbox (3.3057pt too wide) in paragraph at lines 207--207
+[]\T1/ptm/m/n/22.8996 Systemarchitektur und De-tec-tion Frame-work 
+ []
+
+(./Chapters/02_Systemarchitektur_und_Detection_Framework/01_SystemÃ¼berblick_und_verteilte_Kommunikation.tex
+<./figures/deployment_software_modules_v1.drawio.png, id=150, 904.37875pt x 723.70375pt>
+File: ./figures/deployment_software_modules_v1.drawio.png Graphic file (type png)
+<use ./figures/deployment_software_modules_v1.drawio.png>
+Package pdftex.def Info: ./figures/deployment_software_modules_v1.drawio.png  used on input line 15.
+(pdftex.def)             Requested size: 427.43153pt x 342.04018pt.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.209 \newpage
-               [4] [5]
-Overfull \hbox (24.33778pt too wide) in paragraph at lines 225--225
-[]\T1/ptm/m/n/11.04124 Die Gewich-tungs-formel: $\OML/ztmcm/m/it/11.04124 w\OT1/ztmcm/m/n/11.04124 (\OML/ztmcm/m/it/11.04124 n\OT1/ztmcm/m/n/11.04124 ) = \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT \OT1/ztmcm/m/n/11.04124 + (\OML/ztmcm/m/it/11.04124 MAX[]WEIGHT \OMS/ztmcm/m/n/11.04124 ^^@ \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT\OT1/ztmcm/m/n/11.04124 ) \OMS/ztmcm/m/n/11.04124 ^^B
+l.35 \subsection
+                {Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch} [4 <./figures/deployment_software_modules_v1.drawio.png>]
+<./figures/SystemDiagramv2.drawio.png, id=160, 1185.42876pt x 1105.12875pt>
+File: ./figures/SystemDiagramv2.drawio.png Graphic file (type png)
+<use ./figures/SystemDiagramv2.drawio.png>
+Package pdftex.def Info: ./figures/SystemDiagramv2.drawio.png  used on input line 46.
+(pdftex.def)             Requested size: 320.57364pt x 298.86092pt.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 57.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+) [5 <./figures/SystemDiagramv2.drawio.png>]
+<./figures/DataFlowIPFS.drawio.png, id=172, 624.3325pt x 462.72874pt>
+File: ./figures/DataFlowIPFS.drawio.png Graphic file (type png)
+<use ./figures/DataFlowIPFS.drawio.png>
+Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 76.
+(pdftex.def)             Requested size: 427.43153pt x 316.79782pt.
+<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=173, 688.5725pt x 563.10374pt>
+File: ./figures/Sequenzdiagramm_Datenfluss.drawio.png Graphic file (type png)
+<use ./figures/Sequenzdiagramm_Datenfluss.drawio.png>
+Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used on input line 83.
+(pdftex.def)             Requested size: 363.31941pt x 297.12035pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./figures/DataFlowIPFS.drawio.png>]
+<./figures/Cloud-Dashboard.jpg, id=185, 939.51pt x 703.62875pt>
+File: ./figures/Cloud-Dashboard.jpg Graphic file (type jpg)
+<use ./figures/Cloud-Dashboard.jpg>
+Package pdftex.def Info: ./figures/Cloud-Dashboard.jpg  used on input line 99.
+(pdftex.def)             Requested size: 320.57364pt x 240.08952pt.
+) (./Chapters/02_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex [7 <./figures/Sequenzdiagramm_Datenfluss.drawio.png>]) (./Chapters/02_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex
+Overfull \hbox (45.54343pt too wide) in paragraph at lines 3--3
+[]\T1/ptm/m/n/13.24945 Physikalische Signal- und Tem-per-aturüberwachung (de-tec-tion_power_temperature) 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\exp' on input line 225.
+) [8 <./figures/Cloud-Dashboard.jpg>] [9] [10]
+LaTeX Font Info:    Calculating math sizes for size <13.24945> on input line 236.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13.24945> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.80466> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.94974> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cdot' on input line 225.
+(hyperref)                removing `math shift' on input line 236.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `\times' on input line 236.
 
-[6] [7] [8]
-Overfull \hbox (24.7148pt too wide) in paragraph at lines 249--249
-[]\T1/ptm/m/n/13.24945 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die Report-Qualität 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\exp' on input line 236.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cdot' on input line 236.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 236.
+
+[11] [12] [13]
+Overfull \hbox (0.4019pt too wide) in paragraph at lines 260--260
+[]\T1/ptm/m/n/15.89941 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die
  []
 
-[9] [10] (./thesis.bbl
+[14] [15] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1131,98 +1254,98 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 3.
 
-) [11]
-Overfull \hbox (22.25372pt too wide) in alignment at lines 274--279
+) [16]
+Overfull \hbox (22.25372pt too wide) in alignment at lines 285--290
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 279--285
+Overfull \hbox (22.25372pt too wide) in alignment at lines 290--296
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 285--287
+Overfull \hbox (22.25372pt too wide) in alignment at lines 296--298
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 287--289
+Overfull \hbox (22.25372pt too wide) in alignment at lines 298--300
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\T1/ptm/m/n/11.04124 Grammatik- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 []|\T1/ptm/m/n/11.04124 Der gener-ierte Out-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 wurde auss-chlieÿlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 zur Über-prü-fung und
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 291--292
+Underfull \hbox (badness 1960) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 Op-ti-mierung der Gram-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 matik, Rechtschrei-bung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 und Les-barkeit ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 wen-det. Sämtliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 y-sen, In-ter-pre-ta-tio-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 und wis-senschaftliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \T1/ptm/m/n/11.04124 Schlussfol-gerun-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 []|\T1/ptm/m/n/11.04124 Umformulierung von
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 \T1/ptm/m/n/11.04124 Sätzen zur besseren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 \T1/ptm/m/n/11.04124 Ver-ständlichkeit und
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 289--293
+Overfull \hbox (22.25372pt too wide) in alignment at lines 300--304
  [] [] [] [] [] 
  []
 
@@ -1231,9 +1354,26 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 299.
+(scrbook)              This could result in several error messages on input line 310.
 
-[1] (./thesis.aux)
+[1]
+
+Class scrbook Warning: Incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 327.
+
+(./thesis.tdo)
+\tf@tdo=\write6
+\openout6 = `thesis.tdo'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.327 \newpage
+               [2] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1242,18 +1382,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29437 strings out of 476106
- 560910 string characters out of 5793932
- 1941975 words of memory out of 5000000
- 50824 multiletter control sequences out of 15000+600000
- 603850 words of font info for 113 fonts, out of 8000000 for 9000
+ 30032 strings out of 476106
+ 572351 string characters out of 5793932
+ 1975975 words of memory out of 5000000
+ 51362 multiletter control sequences out of 15000+600000
+ 622280 words of font info for 151 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 122i,9n,121p,10968b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (16 pages, 171726 bytes).
+ 122i,9n,121p,10968b,958s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (22 pages, 408176 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
- 378 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 427 words of extra memory for PDF output out of 10000 (max. 10000000)
 

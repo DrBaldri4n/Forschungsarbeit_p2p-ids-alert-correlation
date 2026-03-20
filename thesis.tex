@@ -24,7 +24,10 @@
 \usepackage{amssymb}
 \usepackage{amstext}
 \usepackage{amsthm}
-\usepackage[]{todonotes}
+\usepackage{soul}
+\usepackage[colorinlistoftodos]{todonotes}
+\newcommand{\todohl}[2]{\texthl{#1}\todo{#2}}
+\newcommand{\missingcite}[1]{\texthl{#1}\todo[color=orange!60]}
 \usepackage{etoolbox}
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
@@ -46,7 +49,6 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{float}
-
 
 % TODO: Uncomment just one of the following commands, according to your thesis type. Seminar Thesis is set by default.
 
@@ -161,6 +163,11 @@
 \begin{tabular}{ll}
 	DNN       & Deep Neural Network \\
 	DoS       & Denial of Service \\
+	IPFS	  & InterPlanetary File System \\
+	P2P	      & Peer-to-Peer \\
+	CID	   	  & Content Identifier \\
+	MADDR	  & Multiaddress \\
+	CTI	      & Cyber Threat Intelligence \\
 
 
 \end{tabular}
@@ -185,74 +192,78 @@
 
 \newpage
 
-\section{Einleitung}
+\chapter{Einleitung}
     \input{Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex}
     \input{Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex}
     \input{Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex}
 
 \newpage
 
-\section{Systemarchitektur und Detection Framework}
+\chapter{Related Work}
+\label{sec:related_work}
+
+\newpage
+
+\chapter{Systemarchitektur und Detection Framework}
 \label{sec:systemarchitektur}
-    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Architektur_des_Multi-Node-Systems.tex}
-    % TODO: Hier das Bild der Architektur einfügen
-    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Analyse_der_implementierten_Detections.tex}
-    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Datenakquise_und_Feature-Extraktion_via_Prometheus.tex}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Systemüberblick_und_verteilte_Kommunikation.tex}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex}
 
 \newpage
 
-\section{Konzeption des Threat Reporters}
-    \subsection{Standardisierung durch den Threat Report (CSV/STIX)}
-    \subsection{Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}
-    \subsection{Schnittstellendesign für den Datentransfer zwischen Nodes}
+\chapter{Konzeption des Threat Reporters}
+    \section{Standardisierung durch den Threat Report (CSV/STIX)}
+    \section{Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}
+    \section{Schnittstellendesign für den Datentransfer zwischen Nodes}
 
 \newpage
 
-\section{Theoretische Grundlagen der Informationsfusion}
-    \subsection{Vergleich von Aggregationsmethoden}
-        \subsubsection{Dempster-Shafer-Evidenztheorie}
-        \subsubsection{Fuzzy-basierte Fusion}
-        \subsubsection{Bayes-basierte Konsensmodelle}
-        \subsubsection{Gewichtetes Voting}
-    \subsection{State-of-the-Art: Deep Sets und Attention Mechanismen}
+\chapter{Theoretische Grundlagen der Informationsfusion}
+    \section{Vergleich von Aggregationsmethoden}
+        \subsection{Dempster-Shafer-Evidenztheorie}
+        \subsection{Fuzzy-basierte Fusion}
+        \subsection{Bayes-basierte Konsensmodelle}
+        \subsection{Gewichtetes Voting}
+    \section{State-of-the-Art: Deep Sets und Attention Mechanismen}
     % TODO: Wissenschaftliche Begründung der Methodenwahl (Deep Sets + Attention) hier einarbeiten
 
 \newpage
 
-\section{Methodik: Gewichtete Aggregation mittels Utility Theory}
-    \subsection{Anforderungen an die Gewichtungsfunktion}
-    \subsection{Mathematische Modellierung}
-        \subsubsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
-        \subsubsection{Parameteranalyse: Monotonie und Diminishing Returns}
-        \subsubsection{Abgrenzung zur originären Utility Theory}
+\chapter{Methodik: Gewichtete Aggregation mittels Utility Theory}
+    \section{Anforderungen an die Gewichtungsfunktion}
+    \section{Mathematische Modellierung}
+        \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
+        \subsection{Parameteranalyse: Monotonie und Diminishing Returns}
+        \subsection{Abgrenzung zur originären Utility Theory}
         % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
         %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
-    \subsection{Implementierung des Attention-basierten Selektionsmodells}
+    \section{Implementierung des Attention-basierten Selektionsmodells}
 
 \newpage
 
-\section{Erweiterung der Systemarchitektur und Implementierung}
-    \subsection{Generierte Threat Reports: Format und Struktur}
-    \subsection{Integration von Threat Reporter und Aggregationslogik}
-    \subsection{Architektur der Fusionskomponente im P2P-Netzwerk}
+\chapter{Erweiterung der Systemarchitektur und Implementierung}
+    \section{Generierte Threat Reports: Format und Struktur}
+    \section{Integration von Threat Reporter und Aggregationslogik}
+    \section{Architektur der Fusionskomponente im P2P-Netzwerk}
     % TODO Grafik einfügen wie die Architektur nun verändert wurde
     
 \newpage
 
-\section{Evaluation}
-    \subsection{Qualität der aggregierten Threat Reports}
-    \subsection{Nützlichkeit für die interne Nutzung der Knoten}
+\chapter{Evaluation}
+    \section{Qualität der aggregierten Threat Reports}
+    \section{Nützlichkeit für die interne Nutzung der Knoten}
 
 \newpage
 
-\section{Diskussion und Forschungslücken}
-    \subsection{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
-    \subsection{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
-    \subsection{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
+\chapter{Diskussion und Forschungslücken}
+    \section{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
+    \section{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
+    \section{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
 
 \newpage
 
-\section{Zusammenfassung und Fazit}
+\chapter{Zusammenfassung und Fazit}
 
 \newpage
 
@@ -311,6 +322,8 @@ Ich versichere hiermit wahrheitsgemäß, die Arbeit selbstständig verfasst und 
 \pagenumbering{gobble}
 
 
+\newpage
+\listoftodos
 \newpage
 
 
