@@ -1,4 +1,5 @@
 \section{Systemüberblick und verteilte Kommunikation}
+\label{sec:systemueberblick_und_verteilte_Kommunikation}
 
 Das ReSiLENT-System gliedert sich in zwei logische Domänen: die
 \textbf{Charging Station} mit dem eingebetteten Detection-Client sowie
@@ -35,7 +36,7 @@ Abbildung~\ref{fig:ipfs_network} dargestellt.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\textwidth]{./figures/SystemDiagramv2.drawio.png}
+    \includegraphics[width=0.75\textwidth]{./figures/Test-Mesh.jpg}
     \caption{Topologie des privaten IPFS-Netzwerks mit Bootstrap-Node und
     Client-Peers}
     \label{fig:ipfs_network}
@@ -45,14 +46,12 @@ Der Netzbeitritt erfolgt über einen dedizierten \textbf{Bootstrap-Node},
 der auf dem Server des Cloud Dashboards betrieben wird. Neue Peers melden
 sich beim Bootstrap-Node an, erhalten die Multiaddresses (\textit{MADDR})
 der bekannten Peers und kommunizieren anschließend direkt miteinander, ohne
-den Bootstrap-Node als Relay zu verwenden. Jede Detection Unit betreibt
-einen lokalen \textbf{IPFS-Peer-Daemon}, der über den \texttt{ipfs-wrapper}
--- wie in Abbildung~\ref{fig:dataflow} dargestellt -- in die
+den Bootstrap-Node als Relay zu verwenden. Jeder Knoten betreibt
+einen lokalen \textbf{IPFS-Peer-Daemon}, der über den \texttt{ipfs-wrapper}, wie in Abbildung~\ref{fig:dataflow} dargestellt, in die
 Systemarchitektur eingebunden ist.
 
 Für die Benachrichtigung über neue Daten wird der
-\textbf{Publish-Subscribe-Mechanismus} von IPFS genutzt: Sobald eine
-Detection Unit neue Messdaten veröffentlicht, sendet sie die zugehörige CID zusammen mit der eigenen MADDR über einen gemeinsam abonnierten Kanal an alle Teilnehmer. Die Empfänger rufen die Datei daraufhin direkt beim Ursprungs-Peer ab. Da eine CID dem kryptografischen Hash des jeweiligen Inhalts entspricht, ist die Datenintegrität implizit gewährleistet, ohne dass zusätzliche Signaturmechanismen erforderlich sind.
+\textbf{Publish-Subscribe-Mechanismus} von IPFS genutzt: Sobald neue Messdaten erhoben werden, können diese veröffentlicht werden indem sie die zugehörige CID zusammen mit der eigenen MADDR über einen gemeinsam abonnierten Kanal an alle Teilnehmer versendet. Die Empfänger rufen die Datei daraufhin direkt beim Ursprungs-Peer ab. Da eine CID dem kryptografischen Hash des jeweiligen Inhalts entspricht, ist die Datenintegrität implizit gewährleistet, ohne dass zusätzliche Signaturmechanismen erforderlich sind.
 
 \subsection{End-to-End-Datenfluss}
 
@@ -73,7 +72,7 @@ Der vollständige Datenfluss vom Sensor bis zur Visualisierung lässt sich in dr
 \end{figure}
 
 \paragraph{Datenerhebung (Charging Station)}
-Der \textit{Aggregator} innerhalb des Detection-Clients sammelt die Messdaten. Prometheus scraped alle Exporter in konfigurierbaren Intervallen. Der \textit{Reporter} liest die aggregierten Daten aus der Prometheus-Datenbank und übermittelt sie an den \texttt{ipfs-wrapper}.
+Der \textit{Aggregator} innerhalb des Knotens sammelt die Messdaten. Prometheus scraped alle Exporter in konfigurierbaren Intervallen. Der \textit{Reporter} liest die aggregierten Daten aus der Prometheus-Datenbank und übermittelt sie an den \texttt{ipfs-wrapper}.
 
 \paragraph{Transport (IPFS-Netzwerk)}
 Der \texttt{ipfs-wrapper} nimmt die Datei entgegen, publiziert sie im lokalen IPFS-Node und erhält eine CID zurück. Anschließend wird die CID zusammen mit der eigenen MADDR über den konfigurierten \textbf{Publish-Subscribe-Mechanismus} im privaten IPFS-Netz verbreitet. Die eigentlichen Messdaten werden dabei nicht aktiv gepusht, lediglich der Zeiger (CID) wird distribuiert.
@@ -83,9 +82,9 @@ Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{./figures/Cloud-Dashboard.jpg}
+    \includegraphics[width=0.75\textwidth]{./figures/System.jpg}
     \caption{Komponenten des Cloud Dashboards: IPFS-Peer, File Extractor, InfluxDB und Grafana}
     \label{fig:cloud_dashboard}
 \end{figure}
 
-\todohl{}{Warum genau habe ich das jz beschrieben noch ein abschließender Satz}
+Dieses Verständnis der Systemarchitektur und des Datenflusses bildet die Grundlage für die folgende Arbeit zur Implementierung des CTI-Reports und später des aggregierten CTI-Reports. 
