@@ -1,6 +1,26 @@
 \section{Detection Units der Ladeinfrastruktur}
 \label{sec:detection_units_der_ladeinfrastruktur}
-    \subsection{System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}
+
+Im Folgenden werden die vier Hauptdetektionseinheiten der Testumgebung der Ladeinfrastruktur vorgestellt, die im Rahmen dieses Projekts implementiert wurden und die für den Cyber Threat Report sowie den Aggregierten Cyber Threat Report von zentraler Bedeutung sind.
+
+\subsection{System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}
+Die \textit{Pi Anomaly Detection Einheit} trifft Entscheidungen anhand der folgenden Metriken: \texttt{shunt\_voltage}, \texttt{bus\_voltage\_V}, \texttt{current\_mA}, sowie \texttt{power\_mW}. Diese Messdaten werden von den Sensoren der Wallbox erfasst und an Prometheus weitergeleitet. Die beschriebene Anomaliedetektionseinheit greift diese Daten über Prometheus auf und nutzt daraufhin zwei komplementären Deep-Learning-Modellen welche 
+\begin{itemize}
+    \item \textbf{xLSTM-Autoencoder:} Dieses Modell operiert auf einem Sliding-Window von $w=44$ Zeitschritten. Es lernt die Normalverteilung der physikalischen Parameter (Spannung, Strom, Leistung). Eine Anomalie wird detektiert, wenn der Rekonstruktionsfehler $E_t$ den Schwellenwert $\tau = 0.008$ überschreitet. Die Wahrscheinlichkeit wird über eine Sigmoid-Funktion approximiert:
+    \[ P_{xlstm} = \frac{1}{1 + e^{-50 \cdot (E_t - \tau)}} \]
+    \item \textbf{Transformer-Klassifikator:} Parallel dazu extrahiert das System mittels \textit{tsfresh} 15 statistische Merkmale aus einem 60-Sekunden-Fenster. Ein Transformer-Modell klassifiziert diese aggregierten Merkmale direkt in die Kategorien \textit{benign} oder \textit{attack}.
+    \item \textbf{Sequentielles Voting-Verfahren:} Zur Stabilisierung der Detektion nutzt das System einen \textit{Deques}-Puffer der Länge $k=3$. Ein Alarm wird nur ausgelöst, wenn:
+    \begin{itemize}
+        \item Beide Modelle im aktuellsten Zeitschritt eine Anomalie melden ODER
+        \item Mindestens eines der Modelle eine konsistente Sequenz von drei aufeinanderfolgenden positiven Detektionen aufweist.
+\end{itemize}
+Die Detektionseinheit reagiert insbesondere auf Stromspitzen und -einbrüche, welche primär über die genannten Metriken identifiziert werden können.
+
+\end{enumerate}
+
     \subsection{Physikalische Signal- und Temperaturüberwachung (detection\_power\_temperature)}
     \subsection{KI-basierte Angriffserkennung im Netzwerk (ids\_power\_ai\_detection)}
     \subsection{Hardware-Ereignisüberwachung (detection\_hardwareevents)}
+
+
+    \todohl{Units}{Units ersetzten durch Einheit oder Module!}
