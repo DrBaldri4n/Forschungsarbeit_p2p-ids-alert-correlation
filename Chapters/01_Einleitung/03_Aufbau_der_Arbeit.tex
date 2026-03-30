@@ -1,0 +1,29 @@
+\section{Aufbau der Arbeit}
+
+	Zunächst wird die Systemarchitektur im zur Verfügung stehenden Peer-to-Peer-Netzwerk beschrieben
+	sowie die implementierten Detektionen und die Datenakquise über Prometheus empirisch erläutert und differenziert.
+
+	\todohl{Darauf folgend wird die Konzeption des Threat Reporters vorgestellt, welcher die Detektionsergebnisse
+	in einem standardisierten Format aggregiert und über definierte Schnittstellen zwischen den Knoten überträgt.}
+	{Vielleicht finde ich eine begründung warum ich genaue diese events in den hardware report gepackt habe?}
+
+	\todohl{Anschließend werden die theoretischen Grundlagen der Informationsfusion präsentiert.}
+	{TODO: Sollte hier wissenschaftlich begründet werden, warum die Wahl auf eine Kombination
+	     aus Deep Sets und Attention-Mechanismen gefallen ist?}
+
+	\todohl{Darauf folgend wird die Methodik der gewichteten Aggregation mittels Utility Theory beschrieben.}
+	{TODO: Die Formel der Utility Theory wurde nicht originär für Gewichtungsfunktionen entwickelt.
+	     Wie problematisch ist das? Sollte dies in der Diskussion thematisiert oder direkt
+	     eine alternative Methode verwendet werden?}
+
+	\todohl{Anschließend wird die erweiterte Architektur und umsetzung der Vorgestellten Methodik beschrieben.
+	Die Daraus generierten Threat Reports werden präsentiert und hinsichtlich ihrer Qualität und Nützlichkeit für die interne Nutzung der Knoten bewertet.}
+	{TODO: Fokus darauf legen wie die zuvor beschriebenen Methoden in die Architektur einbepflegt wurden}
+
+	Die anschließende Diskussion der Ergebnisse führt zur \todohl{Identifikation einer Forschungslücke}{Welche Forschungslücke?},
+	welche in zukünftigen Arbeiten weiter untersucht werden sollte.
+	\todohl{}{TODO: Mögliche Forschungslücken:
+	     - Untersuchung der Auswirkungen von unterschiedlichen Gewichtungsstrategien Aggregation auf die Qualität der aggregierten Reports
+	     - Erweiterung um die LLM gestützte Aufbereitung der Reports für die externe Nutzung
+		   - Untersuchung ob der vorgestellte ablauf, erstellen der reports, aggregieren und nutzung der nachbar reports wirklich zu verbesserten Detectionsergebnissen führt (Echo-Chamber-Effekt?).}
+

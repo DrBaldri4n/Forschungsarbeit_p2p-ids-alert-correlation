@@ -1,0 +1,336 @@
+% Thesis Template for MSc, BSc Theses at University of Passau for the Professorship for Cognitive Sensor Systems 
+%   Written by by Alexander Gall <alexander.gall@uni-passau.de>, October 2025
+%   https://www.fim.uni-passau.de/kognitive-sensorsysteme
+
+% Acknowledgements:
+%   Adapted from ITW Thesis Template - Chair Prof. Krämer
+
+
+\documentclass[]{thesisclass}
+
+% NOTE: Use your preferred language.
+ \usepackage[english]{babel}%<--- TODO: If you want to write your thesis in English don't uncomment this command by putting a % sign before the command.
+% \usepackage[ngerman]{babel}%<--- TODO: If you want to write your thesis in German, uncomment this command by removing the % sign before the command.
+
+
+\usepackage{graphicx} 											
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{./figures/}} %TODO: Save your figures in the figures folder, if you want to include graphics in your thesis. This template will reference to that folder.									
+%\usepackage[natbibapa]{apacite}
+\usepackage{cite} 
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{soul}
+\usepackage[colorinlistoftodos]{todonotes}
+\newcommand{\todohl}[2]{\texthl{#1}\todo{#2}}
+\newcommand{\missingcite}[1]{\texthl{#1}\todo[color=orange!60]}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+\counterwithout{equation}{chapter}
+\counterwithout{table}{chapter}
+\counterwithout{figure}{chapter}
+\makeatletter
+\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\usepackage{mathptmx}
+\setkomafont{disposition}{\bfseries}
+\usepackage{pifont}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+
+% TODO: Uncomment just one of the following commands, according to your thesis type. Seminar Thesis is set by default.
+
+%\newcommand{\mytype}{\iflanguage{english}{Bachelor's Thesis}{Bachelorarbeit}} 
+\newcommand{\mytype}{\iflanguage{english}{Research work}{Masterarbeit}} 
+%\newcommand{\mytype}{\iflanguage{english}{Seminar Thesis}{Seminararbeit}} 
+
+% TODO: Enter personal information and information about your thesis.
+\newcommand{\myname}{\iflanguage{english}{Yannic Hanel} {Vorname Nachname}}
+\newcommand{\matricle}{3296954}
+\newcommand{\mytitle}{\iflanguage{english}{Studie zur verbesserten Anomalyerkennung mit erweiterter Kontextinformation} {Titel der Arbeit}}
+\newcommand{\mycurriculum}{\iflanguage{english}{curriculum} {Studiengang}}
+\newcommand{\myinstitute}{\iflanguage{english}
+{}
+{}}
+
+% TODO:change the names of your reviewer and advisor to your actual needs.
+\newcommand{\reviewerone}{Prof. Dr. Sebastian Fischer}
+% \newcommand{\reviewertwo}{Prof. Dr.  \orcid{0000-0002-3173-8871}}
+% \newcommand{\advisor}{Dipl.-Ing. Alexander Gall \orcid{0000-0002-3670-5403}}
+
+
+\newcommand{\timeend}{\iflanguage{english}{Regensburg, 20.02.2026}{}} % TODO: Insert submission date.
+\newcommand{\submissiontime}{01.04.2026} % TODO: Insert submission date which will be displayed in your Declaration.
+
+\hypersetup{
+ pdfauthor={\myname},
+ pdftitle={\mytitle},
+ pdfsubject={\mytype},
+ pdfkeywords={\mytype}
+}
+
+
+\begin{document}
+
+%Do not change anything until the next TODO appears, unless the title is so logn that the title page spreads over two pages. In this case, reduce the vertical spaces highlighted by the blue comments below 
+
+\pagenumbering{arabic}
+\newcommand{\diameter}{20}
+\newcommand{\xone}{-15}
+\newcommand{\xtwo}{160}
+\newcommand{\yone}{15}
+\newcommand{\ytwo}{-253}
+
+\begin{titlepage}
+	
+	\begin{center}
+    \center
+		\iflanguage{english}
+		{\includegraphics[width=.5\textwidth]{logos/oth-logo.png}}
+		{\includegraphics[width=.5\textwidth]{logos/oth-logo.png}}		
+	\end{center}
+	\begin{textblock}{10}[0,0](10,2.5)
+	\end{textblock}
+	\changefont{ppl}{m}{n}
+	\vspace*{0.5cm}
+	\begin{center}
+		\Huge{\mytitle}
+		\vspace*{0.5cm}\\ % reduce vspace if title page spreads over two pages
+		\Large{
+			\iflanguage{english}{\mytype\\of}			
+			{\mytype\\von}
+		}\\
+		\vspace*{0.5cm}
+		\huge{\myname}\\
+		\Large{\matricle}\\
+        \vspace*{0.5cm} % reduce vspace if title page spreads over two pages
+        \Large{
+			\iflanguage{english}{}			
+			{im Rahmen des Studiums}
+		}
+        \vspace*{1cm}
+        \Large{
+			\iflanguage{english}{\mycurriculum \\ at the}			
+			{\mycurriculum \\ an der}
+		}\\
+		\vspace*{0.5cm} % reduce vspace if title page spreads over two pages
+		\Large{
+			\iflanguage{english}{Ostbayerischen Technischen Hochschule Regensburg \\ Faculty of Computer Science and Mathematics}			
+			{Ostbayerischen Technischen Hochschule Regensburg \\ Fakultät für Informatik und Mathematik}
+			\vspace*{0.5cm}\\
+			\myinstitute
+		}
+	\end{center}
+	\vspace*{0.3cm} % reduce vspace if title page spreads over two pages
+	\Large{
+		\begin{center}
+			\begin{tabular}[ht]{l c l}
+
+				\iflanguage{english}{Advisor}{Betreuer}: & \hfill  & \reviewerone\\
+                % \iflanguage{english}{Advisor}{Betreuer}: & \hfill  & \reviewertwo\\
+				% \iflanguage{english}{Assistance}{Betreuender Assistent}: & \hfill  & \advisor\\
+			
+			\end{tabular}
+		\end{center}
+	}
+	
+	
+	\vspace{1.8cm} % reduce vspace if title page spreads over two pages
+	\begin{center}
+		\timeend
+	 \end{center}
+	
+	
+\end{titlepage}
+
+% Add a table of contents
+\tableofcontents
+\newpage
+
+\chapter*{Abkürzungsverzeichnis}
+\begin{tabular}{ll}
+	DNN       & Deep Neural Network \\
+	DoS       & Denial of Service \\
+	IPFS	  & InterPlanetary File System \\
+	P2P	      & Peer-to-Peer \\
+	CID	   	  & Content Identifier \\
+	MADDR	  & Multiaddress \\
+	CTI	      & Cyber Threat Intelligence \\
+	I2C	      & Inter-Integrated Circuit \\
+	MSE 	  & Mean Squared Error \\
+	LSTM 	  & Long Short Term Memory \\
+	
+
+
+\end{tabular}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+
+\clearpage
+
+% TODO: Uncomment the lines to add your abstract in german.
+%\chapter*{Zusammenfassung}
+    % TODO: Enter your abstract here with a maximum of 200 words.
+%\pagebreak
+
+
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL THESIS BEGINS HERE %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass[12pt,a4paper]{article}
+% \usepackage[utf8]{inputenc}
+% \usepackage[german]{babel}
+
+
+\newpage
+
+\chapter{Einleitung}
+    \input{Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex}
+    \input{Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex}
+    \input{Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex}
+
+\newpage
+
+\chapter{Related Work}
+\label{sec:related_work}
+
+\newpage
+
+\chapter{Systemarchitektur und Detection Framework}
+\label{chapter:systemarchitektur}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Systemüberblick_und_verteilte_Kommunikation.tex}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex}
+    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex}
+
+\newpage
+
+\chapter{Konzeption des Threat Reporters}
+    \section{Standardisierung durch den Threat Report (CSV/STIX)}
+    \section{Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}
+    \section{Schnittstellendesign für den Datentransfer zwischen Nodes}
+
+\newpage
+
+\chapter{Theoretische Grundlagen der Informationsfusion}
+    \section{Vergleich von Aggregationsmethoden}
+        \subsection{Dempster-Shafer-Evidenztheorie}
+        \subsection{Fuzzy-basierte Fusion}
+        \subsection{Bayes-basierte Konsensmodelle}
+        \subsection{Gewichtetes Voting}
+    \section{State-of-the-Art: Deep Sets und Attention Mechanismen}
+    % TODO: Wissenschaftliche Begründung der Methodenwahl (Deep Sets + Attention) hier einarbeiten
+
+\newpage
+
+\chapter{Methodik: Gewichtete Aggregation mittels Utility Theory}
+    \section{Anforderungen an die Gewichtungsfunktion}
+    \section{Mathematische Modellierung}
+        \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
+		\todohl{}{NIcht in die überschrift}
+        \subsection{Parameteranalyse: Monotonie und Diminishing Returns}
+        \subsection{Abgrenzung zur originären Utility Theory}
+        % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
+        %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
+    \section{Implementierung des Attention-basierten Selektionsmodells}
+
+\newpage
+
+\chapter{Erweiterung der Systemarchitektur und Implementierung}
+    \section{Generierte Threat Reports: Format und Struktur}
+    \section{Integration von Threat Reporter und Aggregationslogik}
+    \section{Architektur der Fusionskomponente im P2P-Netzwerk}
+    % TODO Grafik einfügen wie die Architektur nun verändert wurde
+    
+\newpage
+
+\chapter{Evaluation}
+    \section{Qualität der aggregierten Threat Reports}
+    \section{Nützlichkeit für die interne Nutzung der Knoten}
+
+\newpage
+
+\chapter{Diskussion und Forschungslücken}
+    \section{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
+    \section{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
+    \section{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
+
+\newpage
+
+\chapter{Zusammenfassung und Fazit}
+
+\newpage
+
+
+% References Style
+\iflanguage{english}
+{\bibliographystyle{abbrv}} % english style
+% {\bibliographystyle{abbrvnat}}	% german style
+
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{references}
+
+\pagebreak
+
+
+%% Dokumentation der verwendeten KI-Werkzeuge
+%% ==================
+\begin{longtable}{p{1.3cm}lp{1.3cm}p{5cm}p{4cm}}
+\caption*{Generative KI-Werkzeuge, die in der Arbeit verwendet wurden.} \label{tab:ai_usage} \\
+\toprule
+Kapitel & KI-Tool & Version & Anwendung & Erklärung/Kommentar \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}%
+{Generative KI-Werkzeuge, die in der Arbeit verwendet wurden.} \\
+\toprule
+Kapitel & KI-Tool & Version & Anwendung & Erklärung/Kommentar \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+% Dokumentation der Perplexity AI-Nutzung
+1.0--4.2 & Perplexity AI & 2024 & Grammatik- und Rechtschreibkorrektion & Der generierte Output wurde ausschließlich zur Überprüfung und Optimierung der Grammatik, Rechtschreibung und Lesbarkeit verwendet. Sämtliche fachlichen Inhalte, Analysen, Interpretationen und wissenschaftliche Schlussfolgerungen stammen vollständig von mir. \\
+1.0--4.2 & Perplexity AI & 2024 & Verbesserung der Lesbarkeit & Umformulierung von Sätzen zur besseren Verständlichkeit und Fluss des Textes, ohne inhaltliche Veränderungen. \\
+\end{longtable}
+%% ==================
+
+
+%% ==================
+%DON'T: German is set as default for the declaration, don't change it
+\chapter*{Eidesstattliche Erklärung}
+\label{ch:Declaration}
+%% ==================
+
+Ich versichere hiermit wahrheitsgemäß, die Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt, die wörtlich oder inhaltlich übernommenen Stellen als solche kenntlich gemacht und die Satzung der Ostbayerischen Technischen Hochschule Regensburg zur Sicherung guter wissenschaftlicher Praxis in der jeweils gültigen Fassung beachtet zu haben. Die Arbeit ist weder von mir noch von einer anderen Person an der Ostbayerischen Technischen Hochschule Regensburg oder an einer anderen Hochschule zur Erlangung eines akademischen Grades bereits eingereicht worden.
+
+\vspace*{1cm}
+\hspace*{4cm} Regensburg, den \submissiontime \hspace*{0.5cm}\hrulefill \\
+\hspace*{10.5cm} \myname \\
+\vspace*{1cm}
+
+
+\pagenumbering{gobble}
+
+\todohl{Anomaly Detection Einheit | Anomalydetectioneinheit | usw..}{immer gleich schreiben}
+
+\newpage
+\listoftodos
+\newpage
+
+
+\end{document}
