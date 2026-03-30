@@ -6,5 +6,10 @@
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ TODO: Fokus darauf legen wie die zuvor beschriebenen Methoden in die Architektur einbepflegt wurden}{2}{section*.8}%
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Welche Forschungslücke?}{2}{section*.9}%
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ TODO: Mögliche Forschungslücken: - Untersuchung der Auswirkungen von unterschiedlichen Gewichtungsstrategien Aggregation auf die Qualität der aggregierten Reports - Erweiterung um die LLM gestützte Aufbereitung der Reports für die externe Nutzung - Untersuchung ob der vorgestellte ablauf, erstellen der reports, aggregieren und nutzung der nachbar reports wirklich zu verbesserten Detectionsergebnissen führt (Echo-Chamber-Effekt?).}{2}{section*.10}%
+<<<<<<< HEAD
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Units ersetzten durch Einheit oder Module!}{9}{section*.23}%
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ NIcht in die überschrift}{12}{section*.24}%
+=======
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ NIcht in die überschrift}{13}{section*.23}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ immer gleich schreiben}{}{section*.27}%
+>>>>>>> main
