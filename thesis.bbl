@@ -1,3 +1,20 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Becker2009}
+S.~Becker, H.~Koziolek, and R.~Reussner.
+\newblock The {Palladio} component model for model-driven performance prediction.
+\newblock {\em Journal of Systems and Software}, 82(1):3--22, 2009.
+
+\bibitem{heigl2021exploiting}
+M.~Heigl, E.~Weigelt, A.~Urmann, D.~Fiala, and M.~Schramm.
+\newblock Exploiting the outcome of outlier detection for novel attack pattern recognition on streaming data.
+\newblock {\em Electronics}, 10(17):2160, 2021.
+\newblock SOAAPR-Framework: Streaming Outlier Analysis and Attack Pattern Recognition zur Verarbeitung von Outlier-Detection-Ergebnissen und Extraktion von Angriffssignaturen.
+
+\bibitem{kotenko2022systematic}
+I.~Kotenko, D.~Gaifulina, and I.~Zelichenok.
+\newblock Systematic literature review of security event correlation methods.
+\newblock {\em IEEE Access}, 10:43387--43420, 2022.
+\newblock Systematische Literaturübersicht zu Methoden der Sicherheitsereigniskorrelation, mit Fokus auf Multi-Step-Angriffe und Advanced Persistent Threats (APTs).
 
 \end{thebibliography}

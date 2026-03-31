@@ -169,12 +169,9 @@
 	MADDR	  & Multiaddress \\
 	CTI	      & Cyber Threat Intelligence \\
 	I2C	      & Inter-Integrated Circuit \\
-<<<<<<< HEAD
-=======
 	MSE 	  & Mean Squared Error \\
 	LSTM 	  & Long Short Term Memory \\
 	
->>>>>>> main
 
 
 \end{tabular}
@@ -208,21 +205,21 @@
 
 \chapter{Related Work}
 \label{sec:related_work}
+	\input{Chapters/02_related_work/01_related_work.tex}
 
 \newpage
 
 \chapter{Systemarchitektur und Detection Framework}
 \label{chapter:systemarchitektur}
-    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/01_Systemüberblick_und_verteilte_Kommunikation.tex}
-    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex}
-    \input{Chapters/02_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex}
+    \input{Chapters/03_Systemarchitektur_und_Detection_Framework/01_Systemüberblick_und_verteilte_Kommunikation.tex}
+    \input{Chapters/03_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex}
+    \input{Chapters/03_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex}
 
 \newpage
 
 \chapter{Konzeption des Threat Reporters}
-    \section{Standardisierung durch den Threat Report (CSV/STIX)}
-    \section{Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}
-    \section{Schnittstellendesign für den Datentransfer zwischen Nodes}
+\label{chapter:thread_report}
+	\input{Chapters/04_konzeption_des_thread_reports/thread_report.tex}
 
 \newpage
 
@@ -265,6 +262,7 @@
 \newpage
 
 \chapter{Diskussion und Forschungslücken}
+\label{chapter:diskussion_und_forschungsluecke}
     \section{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
     \section{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
     \section{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
@@ -329,19 +327,12 @@ Ich versichere hiermit wahrheitsgemäß, die Arbeit selbstständig verfasst und 
 
 \pagenumbering{gobble}
 
-<<<<<<< HEAD
-=======
 \todohl{Anomaly Detection Einheit | Anomalydetectioneinheit | usw..}{immer gleich schreiben}
->>>>>>> main
+\todohl{Detection oder Detektion}{immer gleich schreiben}
 
 \newpage
 \listoftodos
 \newpage
 
 
-<<<<<<< HEAD
 \end{document}
-
-=======
-\end{document}
->>>>>>> main

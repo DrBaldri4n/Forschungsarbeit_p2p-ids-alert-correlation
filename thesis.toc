@@ -1,9 +1,5 @@
 \babel@toc {english}{}\relax 
-<<<<<<< HEAD
-\contentsline {chapter}{Abkürzungsverzeichnis}{3}{section*.2}%
-=======
 \contentsline {chapter}{Abkürzungsverzeichnis}{4}{section*.2}%
->>>>>>> main
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation und Problemstellung}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Zielsetzung der Arbeit}{1}{section.1.2}%
@@ -17,79 +13,40 @@
 \contentsline {paragraph}{\nonumberline Transport (IPFS-Netzwerk)}{6}{paragraph*.18}%
 \contentsline {paragraph}{\nonumberline Persistierung und Visualisierung (Cloud Dashboard)}{6}{paragraph*.20}%
 \contentsline {section}{\numberline {3.2}Physische Testumgebung}{7}{section.3.2}%
-<<<<<<< HEAD
-\contentsline {section}{\numberline {3.3}Detection Units der Ladeinfrastruktur}{8}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}{9}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Physikalische Signal- und Temperaturüberwachung (detection\_power\_temperature)}{9}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}KI-basierte Angriffserkennung im Netzwerk (ids\_power\_ai\_detection)}{9}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Hardware-Ereignisüberwachung (detection\_hardwareevents)}{9}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {4}Konzeption des Threat Reporters}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Standardisierung durch den Threat Report (CSV/STIX)}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}{10}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Schnittstellendesign für den Datentransfer zwischen Nodes}{10}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Theoretische Grundlagen der Informationsfusion}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Vergleich von Aggregationsmethoden}{11}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Dempster-Shafer-Evidenztheorie}{11}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Fuzzy-basierte Fusion}{11}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Bayes-basierte Konsensmodelle}{11}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Gewichtetes Voting}{11}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}State-of-the-Art: Deep Sets und Attention Mechanismen}{11}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation mittels Utility Theory}{12}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Anforderungen an die Gewichtungsfunktion}{12}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Mathematische Modellierung}{12}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp (-K \cdot n))$}{12}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Parameteranalyse: Monotonie und Diminishing Returns}{12}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Abgrenzung zur originären Utility Theory}{12}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{12}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Erweiterung der Systemarchitektur und Implementierung}{13}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Generierte Threat Reports: Format und Struktur}{13}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Integration von Threat Reporter und Aggregationslogik}{13}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Architektur der Fusionskomponente im P2P-Netzwerk}{13}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Evaluation}{14}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Qualität der aggregierten Threat Reports}{14}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Nützlichkeit für die interne Nutzung der Knoten}{14}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Diskussion und Forschungslücken}{15}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{15}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{15}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{15}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Zusammenfassung und Fazit}{16}{chapter.10}%
-\contentsline {chapter}{Bibliography}{17}{section*.25}%
-=======
 \contentsline {section}{\numberline {3.3}Detection Einheiten der Ladeinfrastruktur}{8}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}{9}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Physikalische Signal- und Temperaturüberwachung (detection\_power\_temperature)}{9}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}KI-basierte Angriffserkennung im Netzwerk (ids\_power\_ai\_detection)}{10}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Hardware-Ereignisüberwachung (detection\_hardwareevents)}{10}{subsection.3.3.4}%
 \contentsline {chapter}{\numberline {4}Konzeption des Threat Reporters}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Standardisierung durch den Threat Report (CSV/STIX)}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Zeitfenster-Analyse und Datenaggregation (60s/30s Intervalle)}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Schnittstellendesign für den Datentransfer zwischen Nodes}{11}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Theoretische Grundlagen der Informationsfusion}{12}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Vergleich von Aggregationsmethoden}{12}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Dempster-Shafer-Evidenztheorie}{12}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Fuzzy-basierte Fusion}{12}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Bayes-basierte Konsensmodelle}{12}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Gewichtetes Voting}{12}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}State-of-the-Art: Deep Sets und Attention Mechanismen}{12}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation mittels Utility Theory}{13}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Anforderungen an die Gewichtungsfunktion}{13}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Mathematische Modellierung}{13}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp (-K \cdot n))$}{13}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Parameteranalyse: Monotonie und Diminishing Returns}{13}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Abgrenzung zur originären Utility Theory}{13}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{13}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Erweiterung der Systemarchitektur und Implementierung}{14}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Generierte Threat Reports: Format und Struktur}{14}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Integration von Threat Reporter und Aggregationslogik}{14}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Architektur der Fusionskomponente im P2P-Netzwerk}{14}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Evaluation}{15}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Qualität der aggregierten Threat Reports}{15}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Nützlichkeit für die interne Nutzung der Knoten}{15}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Diskussion und Forschungslücken}{16}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{16}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{16}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{16}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Zusammenfassung und Fazit}{17}{chapter.10}%
-\contentsline {chapter}{Bibliography}{18}{section*.24}%
->>>>>>> main
+\contentsline {section}{\numberline {4.1}Zentralisiertes Datenmanagement und Merkmalsextraktion für den Threat Report}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Zeitliche Diskretisierung und Intervalldefinition}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Statistische Merkmalsaggregation mittels Sliding-Window-Analyse}{12}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Theoretische Grundlagen der Informationsfusion}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Vergleich von Aggregationsmethoden}{13}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Dempster-Shafer-Evidenztheorie}{13}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Fuzzy-basierte Fusion}{13}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Bayes-basierte Konsensmodelle}{13}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Gewichtetes Voting}{13}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}State-of-the-Art: Deep Sets und Attention Mechanismen}{13}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation mittels Utility Theory}{14}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Anforderungen an die Gewichtungsfunktion}{14}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Mathematische Modellierung}{14}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp (-K \cdot n))$}{14}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Parameteranalyse: Monotonie und Diminishing Returns}{14}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Abgrenzung zur originären Utility Theory}{14}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{14}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Erweiterung der Systemarchitektur und Implementierung}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Generierte Threat Reports: Format und Struktur}{15}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Integration von Threat Reporter und Aggregationslogik}{15}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Architektur der Fusionskomponente im P2P-Netzwerk}{15}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Evaluation}{16}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Qualität der aggregierten Threat Reports}{16}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Nützlichkeit für die interne Nutzung der Knoten}{16}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Diskussion und Forschungslücken}{17}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{17}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{17}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{17}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Zusammenfassung und Fazit}{18}{chapter.10}%
+\contentsline {chapter}{Bibliography}{19}{section*.29}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
