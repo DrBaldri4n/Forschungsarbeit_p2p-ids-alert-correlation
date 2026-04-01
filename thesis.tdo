@@ -6,11 +6,6 @@
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ TODO: Fokus darauf legen wie die zuvor beschriebenen Methoden in die Architektur einbepflegt wurden}{2}{section*.8}%
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Welche Forschungslücke?}{2}{section*.9}%
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ TODO: Mögliche Forschungslücken: - Untersuchung der Auswirkungen von unterschiedlichen Gewichtungsstrategien Aggregation auf die Qualität der aggregierten Reports - Erweiterung um die LLM gestützte Aufbereitung der Reports für die externe Nutzung - Untersuchung ob der vorgestellte ablauf, erstellen der reports, aggregieren und nutzung der nachbar reports wirklich zu verbesserten Detectionsergebnissen führt (Echo-Chamber-Effekt?).}{2}{section*.10}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ paper reference ML besser mit vorselection}{11}{section*.23}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Paper reference ML vorselection besser mit möglichst großen input über alle datenpunkte}{11}{section*.24}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ paper reference needed}{11}{section*.25}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ paper reference needed}{11}{section*.26}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ reference noch einfügen Latex style}{12}{section*.27}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ NIcht in die überschrift}{14}{section*.28}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ immer gleich schreiben}{}{section*.32}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ immer gleich schreiben}{}{section*.33}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ NIcht in die überschrift}{14}{section*.23}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ immer gleich schreiben}{}{section*.27}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ immer gleich schreiben}{}{section*.28}%

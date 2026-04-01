@@ -49,9 +49,32 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}   % ← hier
+\usepackage[T1]{fontenc}      % ← empfohlen dazu
+\usepackage[english]{babel}
 
 % TODO: Uncomment just one of the following commands, according to your thesis type. Seminar Thesis is set by default.
-
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  % ... your other settings ...
+  extendedchars=true,
+  literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+           {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+           {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+           {À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+           {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+           {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+           {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+           {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+           {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+           {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+           {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+           {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
+}
 %\newcommand{\mytype}{\iflanguage{english}{Bachelor's Thesis}{Bachelorarbeit}} 
 \newcommand{\mytype}{\iflanguage{english}{Research work}{Masterarbeit}} 
 %\newcommand{\mytype}{\iflanguage{english}{Seminar Thesis}{Seminararbeit}} 
@@ -189,9 +212,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ACTUAL THESIS BEGINS HERE %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \documentclass[12pt,a4paper]{article}
-% \usepackage[utf8]{inputenc}
-% \usepackage[german]{babel}
+
 
 
 \newpage
@@ -237,7 +258,8 @@
 \chapter{Methodik: Gewichtete Aggregation mittels Utility Theory}
     \section{Anforderungen an die Gewichtungsfunktion}
     \section{Mathematische Modellierung}
-        \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
+        % \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
+		\subsection{Die Gewichtungsformel: \texorpdfstring{$w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}{w(n) formula}}
 		\todohl{}{NIcht in die überschrift}
         \subsection{Parameteranalyse: Monotonie und Diminishing Returns}
         \subsection{Abgrenzung zur originären Utility Theory}
@@ -270,6 +292,25 @@
 \newpage
 
 \chapter{Zusammenfassung und Fazit}
+
+\newpage
+
+\appendix
+
+\chapter{Quellcode}
+
+\lstinputlisting[
+  language=Python,
+  caption={reporter.py -- Logik der Report-Generierung},
+  label={lst:reporter}
+]{code_sections/reporter.py}
+
+% \lstinputlisting[
+%   language=Python,
+%   caption={queries.py – Logik der Datenbankabfragen},
+%   label={lst:queries}
+% ]{code_sections/queries.py}
+
 
 \newpage
 

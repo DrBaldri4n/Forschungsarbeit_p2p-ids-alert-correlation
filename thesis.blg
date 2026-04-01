@@ -3,44 +3,51 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: abbrv.bst
 Database file #1: references.bib
-You've used 3 entries,
+Warning--entry type for "taylordavies2023parquet" isn't style-file defined
+--line 239 of file references.bib
+Warning--entry type for "celerdata2024parquet" isn't style-file defined
+--line 250 of file references.bib
+Warning--entry type for "zhang2019iacf" isn't style-file defined
+--line 259 of file references.bib
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            522 strings with 4637 characters,
-and the built_in function-call counts, 1158 in all, are:
-= -- 113
-> -- 64
+            531 strings with 5529 characters,
+and the built_in function-call counts, 1506 in all, are:
+= -- 133
+> -- 98
 < -- 0
-+ -- 26
-- -- 22
++ -- 40
+- -- 34
 * -- 97
-:= -- 205
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 20
+:= -- 271
+add.period$ -- 17
+call.type$ -- 5
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 33
-empty$ -- 79
-format.name$ -- 22
-if$ -- 227
+cite$ -- 5
+duplicate$ -- 42
+empty$ -- 108
+format.name$ -- 34
+if$ -- 300
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 20
-num.names$ -- 6
-pop$ -- 12
+int.to.str$ -- 5
+missing$ -- 2
+newline$ -- 30
+num.names$ -- 10
+pop$ -- 43
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 27
 quote$ -- 0
-skip$ -- 21
+skip$ -- 35
 stack$ -- 0
-substring$ -- 81
-swap$ -- 3
+substring$ -- 38
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 20
 warning$ -- 0
 while$ -- 11
-width$ -- 4
-write$ -- 39
+width$ -- 6
+write$ -- 57
+(There were 3 warnings)

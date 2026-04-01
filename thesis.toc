@@ -48,5 +48,6 @@
 \contentsline {section}{\numberline {9.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{17}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{17}{section.9.3}%
 \contentsline {chapter}{\numberline {10}Zusammenfassung und Fazit}{18}{chapter.10}%
-\contentsline {chapter}{Bibliography}{19}{section*.29}%
+\contentsline {chapter}{\numberline {11}Quellcode}{19}{chapter.11}%
+\contentsline {chapter}{Bibliography}{22}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

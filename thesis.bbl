@@ -1,20 +1,30 @@
 \begin{thebibliography}{1}
 
-\bibitem{Becker2009}
-S.~Becker, H.~Koziolek, and R.~Reussner.
-\newblock The {Palladio} component model for model-driven performance prediction.
-\newblock {\em Journal of Systems and Software}, 82(1):3--22, 2009.
+\bibitem{boswell2025flare}
+B.~Boswell, S.~Barrett, S.~Rajaganapathy, G.~Dorai, and M.~Qiu.
+\newblock {FLARE}: Feature-based lightweight aggregation for robust evaluation of {IoT} intrusion detection.
+\newblock {\em arXiv preprint arXiv:2504.15375}, 2025.
+\newblock Schlägt FLARE vor, eine leichtgewichtige Feature-Aggregationstechnik für IoT-IDS, die mittels zeitbasierter Sliding Windows statistische Kennzahlen wie Flussrate, Paketgrößen, Inter-Arrival-Zeiten und Entropie aggregiert, um kurzlebige Angriffsmuster wie DoS und DDoS zuverlässig zu erkennen.
+
+\bibitem{celerdata2024parquet}
+{CelerData}.
+\newblock What is parquet file format?, 2024.
+\newblock Erklärt die Architektur des Parquet-Formats, insbesondere die Vorteile der spaltenorientierten Speicherung und Kompression.
 
 \bibitem{heigl2021exploiting}
 M.~Heigl, E.~Weigelt, A.~Urmann, D.~Fiala, and M.~Schramm.
 \newblock Exploiting the outcome of outlier detection for novel attack pattern recognition on streaming data.
 \newblock {\em Electronics}, 10(17):2160, 2021.
-\newblock SOAAPR-Framework: Streaming Outlier Analysis and Attack Pattern Recognition zur Verarbeitung von Outlier-Detection-Ergebnissen und Extraktion von Angriffssignaturen.
+\newblock Präsentiert das SOAAPR-Framework, das Ausreißererkennungsergebnisse auf Streaming-Daten auswertet und daraus neuartige Angriffsmuster extrahiert.
 
-\bibitem{kotenko2022systematic}
-I.~Kotenko, D.~Gaifulina, and I.~Zelichenok.
-\newblock Systematic literature review of security event correlation methods.
-\newblock {\em IEEE Access}, 10:43387--43420, 2022.
-\newblock Systematische Literaturübersicht zu Methoden der Sicherheitsereigniskorrelation, mit Fokus auf Multi-Step-Angriffe und Advanced Persistent Threats (APTs).
+\bibitem{taylordavies2023parquet}
+R.~Taylor-Davies.
+\newblock How good is parquet for wide tables (machine learning workloads) really?, 2023.
+\newblock Analysiert die Performance von Apache Parquet bei Tabellen mit hoher Spaltenanzahl und bewertet den Metadaten-Overhead kritisch.
+
+\bibitem{zhang2019iacf}
+K.~Zhang, F.~Zhao, S.~Luo, Y.~Xin, and H.~Zhu.
+\newblock An intrusion action-based {IDS} alert correlation analysis and prediction framework, 2019.
+\newblock Schlägt das IACF-Framework vor, das Alarme auf Basis intrinsischer Korrelationen zu Intrusion Actions gruppiert und mittels zeitbasierter Sequenzanalyse (TSS) zu Sessions zusammenführt, um mehrstufige Angriffe zu rekonstruieren und vorherzusagen.
 
 \end{thebibliography}
