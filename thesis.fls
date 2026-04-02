@@ -572,6 +572,11 @@ INPUT Chapters/04_konzeption_des_thread_reports/thread_report.tex
 INPUT ./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
 INPUT ./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
 INPUT Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
+INPUT ./figures/Fusions_architektur.png
+INPUT ./figures/Fusions_architektur.png
+INPUT ./figures/Fusions_architektur.png
+INPUT ./figures/Fusions_architektur.png
+INPUT ./figures/Fusions_architektur.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
