@@ -9,45 +9,49 @@ Warning--entry type for "celerdata2024parquet" isn't style-file defined
 --line 250 of file references.bib
 Warning--entry type for "zhang2019iacf" isn't style-file defined
 --line 259 of file references.bib
-You've used 5 entries,
+Warning--empty journal in debar2001aggregation
+Warning--empty journal in lo2022egraphsage
+Warning--empty journal in vinyals2016orderm
+Warning--empty journal in zaheer2017deepsets
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            531 strings with 5529 characters,
-and the built_in function-call counts, 1506 in all, are:
-= -- 133
-> -- 98
+            563 strings with 7747 characters,
+and the built_in function-call counts, 3294 in all, are:
+= -- 293
+> -- 233
 < -- 0
-+ -- 40
-- -- 34
-* -- 97
-:= -- 271
-add.period$ -- 17
-call.type$ -- 5
-change.case$ -- 32
++ -- 93
+- -- 82
+* -- 228
+:= -- 597
+add.period$ -- 37
+call.type$ -- 10
+change.case$ -- 71
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 42
-empty$ -- 108
-format.name$ -- 34
-if$ -- 300
+cite$ -- 14
+duplicate$ -- 97
+empty$ -- 212
+format.name$ -- 82
+if$ -- 644
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 2
-newline$ -- 30
-num.names$ -- 10
-pop$ -- 43
+int.to.str$ -- 10
+missing$ -- 7
+newline$ -- 60
+num.names$ -- 20
+pop$ -- 87
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 61
 quote$ -- 0
-skip$ -- 35
+skip$ -- 70
 stack$ -- 0
-substring$ -- 38
-swap$ -- 5
+substring$ -- 85
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 11
-width$ -- 6
-write$ -- 57
-(There were 3 warnings)
+type$ -- 40
+warning$ -- 4
+while$ -- 23
+width$ -- 12
+write$ -- 114
+(There were 7 warnings)

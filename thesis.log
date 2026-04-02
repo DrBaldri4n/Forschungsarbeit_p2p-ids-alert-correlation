@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  1 APR 2026 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  2 APR 2026 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1081,7 +1081,7 @@ Overfull \hbox (33.51457pt too wide) in paragraph at lines 18--18
  []
 
 
-Overfull \hbox (1.24435pt too wide) in paragraph at lines 35--35
+Overfull \hbox (1.24435pt too wide) in paragraph at lines 36--36
  [][] [][]\T1/ptm/m/n/11.04124 Die Gewich-tungs-formel: $\OML/ztmcm/m/it/11.04124 w\OT1/ztmcm/m/n/11.04124 (\OML/ztmcm/m/it/11.04124 n\OT1/ztmcm/m/n/11.04124 ) = \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT \OT1/ztmcm/m/n/11.04124 + (\OML/ztmcm/m/it/11.04124 MAX[]WEIGHT \OMS/ztmcm/m/n/11.04124 ^^@ 
  []
 
@@ -1197,7 +1197,7 @@ Overfull \hbox (3.3057pt too wide) in paragraph at lines 233--233
  []
 
 (./Chapters/03_Systemarchitektur_und_Detection_Framework/01_SystemÃ¼berblick_und_verteilte_Kommunikation.tex
-<./figures/deployment_software_modules_v1.drawio.png, id=152, 904.37875pt x 723.70375pt>
+<./figures/deployment_software_modules_v1.drawio.png, id=146, 904.37875pt x 723.70375pt>
 File: ./figures/deployment_software_modules_v1.drawio.png Graphic file (type png)
 <use ./figures/deployment_software_modules_v1.drawio.png>
 Package pdftex.def Info: ./figures/deployment_software_modules_v1.drawio.png  used on input line 14.
@@ -1208,7 +1208,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has b
                    \relax 
 l.36 
       [4 <./figures/deployment_software_modules_v1.drawio.png>]
-<./figures/Test-Mesh.jpg, id=162, 763.85374pt x 532.99126pt>
+<./figures/Test-Mesh.jpg, id=156, 763.85374pt x 532.99126pt>
 File: ./figures/Test-Mesh.jpg Graphic file (type jpg)
 <use ./figures/Test-Mesh.jpg>
 Package pdftex.def Info: ./figures/Test-Mesh.jpg  used on input line 39.
@@ -1221,7 +1221,7 @@ Overfull \hbox (14.23575pt too wide) in paragraph at lines 53--55
 \T1/ptm/m/n/11.04124 Kanal an alle Teil-nehmer versendet. Die Empfänger rufen die Datei da-raufhin di-rekt beim Ursprungs-
  []
 
-<./figures/DataFlowIPFS.drawio.png, id=166, 624.3325pt x 462.72874pt>
+<./figures/DataFlowIPFS.drawio.png, id=160, 624.3325pt x 462.72874pt>
 File: ./figures/DataFlowIPFS.drawio.png Graphic file (type png)
 <use ./figures/DataFlowIPFS.drawio.png>
 Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 62.
@@ -1229,7 +1229,7 @@ Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=167, 688.5725pt x 563.10374pt>
+<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=161, 688.5725pt x 563.10374pt>
 File: ./figures/Sequenzdiagramm_Datenfluss.drawio.png Graphic file (type png)
 <use ./figures/Sequenzdiagramm_Datenfluss.drawio.png>
 Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used on input line 69.
@@ -1238,7 +1238,7 @@ Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used o
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./figures/Test-Mesh.jpg>]
-<./figures/System.jpg, id=179, 1505.625pt x 834.11626pt>
+<./figures/System.jpg, id=173, 1505.625pt x 834.11626pt>
 File: ./figures/System.jpg Graphic file (type jpg)
 <use ./figures/System.jpg>
 Package pdftex.def Info: ./figures/System.jpg  used on input line 85.
@@ -1257,7 +1257,7 @@ Overfull \hbox (1.15144pt too wide) in paragraph at lines 7--8
 []\T1/ptm/m/n/11.04124 Zusätzliche Sen-sor-daten wer-den dem Rasp-berry Pi 4 B über die in der Tes-tumge-bung ein-gerichtete
  []
 
-<./figures/SystemDiagramv2.drawio.png, id=196, 875.27pt x 972.63374pt>
+<./figures/SystemDiagramv2.drawio.png, id=190, 875.27pt x 972.63374pt>
 File: ./figures/SystemDiagramv2.drawio.png Graphic file (type png)
 <use ./figures/SystemDiagramv2.drawio.png>
 Package pdftex.def Info: ./figures/SystemDiagramv2.drawio.png  used on input line 11.
@@ -1291,31 +1291,27 @@ Overfull \hbox (26.76176pt too wide) in paragraph at lines 21--21
 []\T1/ptm/m/n/15.89941 Statistische Merk-mal-sag-gre-ga-tion mit-tels Sliding-Window-Analyse 
  []
 
-[11]
-
-LaTeX Warning: Reference `lst:queries' on page 12 undefined on input line 45.
-
-) [12] [13]
-LaTeX Font Info:    Calculating math sizes for size <13.24945> on input line 262.
+[11]) [12] (./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex) [13]
+LaTeX Font Info:    Calculating math sizes for size <13.24945> on input line 258.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13.24945> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 258.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.80466> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 258.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.94974> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
- [14] [15] [16]
-Overfull \hbox (0.4019pt too wide) in paragraph at lines 288--288
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 258.
+ [14] [15]
+Overfull \hbox (0.4019pt too wide) in paragraph at lines 284--284
 []\T1/ptm/m/n/15.89941 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die
  []
 
-[17] [18]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 306.
+[16] [17]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 302.
  (./code_sections/reporter.py
 
 LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
-[19] [20]) [21] (./thesis.bbl
+[18] [19]) [20] (./code_sections/queries.py [21]) [22] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1323,98 +1319,98 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 1.
 
-) [22]
-Overfull \hbox (22.25372pt too wide) in alignment at lines 332--337
+[23]) [24]
+Overfull \hbox (22.25372pt too wide) in alignment at lines 328--333
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 337--343
+Overfull \hbox (22.25372pt too wide) in alignment at lines 333--339
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 343--345
+Overfull \hbox (22.25372pt too wide) in alignment at lines 339--341
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 345--347
+Overfull \hbox (22.25372pt too wide) in alignment at lines 341--343
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
 []|\T1/ptm/m/n/11.04124 Grammatik- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 []|\T1/ptm/m/n/11.04124 Der gener-ierte Out-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 wurde auss-chlieÿlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 zur Über-prü-fung und
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 349--350
+Underfull \hbox (badness 1960) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 Op-ti-mierung der Gram-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 matik, Rechtschrei-bung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 und Les-barkeit ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 wen-det. Sämtliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 y-sen, In-ter-pre-ta-tio-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 und wis-senschaftliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 \T1/ptm/m/n/11.04124 Schlussfol-gerun-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 []|\T1/ptm/m/n/11.04124 Umformulierung von
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 \T1/ptm/m/n/11.04124 Sätzen zur besseren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 \T1/ptm/m/n/11.04124 Ver-ständlichkeit und
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 347--351
+Overfull \hbox (22.25372pt too wide) in alignment at lines 343--347
  [] [] [] [] [] 
  []
 
@@ -1423,7 +1419,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 357.
+(scrbook)              This could result in several error messages on input line 353.
 
 
 LaTeX Warning: Marginpar on page  moved.
@@ -1434,7 +1430,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 376.
+(scrbook)              This could result in several error messages on input line 372.
 
 (./thesis.tdo)
 \tf@tdo=\write6
@@ -1444,7 +1440,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.376 \newpage
+l.372 \newpage
                [2] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1461,18 +1457,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32261 strings out of 476106
- 603584 string characters out of 5793932
+ 32360 strings out of 476106
+ 605876 string characters out of 5793932
  2147975 words of memory out of 5000000
- 53373 multiletter control sequences out of 15000+600000
+ 53385 multiletter control sequences out of 15000+600000
  631790 words of font info for 170 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,9n,121p,10968b,2397s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (28 pages, 564232 bytes).
+Output written on thesis.pdf (30 pages, 573136 bytes).
 PDF statistics:
- 726 PDF objects out of 1000 (max. 8388607)
- 655 compressed objects within 7 object streams
- 256 named destinations out of 1000 (max. 500000)
- 440 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 822 PDF objects out of 1000 (max. 8388607)
+ 748 compressed objects within 8 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 416 words of extra memory for PDF output out of 10000 (max. 10000000)
 

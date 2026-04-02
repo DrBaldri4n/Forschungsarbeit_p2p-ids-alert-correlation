@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{boswell2025flare}
 B.~Boswell, S.~Barrett, S.~Rajaganapathy, G.~Dorai, and M.~Qiu.
@@ -11,16 +11,46 @@ B.~Boswell, S.~Barrett, S.~Rajaganapathy, G.~Dorai, and M.~Qiu.
 \newblock What is parquet file format?, 2024.
 \newblock Erklärt die Architektur des Parquet-Formats, insbesondere die Vorteile der spaltenorientierten Speicherung und Kompression.
 
+\bibitem{debar2001aggregation}
+H.~Debar and A.~Wespi.
+\newblock Aggregation and correlation of intrusion-detection alerts.
+\newblock 2212:85--103, 2001.
+\newblock Beschreibt einen Aggregations- und Korrelationsalgorithmus für Intrusion-Detection-Alerts, der Duplikate und Folgewarnungen erkennt sowie Alerts in Situationen zusammenfasst, um dem Operator eine kondensierte Sicherheitsübersicht zu geben.
+
 \bibitem{heigl2021exploiting}
 M.~Heigl, E.~Weigelt, A.~Urmann, D.~Fiala, and M.~Schramm.
 \newblock Exploiting the outcome of outlier detection for novel attack pattern recognition on streaming data.
 \newblock {\em Electronics}, 10(17):2160, 2021.
 \newblock Präsentiert das SOAAPR-Framework, das Ausreißererkennungsergebnisse auf Streaming-Daten auswertet und daraus neuartige Angriffsmuster extrahiert.
 
+\bibitem{lo2022egraphsage}
+W.~W. Lo, S.~Layeghy, M.~Sarhan, M.~Gallagher, and M.~Portmann.
+\newblock {E-GraphSAGE}: A graph neural network based intrusion detection system for {IoT}.
+\newblock 2022.
+\newblock Schlägt E-GraphSAGE vor, ein GNN-basiertes Netzwerk-Intrusion-Detection-System, das sowohl Kanten-Features als auch topologische Informationen aus Netzwerkflussdaten für die Erkennung von Angriffen in IoT-Netzwerken nutzt.
+
 \bibitem{taylordavies2023parquet}
 R.~Taylor-Davies.
 \newblock How good is parquet for wide tables (machine learning workloads) really?, 2023.
 \newblock Analysiert die Performance von Apache Parquet bei Tabellen mit hoher Spaltenanzahl und bewertet den Metadaten-Overhead kritisch.
+
+\bibitem{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez, {\L}.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)}, 2017.
+\newblock Führt die Transformer-Architektur ein, die ausschließlich auf Attention-Mechanismen basiert und Rekurrenz sowie Faltungen vollständig ersetzt, und erzielt State-of-the-Art-Ergebnisse bei maschineller Übersetzung.
+
+\bibitem{vinyals2016orderm}
+O.~Vinyals, S.~Bengio, and M.~Kudlur.
+\newblock Order matters: Sequence to sequence for sets.
+\newblock 2016.
+\newblock Zeigt, dass die Reihenfolge von Eingabe- und Ausgabedaten das Lernen signifikant beeinflusst, und schlägt die Read-Process-and-Write-Architektur für permutationsinvariante Mengenverarbeitung sowie eine Suchmethode für optimale Ausgabereihenfolgen vor.
+
+\bibitem{zaheer2017deepsets}
+M.~Zaheer, S.~Kottur, S.~Ravanbakhsh, B.~P{\'o}czos, R.~Salakhutdinov, and A.~J. Smola.
+\newblock Deep sets.
+\newblock 2017.
+\newblock Entwickelt die DeepSets-Architektur, die permutationsinvariante Funktionen auf Mengen durch Summen-Dekomposition charakterisiert und in zahlreichen Aufgaben wie Punktwolken-Klassifikation und Populationsstatistikschätzung angewendet wird.
 
 \bibitem{zhang2019iacf}
 K.~Zhang, F.~Zhao, S.~Luo, Y.~Xin, and H.~Zhu.

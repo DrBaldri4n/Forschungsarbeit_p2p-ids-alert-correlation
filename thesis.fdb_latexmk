@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1775044358.29363 "thesis.aux" "thesis.bbl" "thesis" 1775044362.50931 0
-  "./references.bib" 1775043396.02145 13065 e387afef588db932fee83a860302a3a9 ""
+["bibtex thesis"] 1775122167.82472 "thesis.aux" "thesis.bbl" "thesis" 1775122173.7889 0
+  "./references.bib" 1775120605.53574 17744 2051bc3a6dde920ae45c3e1d3c257f9b ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "thesis.aux" 1775044361.98271 43143 30280ddcd3702b7143f03df57dea1906 "pdflatex"
+  "thesis.aux" 1775122173.04381 40726 e412a7e42f93e790ab2b01af2c3d56fd "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1775044358.41762 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1775044362.5099 0
+["pdflatex"] 1775122168.04735 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1775122173.7893 0
   "/etc/texmf/web2c/texmf.cnf" 1722698732.88771 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1775044344.74878 13551 4a935594cc88a47d7b8b902b1684dc24 ""
+  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1775120151.67442 13427 92f93498e0180acc85c82c2fa96a1f19 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -265,7 +265,9 @@
   "Chapters/03_Systemarchitektur_und_Detection_Framework/01_Systemüberblick_und_verteilte_Kommunikation.tex" 1774274565.26196 6100 05e70236b7aba92b2318fe8114ebe332 ""
   "Chapters/03_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex" 1774278761.56207 1836 2c27adfa4a47973b8412e17f57c2a91e ""
   "Chapters/03_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex" 1774961601.49007 6240 20eef7e8a6e3df8b8e9da3be9cf8294b ""
-  "Chapters/04_konzeption_des_thread_reports/thread_report.tex" 1775044181.63247 7069 3cf6e7dc3f60132827523612ff3204d7 ""
+  "Chapters/04_konzeption_des_thread_reports/thread_report.tex" 1775119882.83335 7069 3cf6e7dc3f60132827523612ff3204d7 ""
+  "Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex" 1775122161.7939 2167 2196137ad139d3c2c11ab966e77b1483 ""
+  "code_sections/queries.py" 1774279796.3852 4144 7edd2b16b9b8242c8829100a38e6ff84 ""
   "code_sections/reporter.py" 1774878689.88104 4606 cb26957fe33298ed8685e9919aea6668 ""
   "figures/DataFlowIPFS.drawio.png" 1774001585.55875 56836 d8736c841d69902d15367555e622ce03 ""
   "figures/Sequenzdiagramm_Datenfluss.drawio.png" 1774001585.54575 53865 d6961f4a648a5be84e2d77a1954c5d28 ""
@@ -274,12 +276,12 @@
   "figures/Test-Mesh.jpg" 1774001585.61275 26709 81ed902996ed14a8b7bfdc6fae26f033 ""
   "figures/deployment_software_modules_v1.drawio.png" 1774001585.53175 85961 ef6279e6834a33123df366fa3a7b84c0 ""
   "logos/oth-logo.png" 1491634092 72704 28cd978a7a026ba33f822ab10581c80a ""
-  "thesis.aux" 1775044361.98271 43143 30280ddcd3702b7143f03df57dea1906 "pdflatex"
-  "thesis.bbl" 1775044358.41073 1960 bb5ca6343006b9dc72b156482c007068 "bibtex thesis"
-  "thesis.out" 1775044360.35372 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.tdo" 1775044361.99671 2236 e2eb4aa4a6afdceff926ca739d94c6bb "pdflatex"
-  "thesis.tex" 1775044344.74878 13551 4a935594cc88a47d7b8b902b1684dc24 ""
-  "thesis.toc" 1775044361.99671 5407 4bfc33d7b582cfa71f0699b1365cc7fe "pdflatex"
+  "thesis.aux" 1775122173.04381 40726 e412a7e42f93e790ab2b01af2c3d56fd "pdflatex"
+  "thesis.bbl" 1775122168.03485 4098 839de04b5d387e720502dd76c181036e "bibtex thesis"
+  "thesis.out" 1775122170.66983 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.tdo" 1775122173.06081 2236 e2eb4aa4a6afdceff926ca739d94c6bb "pdflatex"
+  "thesis.tex" 1775120151.67442 13427 92f93498e0180acc85c82c2fa96a1f19 ""
+  "thesis.toc" 1775122173.05981 5028 229a7f5f1e07e3bafd34e3650743323c "pdflatex"
   "thesisclass.cls" 1760532836 7338 846104f6b6832a0fb61015bbee24f22d ""
   (generated)
   "thesis.aux"

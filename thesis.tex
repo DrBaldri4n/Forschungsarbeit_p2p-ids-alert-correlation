@@ -245,11 +245,7 @@
 \newpage
 
 \chapter{Theoretische Grundlagen der Informationsfusion}
-    \section{Vergleich von Aggregationsmethoden}
-        \subsection{Dempster-Shafer-Evidenztheorie}
-        \subsection{Fuzzy-basierte Fusion}
-        \subsection{Bayes-basierte Konsensmodelle}
-        \subsection{Gewichtetes Voting}
+    \input{Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex}
     \section{State-of-the-Art: Deep Sets und Attention Mechanismen}
     % TODO: Wissenschaftliche Begründung der Methodenwahl (Deep Sets + Attention) hier einarbeiten
 
@@ -269,10 +265,10 @@
 
 \newpage
 
-\chapter{Erweiterung der Systemarchitektur und Implementierung}
-    \section{Generierte Threat Reports: Format und Struktur}
-    \section{Integration von Threat Reporter und Aggregationslogik}
-    \section{Architektur der Fusionskomponente im P2P-Netzwerk}
+% \chapter{Erweiterung der Systemarchitektur und Implementierung}
+%     \section{Generierte Threat Reports: Format und Struktur}
+%     \section{Integration von Threat Reporter und Aggregationslogik}
+%     \section{Architektur der Fusionskomponente im P2P-Netzwerk}
     % TODO Grafik einfügen wie die Architektur nun verändert wurde
     
 \newpage
@@ -305,11 +301,11 @@
   label={lst:reporter}
 ]{code_sections/reporter.py}
 
-% \lstinputlisting[
-%   language=Python,
-%   caption={queries.py – Logik der Datenbankabfragen},
-%   label={lst:queries}
-% ]{code_sections/queries.py}
+\lstinputlisting[
+  language=Python,
+  caption={queries.py – Logik der Datenbankabfragen},
+  label={lst:queries}
+]{code_sections/queries.py}
 
 
 \newpage
