@@ -17,17 +17,41 @@ H.~Debar and A.~Wespi.
 \newblock 2212:85--103, 2001.
 \newblock Beschreibt einen Aggregations- und Korrelationsalgorithmus für Intrusion-Detection-Alerts, der Duplikate und Folgewarnungen erkennt sowie Alerts in Situationen zusammenfasst, um dem Operator eine kondensierte Sicherheitsübersicht zu geben.
 
+\bibitem{devlin2019bert}
+J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language understanding.
+\newblock 2019.
+\newblock Führt BERT ein, ein bidirektionales Repräsentationsmodell, das durch Masked Language Modeling (MLM) und Next Sentence Prediction (NSP) tiefen Kontext aus beiden Richtungen gleichzeitig lernt und damit neue Bestleistungen in elf NLP-Aufgaben erzielte[cite: 557, 564, 567, 580, 583].
+
 \bibitem{heigl2021exploiting}
 M.~Heigl, E.~Weigelt, A.~Urmann, D.~Fiala, and M.~Schramm.
 \newblock Exploiting the outcome of outlier detection for novel attack pattern recognition on streaming data.
 \newblock {\em Electronics}, 10(17):2160, 2021.
 \newblock Präsentiert das SOAAPR-Framework, das Ausreißererkennungsergebnisse auf Streaming-Daten auswertet und daraus neuartige Angriffsmuster extrahiert.
 
+\bibitem{lee2019settransformer}
+J.~Lee, Y.~Lee, J.~Kim, A.~R. Kosiorek, S.~Choi, and Y.~W. Teh.
+\newblock Set transformer: A framework for attention-based permutation-invariant neural networks.
+\newblock 97, 2019.
+\newblock Stellt den Set Transformer vor, der Self-Attention zur Kodierung von Element-Interaktionen in Mengen nutzt und durch Inducing-Point-Methoden die quadratische Komplexität von Self-Attention auf lineare Komplexität reduziert.
+
+\bibitem{liu2022pooling}
+Z.~Liu, L.~Wang, B.~Huang, H.~Liu, H.~Shi, P.~Yang, and H.~Dong.
+\newblock Pooling operations in deep learning: From invariable to variable.
+\newblock {\em BioMed Research International}, 2022.
+\newblock Gibt einen umfassenden Überblick über Pooling-Operationen im Deep Learning, kategorisiert sie nach invariablem und variablem Pooling-Bereich sowie -Kernel, und diskutiert deren Eigenschaften und Einsatzbereiche.
+
 \bibitem{lo2022egraphsage}
 W.~W. Lo, S.~Layeghy, M.~Sarhan, M.~Gallagher, and M.~Portmann.
 \newblock {E-GraphSAGE}: A graph neural network based intrusion detection system for {IoT}.
 \newblock 2022.
 \newblock Schlägt E-GraphSAGE vor, ein GNN-basiertes Netzwerk-Intrusion-Detection-System, das sowohl Kanten-Features als auch topologische Informationen aus Netzwerkflussdaten für die Erkennung von Angriffen in IoT-Netzwerken nutzt.
+
+\bibitem{pytorch2024multihead}
+{PyTorch Contributors}.
+\newblock {\em MultiheadAttention --- {PyTorch} 2.4 Documentation}.
+\newblock Meta AI, 2024.
+\newblock Zugriff am: 13. April 2026.
 
 \bibitem{taylordavies2023parquet}
 R.~Taylor-Davies.

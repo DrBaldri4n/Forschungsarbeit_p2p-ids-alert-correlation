@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  2 APR 2026 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  13 APR 2026 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1297,7 +1297,18 @@ File: ./figures/Fusions_architektur.png Graphic file (type png)
 <use ./figures/Fusions_architektur.png>
 Package pdftex.def Info: ./figures/Fusions_architektur.png  used on input line 18.
 (pdftex.def)             Requested size: 320.57364pt x 428.69786pt.
-) [13] [14 <./figures/Fusions_architektur.png>]
+ [13]
+Overfull \hbox (5.29176pt too wide) in paragraph at lines 27--28
+[]\T1/ptm/m/n/11.04124 Ein tech-nisch fundierter Ansatz besteht zunächst in der Nor-mal-isierung der Daten un-ter-schiedlicher
+ []
+
+[14 <./figures/Fusions_architektur.png>]
+<./figures/masking_attention_is_all_you_need.png, id=258, 1401.235pt x 829.0975pt>
+File: ./figures/masking_attention_is_all_you_need.png Graphic file (type png)
+<use ./figures/masking_attention_is_all_you_need.png>
+Package pdftex.def Info: ./figures/masking_attention_is_all_you_need.png  used on input line 42.
+(pdftex.def)             Requested size: 320.57364pt x 189.67633pt.
+ [15 <./figures/masking_attention_is_all_you_need.png>]) [16]
 LaTeX Font Info:    Calculating math sizes for size <13.24945> on input line 259.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13.24945> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 259.
@@ -1305,19 +1316,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.80466> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 259.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.94974> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 259.
- [15] [16]
+ [17] [18]
 Overfull \hbox (0.4019pt too wide) in paragraph at lines 285--285
 []\T1/ptm/m/n/15.89941 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die
  []
 
-[17] [18]
+[19] [20]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 303.
  (./code_sections/reporter.py
 
 LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
-[19] [20]) [21] (./code_sections/queries.py [22]) [23] (./thesis.bbl
+[21] [22]) [23] (./code_sections/queries.py [24]) [25] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1325,7 +1336,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 1.
 
-[24]) [25]
+[26]) [27]
 Overfull \hbox (22.25372pt too wide) in alignment at lines 329--334
  [] [] [] [] [] 
  []
@@ -1463,18 +1474,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32371 strings out of 476106
- 606255 string characters out of 5793932
+ 32390 strings out of 476106
+ 606850 string characters out of 5793932
  2147975 words of memory out of 5000000
- 53394 multiletter control sequences out of 15000+600000
+ 53406 multiletter control sequences out of 15000+600000
  631790 words of font info for 170 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 122i,9n,121p,10968b,2397s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,9n,121p,10968b,2395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (31 pages, 663215 bytes).
+Output written on thesis.pdf (33 pages, 769366 bytes).
 PDF statistics:
- 833 PDF objects out of 1000 (max. 8388607)
- 756 compressed objects within 8 object streams
- 338 named destinations out of 1000 (max. 500000)
- 421 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 857 PDF objects out of 1000 (max. 8388607)
+ 775 compressed objects within 8 object streams
+ 345 named destinations out of 1000 (max. 500000)
+ 426 words of extra memory for PDF output out of 10000 (max. 10000000)
 

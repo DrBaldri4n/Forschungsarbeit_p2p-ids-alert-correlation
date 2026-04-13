@@ -13,7 +13,7 @@
         \item Es gilt eine Methode zu entwickeln, welche die relevanz der einzelnen Knoten bewertet und somit die Gewichtung der Informationen jedes einzelnen Threat Reports dynamisch und intelligent anpasst.
     \end{itemize}
 
-    \begin{figure}
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.75\textwidth]{./figures/Fusions_architektur.png}
         \caption{Aufbau der Fusion von Threat Reports aus Nachbarknoten}
@@ -22,12 +22,30 @@
 
     \subsection{Statische Aggregation}
 
-    \cite{debar2001aggregation}
+    In der einschlägigen Literatur existiert eine Vielzahl von Methoden zur Aggregation von Informationen aus heterogenen Quellen. Primäre Ziele dieser Verfahren sind die Unterstützung der Entscheidungsfindung, die Vermeidung von Informationsüberlastung sowie die Identifikation von Korrelationen. 
+
+    Ein technisch fundierter Ansatz besteht zunächst in der Normalisierung der Daten unterschiedlicher Quellen, um die Vergleichbarkeit zu gewährleisten. Im nächsten Schritt werden Beziehungen zwischen den Quellen und deren Inhalten identifiziert, bevor die einzelnen Meldungen (Alerts) schließlich zu übergeordneten „Situationen“ zusammengefasst werden. Eine solche Aggregation kann beispielsweise auf Basis identischer Ursprungssysteme oder spezifischer Angriffsklassen erfolgen \cite{debar2001aggregation}.
+
+    Bei der statischen Aggregation liegt der Fokus auf vorab manuell definierten Regeln. Diese sind regelbasiert konzipiert und verfügen über keine lernenden Komponenten. Ein typisches Szenario für diesen Ansatz ist die situationsbezogene Aggregation: Hierbei werden unterschiedliche Alerts nur dann zu einer Situation konsolidiert, wenn sie dieselbe Quelle, dasselbe Ziel und dieselbe Angriffsklasse aufweisen. Die Granularität dieser Zusammenfassung wird dabei durch statisch konfigurierte Schwellenwerte gesteuert \cite{debar2001aggregation}. Als gängige mathematische Aggregationsmethoden kommen in diesem Kontext nach der gruppierung die Berechnung von Minimum, Maximum, Durchschnitt oder der Standardabweichung zum Einsatz \cite{lee2019settransformer, liu2022pooling}.
+    
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \subsection{Padding and Masking}
+    \subsection{Padding und Masking}
 
+    Padding und Masking sind essenzielle Verfahren bei der Verarbeitung von Sequenzdaten, um die Inferenz mit variierenden Sequenzlängen zu ermöglichen. Diese Mechanismen sind standardmäßig in modernen Deep-Learning-Frameworks integriert, wie beispielsweise im Parameter \texttt{key\_padding\_mask} der \texttt{torch.nn.MultiheadAttention}-Klasse in PyTorch \cite{pytorch2024multihead}.
 
-    \cite{vaswani2017attention}
+    Der Prozess des Paddings definiert eine maximale Sequenzlänge $n_{\max}$. Sequenzen, die diese Länge unterschreiten, werden mit speziellen \texttt{[PAD]}-Token aufgefüllt, bis sie die Dimension $n_{\max}$ erreichen. Damit diese künstlich hinzugefügten Token das Training oder die Aggregation nicht verfälschen, wird eine Maskierung (Masking) eingesetzt. Diese stellt sicher, dass die entsprechenden Positionen während der Berechnung der Attention-Scores ignoriert werden.
+
+    In der wegweisenden Arbeit von Vaswani et al. (2017) \cite{vaswani2017attention} bildet dieses Prinzip die Grundlage für die effiziente Batch-Verarbeitung innerhalb der Transformer-Architektur. Hierbei verhindert das Masking, dass das Modell Aufmerksamkeit auf Padding-Bereiche richtet (siehe Abbildung \ref{fig:padding_masking}).
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\textwidth]{./figures/masking_attention_is_all_you_need.png}
+        \caption{Visualisierung der Attention-Mechanismen (adaptiert nach Figure 3 aus \cite{vaswani2017attention})}
+        \label{fig:padding_masking}
+    \end{figure}
+
+    Ebenso findet dieses Verfahren Anwendung in der BERT-Architektur von Devlin et al. (2019) \cite{devlin2019bert}. Hierbei werden Eingabesequenzen auf eine feste Länge von meist 512 Token gepaddet, wobei das Masking sowohl für das Padding als auch für die spezifische Trainingsmethode des \textit{Masked Language Modeling} (MLM) verwendet wird.
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{Deep Sets}
     
