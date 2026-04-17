@@ -20,6 +20,8 @@
         \label{fig:aggregation_comparison}
     \end{figure}
 
+    \todohl{klassiche problem von neuronalen netzten ist, dass sie immer einen festen Eingabe Menge benötigen, folgend wird untersucht, welche methoden es gibt um dies sicherzustellen, da die zahl er erhaltenen CTI-reports variabel ist darauf aber ein Machine Learning algorithmus trainiert werden muss}{baue den part noch in die erklärung mit ein.}
+
     \subsection{Statische Aggregation}
 
     In der einschlägigen Literatur existiert eine Vielzahl von Methoden zur Aggregation von Informationen aus heterogenen Quellen. Primäre Ziele dieser Verfahren sind die Unterstützung der Entscheidungsfindung, die Vermeidung von Informationsüberlastung sowie die Identifikation von Korrelationen. 
@@ -30,6 +32,7 @@
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{Padding und Masking}
+    \label{subsec:padding_und_masking}
 
     Padding und Masking sind essenzielle Verfahren bei der Verarbeitung von Sequenzdaten, um die Inferenz mit variierenden Sequenzlängen zu ermöglichen. Diese Mechanismen sind standardmäßig in modernen Deep-Learning-Frameworks integriert, wie beispielsweise im Parameter \texttt{key\_padding\_mask} der \texttt{torch.nn.MultiheadAttention}-Klasse in PyTorch \cite{pytorch2024multihead}.
 
@@ -48,14 +51,29 @@
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{Deep Sets}
-    
+    \label{subsec:deep_set}
+    Im Gegensatz zu den in Abschnitt \ref{subsec:padding_und_masking} beschriebenen Verfahren, die auf einer fixen Anzahl von Elementen basieren, verfolgen \textit{Deep Sets} einen mengenbasierten Ansatz. Dabei wird die Eingabe als eine ungeordnete Menge $X$ betrachtet. Das Modell lernt hierbei, die Relevanz der einzelnen Elemente autonom zu bewerten und die Gewichtung der Informationen dynamisch anzupassen. 
 
-    \cite{zaheer2017deepsets}
+    Eine fundamentale Anforderung an die verarbeitende Funktion $f(X)$ ist die \textit{Permutationsinvarianz}. Dies bedeutet, dass die Ausgabe der Funktion unabhängig von der Reihenfolge der Elemente innerhalb der Menge sein muss \cite{zaheer2017deepsets}.
+
+    \begin{theorem}[Zaheer et al., 2017]
+    Eine Funktion $f(X)$ auf einer Menge $X$, deren Elemente aus einem abzählbaren Universum stammen, ist genau dann permutationsinvariant, wenn sie sich wie folgt dekomponieren lässt:
+    \[
+    f(X) = \rho \left( \sum_{x \in X} \phi(x) \right)
+    \]
+    wobei $\phi$ und $\rho$ geeignete Transformationen (typischerweise neuronale Netze) darstellen.
+    \end{theorem}
+
+    Während die Summenbildung die theoretische Grundlage für die Aggregation bildet, werden in der Praxis häufig auch der Mittelwert (\textit{Mean}) oder das Maximum (\textit{Max}) verwendet, da diese Operationen ebenfalls die Bedingung der Permutationsinvarianz erfüllen. Soelch et al. zeigen jedoch auf, dass die Wahl der Aggregationsfunktion einen erheblichen Einfluss auf die Modellperformance hat, und schlagen als Alternative lernbare Aggregationsmechanismen vor \cite{soelch2019deepsetAgg}.
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \subsection{Set 2 Set}
+    \subsection{Set2Set}
+  
+    Obwohl auch Ansätze der vorheringen Aggregations Methoden variable Eingabelängen verarbeiten können, unterscheiden sie sich von Set2Set primär in der Art der Informationsverdichtung. Während herkömmliche Methoden die Eingabemenge meist durch eine statische Aggregationsfunktion (z. B. Mean-Pooling) in einen fixen Merkmalsraum transformieren, nutzt Set2Set einen iterativen \textit{Read-Process}. Durch die Kombination aus Attention-Mechanismen und einem rekurrenten Zustand kann das Modell die Menge mehrfach explorieren. Dies ermöglicht es, komplexe Abhängigkeiten zwischen den Elementen aufzulösen, die bei einer einfachen Summation oder Mittelwertbildung verloren gingen \cite{vinyals2016orderm}.
+
+    Algorithmische Experimente, wie das Sortieren von Zahlenfolgen, belegen, dass Modelle eine höhere Lern- und Generalisierungsfähigkeit aufweisen, wenn sie nicht durch eine willkürliche Reihenfolge der Eingabedaten eingeschränkt werden \cite{vinyals2016orderm}. Auch die in Abschnitt \ref{subsec:padding_und_masking} behandelten Transformer-Architekturen wird mit einer Form des Set2Set-Ansatzes erweitert \cite{vaswani2017attention}.
     
 
-    \cite{vinyals2016orderm}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{Graph Neural Networks and Pooling}
 

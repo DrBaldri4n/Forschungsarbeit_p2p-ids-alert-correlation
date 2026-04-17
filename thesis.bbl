@@ -53,6 +53,11 @@ W.~W. Lo, S.~Layeghy, M.~Sarhan, M.~Gallagher, and M.~Portmann.
 \newblock Meta AI, 2024.
 \newblock Zugriff am: 13. April 2026.
 
+\bibitem{soelch2019deepsetAgg}
+M.~Sölch, A.~Akhundov, P.~van~der Smagt, and J.~Bayer.
+\newblock On deep set learning and the choice of aggregations.
+\newblock {\em arXiv preprint arXiv:1903.07348}, 2019.
+
 \bibitem{taylordavies2023parquet}
 R.~Taylor-Davies.
 \newblock How good is parquet for wide tables (machine learning workloads) really?, 2023.

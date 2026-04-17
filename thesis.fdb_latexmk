@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1776085666.71481 "thesis.aux" "thesis.bbl" "thesis" 1776085670.61617 0
-  "./references.bib" 1776085537.14798 18792 bb6c1de572aad22abf87fbe5cf8b2457 ""
+["bibtex thesis"] 1776419530.60995 "thesis.aux" "thesis.bbl" "thesis" 1776419533.51862 0
+  "./references.bib" 1776415806.76291 19102 d46fa440f2376f9a383b6efb5a5e103f ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "thesis.aux" 1776085670.25956 41867 3dd741f7e0b2b925b1be1d4c6c9f7094 "pdflatex"
+  "thesis.aux" 1776419533.21501 42437 68e47059739070c8444ceeca0961a5cd "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1776085666.81075 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1776085670.61636 0
+["pdflatex"] 1776419530.68376 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1776419533.51881 0
   "/etc/texmf/web2c/texmf.cnf" 1722698732.88771 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1775130632.65415 13482 544d71ba949c85b11551fdbaf6baf8f7 ""
+  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1776416058.14869 13601 3c0a4022d57288c68774d6600f83987e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -37,6 +37,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aett9.tfm" 1136768653 1380 19ca13114324160be390bab24cecf734 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm" 1136768653 768 2297ad2ac26f37e67f756dad27c77d68 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm" 1136768653 1524 554068197b70979a55370e6c6495f441 ""
@@ -45,6 +46,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm" 1136768653 764 c98a2af25c99b73a368cf7336e255190 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb" 1248133631 26057 fad158094905eaf20f4ae3782af0c45c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -63,6 +65,7 @@
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf" 1136768653 2328 6cd7df782b09b29cfc4d93e55b6b9a59 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf" 1136768653 1132 27520247d3fe18d4266a226b461885c2 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf" 1136768653 1108 d271d6f9de4122c3f8d3b65666167fac ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7v.vf" 1136768653 1012 046369ac6a83af997c3aa05a43256ad5 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf" 1136768653 964 5673178ff30617b900214de28ab32b38 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/ae/aeitt10.vf" 1136768653 3608 d6f2f486fc2ec083a03634a111f6f5a6 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/ae/aett10.vf" 1136768653 3440 4d67aaeb563945aba80b73efb32a3720 ""
@@ -266,7 +269,7 @@
   "Chapters/03_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex" 1774278761.56207 1836 2c27adfa4a47973b8412e17f57c2a91e ""
   "Chapters/03_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex" 1774961601.49007 6240 20eef7e8a6e3df8b8e9da3be9cf8294b ""
   "Chapters/04_konzeption_des_thread_reports/thread_report.tex" 1775119882.83335 7069 3cf6e7dc3f60132827523612ff3204d7 ""
-  "Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex" 1776085635.56167 6033 eeca60d1843dafe6bc4e794e30295220 ""
+  "Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex" 1776419526.26209 9136 9d1754a646f7a339581810d18ed333df ""
   "code_sections/queries.py" 1774279796.3852 4144 7edd2b16b9b8242c8829100a38e6ff84 ""
   "code_sections/reporter.py" 1774878689.88104 4606 cb26957fe33298ed8685e9919aea6668 ""
   "figures/DataFlowIPFS.drawio.png" 1774001585.55875 56836 d8736c841d69902d15367555e622ce03 ""
@@ -278,12 +281,12 @@
   "figures/deployment_software_modules_v1.drawio.png" 1774001585.53175 85961 ef6279e6834a33123df366fa3a7b84c0 ""
   "figures/masking_attention_is_all_you_need.png" 1776084913.10818 142484 cc4bd145d246eba6bf0d9bade406d4ef ""
   "logos/oth-logo.png" 1491634092 72704 28cd978a7a026ba33f822ab10581c80a ""
-  "thesis.aux" 1776085670.25956 41867 3dd741f7e0b2b925b1be1d4c6c9f7094 "pdflatex"
-  "thesis.bbl" 1776085666.80557 5658 6673086f2b5aac67a6f832b3808a756f "bibtex thesis"
-  "thesis.out" 1776085668.52757 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.tdo" 1776085670.27156 2236 c022604298a9aeb16423771e3a421b8a "pdflatex"
-  "thesis.tex" 1775130632.65415 13482 544d71ba949c85b11551fdbaf6baf8f7 ""
-  "thesis.toc" 1776085670.27156 5028 28856afd90edcaab4dbc761917ed586d "pdflatex"
+  "thesis.aux" 1776419533.21501 42437 68e47059739070c8444ceeca0961a5cd "pdflatex"
+  "thesis.bbl" 1776419530.67804 5864 44964a1b047de9ad93645f15ff9bd3eb "bibtex thesis"
+  "thesis.out" 1776419531.88402 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.tdo" 1776419533.22301 2374 6cbeb4842d8606e91e68fe7dc75f4df6 "pdflatex"
+  "thesis.tex" 1776416058.14869 13601 3c0a4022d57288c68774d6600f83987e ""
+  "thesis.toc" 1776419533.22301 5026 d681d2182d423f7791aa7fc51adddcf6 "pdflatex"
   "thesisclass.cls" 1760532836 7338 846104f6b6832a0fb61015bbee24f22d ""
   (generated)
   "thesis.aux"

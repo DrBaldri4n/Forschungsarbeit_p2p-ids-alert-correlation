@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {5.1}Vergleich von Aggregationsmethoden}{13}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Statische Aggregation}{14}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Padding und Masking}{15}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Deep Sets}{15}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Set 2 Set}{16}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.3}Deep Sets}{16}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Set2Set}{16}{subsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.1.5}Graph Neural Networks and Pooling}{16}{subsection.5.1.5}%
 \contentsline {section}{\numberline {5.2}State-of-the-Art: Deep Sets und Attention Mechanismen}{16}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation mittels Utility Theory}{17}{chapter.6}%
@@ -46,5 +46,5 @@
 \contentsline {section}{\numberline {8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{19}{section.8.3}%
 \contentsline {chapter}{\numberline {9}Zusammenfassung und Fazit}{20}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Quellcode}{21}{chapter.10}%
-\contentsline {chapter}{Bibliography}{26}{section*.26}%
+\contentsline {chapter}{Bibliography}{26}{section*.27}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
