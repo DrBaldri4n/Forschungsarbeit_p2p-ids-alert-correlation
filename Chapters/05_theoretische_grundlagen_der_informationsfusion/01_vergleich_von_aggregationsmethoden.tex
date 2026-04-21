@@ -68,6 +68,7 @@
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{Set2Set}
+    \label{subsec:set2set}
   
     Obwohl auch Ansätze der vorheringen Aggregations Methoden variable Eingabelängen verarbeiten können, unterscheiden sie sich von Set2Set primär in der Art der Informationsverdichtung. Während herkömmliche Methoden die Eingabemenge meist durch eine statische Aggregationsfunktion (z. B. Mean-Pooling) in einen fixen Merkmalsraum transformieren, nutzt Set2Set einen iterativen \textit{Read-Process}. Durch die Kombination aus Attention-Mechanismen und einem rekurrenten Zustand kann das Modell die Menge mehrfach explorieren. Dies ermöglicht es, komplexe Abhängigkeiten zwischen den Elementen aufzulösen, die bei einer einfachen Summation oder Mittelwertbildung verloren gingen \cite{vinyals2016orderm}.
 
@@ -76,7 +77,7 @@
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{Graph Neural Networks and Pooling}
+    Graph Neural Networks (GNNs) bieten eine leistungsstarke Methode zur Verarbeitung von Daten, die in Form von Graphen vorliegen. Knoten repräsentieren dabei Entitäten (z.\,B. IP-Adressen), während Kanten die Beziehungen zwischen diesen Entitäten modellieren und die zugehörigen Flow-Informationen als Kantenmerkmale tragen \cite[Sec.\,III-A]{lo2022egraphsage}. 
 
-
-    \cite{lo2022egraphsage}
+    Durch iteratives Aggregieren der Nachbarschaftsinformationen können GNNs sowohl topologische Muster als auch merkmalsbasierte Strukturen im Netzwerkgraphen erkennen. Das Pooling erfolgt hier, wie bereits in Abschnitt~\ref{subsec:set2set} beschrieben, mittels Mean-Pooling über die Kanten-Features der Nachbarschaft \cite[Sec.\,IV-A, Eq.\,6]{lo2022egraphsage}.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

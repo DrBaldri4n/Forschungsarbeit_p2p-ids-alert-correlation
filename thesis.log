@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  17 APR 2026 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  21 APR 2026 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,34 +941,34 @@ LaTeX Warning: Unused global option(s):
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-Package scrbase Info: activating english \partname on input line 110.
-Package scrbase Info: activating english \chaptername on input line 110.
-Package scrbase Info: activating english \appendixname on input line 110.
-Package scrbase Info: activating english \figurename on input line 110.
-Package scrbase Info: activating english \tablename on input line 110.
-Package scrbase Info: activating english \contentsname on input line 110.
-Package scrbase Info: activating english \listfigurename on input line 110.
-Package scrbase Info: activating english \listtablename on input line 110.
-Package scrbase Info: activating english \bibname on input line 110.
-Package scrbase Info: activating english \indexname on input line 110.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+Package scrbase Info: activating english \partname on input line 111.
+Package scrbase Info: activating english \chaptername on input line 111.
+Package scrbase Info: activating english \appendixname on input line 111.
+Package scrbase Info: activating english \figurename on input line 111.
+Package scrbase Info: activating english \tablename on input line 111.
+Package scrbase Info: activating english \contentsname on input line 111.
+Package scrbase Info: activating english \listfigurename on input line 111.
+Package scrbase Info: activating english \listtablename on input line 111.
+Package scrbase Info: activating english \bibname on input line 111.
+Package scrbase Info: activating english \indexname on input line 111.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
@@ -994,7 +994,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 110.
+Package hyperref Info: Link coloring OFF on input line 111.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1006,7 +1006,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 110.
+(scrbook)           before \begin{document} on input line 111.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1024,39 +1024,39 @@ Package caption Info: End \AtBeginDocument code.
 <logos/oth-logo.png, id=7, 1091.5179pt x 189.5883pt>
 File: logos/oth-logo.png Graphic file (type png)
 <use logos/oth-logo.png>
-Package pdftex.def Info: logos/oth-logo.png  used on input line 127.
+Package pdftex.def Info: logos/oth-logo.png  used on input line 128.
 (pdftex.def)             Requested size: 213.71576pt x 37.11855pt.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 131.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 132.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Font Info:    Calculating math sizes for size <15.89941> on input line 164.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 164.
+LaTeX Font Info:    Calculating math sizes for size <15.89941> on input line 165.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 164.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 164.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 164.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 164.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15.89941> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.76564> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.53973> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
  [1
 
 
@@ -1067,7 +1067,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 184.
+(scrbook)              This could result in several error messages on input line 185.
 
 (./thesis.toc
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 4.
@@ -1082,11 +1082,6 @@ Overfull \hbox (33.51457pt too wide) in paragraph at lines 18--18
  [][] [][]\T1/ptm/m/n/11.04124 Physikalische Signal- und Tem-per-aturüberwachung (de-tec-tion_power_temperature)[] [][]  
  []
 
-
-Overfull \hbox (1.24435pt too wide) in paragraph at lines 36--36
- [][] [][]\T1/ptm/m/n/11.04124 Die Gewich-tungs-formel: $\OML/ztmcm/m/it/11.04124 w\OT1/ztmcm/m/n/11.04124 (\OML/ztmcm/m/it/11.04124 n\OT1/ztmcm/m/n/11.04124 ) = \OML/ztmcm/m/it/11.04124 BASE[]WEIGHT \OT1/ztmcm/m/n/11.04124 + (\OML/ztmcm/m/it/11.04124 MAX[]WEIGHT \OMS/ztmcm/m/n/11.04124 ^^@ 
- []
-
 [2])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
@@ -1097,7 +1092,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 187.
+(scrbook)              This could result in several error messages on input line 188.
 
 [4] (./Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 2.
@@ -1187,19 +1182,19 @@ LaTeX Warning: Marginpar on page 2 moved.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.227 \newpage
+l.228 \newpage
                [2] (./Chapters/02_related_work/01_related_work.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.233 \newpage
+l.234 \newpage
                [3]
-Overfull \hbox (3.3057pt too wide) in paragraph at lines 235--235
+Overfull \hbox (3.3057pt too wide) in paragraph at lines 236--236
 []\T1/ptm/m/n/22.8996 Systemarchitektur und De-tec-tion Frame-work 
  []
 
 (./Chapters/03_Systemarchitektur_und_Detection_Framework/01_SystemÃ¼berblick_und_verteilte_Kommunikation.tex
-<./figures/deployment_software_modules_v1.drawio.png, id=146, 904.37875pt x 723.70375pt>
+<./figures/deployment_software_modules_v1.drawio.png, id=138, 904.37875pt x 723.70375pt>
 File: ./figures/deployment_software_modules_v1.drawio.png Graphic file (type png)
 <use ./figures/deployment_software_modules_v1.drawio.png>
 Package pdftex.def Info: ./figures/deployment_software_modules_v1.drawio.png  used on input line 14.
@@ -1210,7 +1205,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has b
                    \relax 
 l.36 
       [4 <./figures/deployment_software_modules_v1.drawio.png>]
-<./figures/Test-Mesh.jpg, id=156, 763.85374pt x 532.99126pt>
+<./figures/Test-Mesh.jpg, id=149, 763.85374pt x 532.99126pt>
 File: ./figures/Test-Mesh.jpg Graphic file (type jpg)
 <use ./figures/Test-Mesh.jpg>
 Package pdftex.def Info: ./figures/Test-Mesh.jpg  used on input line 39.
@@ -1223,7 +1218,7 @@ Overfull \hbox (14.23575pt too wide) in paragraph at lines 53--55
 \T1/ptm/m/n/11.04124 Kanal an alle Teil-nehmer versendet. Die Empfänger rufen die Datei da-raufhin di-rekt beim Ursprungs-
  []
 
-<./figures/DataFlowIPFS.drawio.png, id=160, 624.3325pt x 462.72874pt>
+<./figures/DataFlowIPFS.drawio.png, id=153, 624.3325pt x 462.72874pt>
 File: ./figures/DataFlowIPFS.drawio.png Graphic file (type png)
 <use ./figures/DataFlowIPFS.drawio.png>
 Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 62.
@@ -1231,7 +1226,7 @@ Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=161, 688.5725pt x 563.10374pt>
+<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=154, 688.5725pt x 563.10374pt>
 File: ./figures/Sequenzdiagramm_Datenfluss.drawio.png Graphic file (type png)
 <use ./figures/Sequenzdiagramm_Datenfluss.drawio.png>
 Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used on input line 69.
@@ -1240,7 +1235,7 @@ Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used o
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./figures/Test-Mesh.jpg>]
-<./figures/System.jpg, id=173, 1505.625pt x 834.11626pt>
+<./figures/System.jpg, id=166, 1505.625pt x 834.11626pt>
 File: ./figures/System.jpg Graphic file (type jpg)
 <use ./figures/System.jpg>
 Package pdftex.def Info: ./figures/System.jpg  used on input line 85.
@@ -1259,7 +1254,7 @@ Overfull \hbox (1.15144pt too wide) in paragraph at lines 7--8
 []\T1/ptm/m/n/11.04124 Zusätzliche Sen-sor-daten wer-den dem Rasp-berry Pi 4 B über die in der Tes-tumge-bung ein-gerichtete
  []
 
-<./figures/SystemDiagramv2.drawio.png, id=190, 875.27pt x 972.63374pt>
+<./figures/SystemDiagramv2.drawio.png, id=183, 875.27pt x 972.63374pt>
 File: ./figures/SystemDiagramv2.drawio.png Graphic file (type png)
 <use ./figures/SystemDiagramv2.drawio.png>
 Package pdftex.def Info: ./figures/SystemDiagramv2.drawio.png  used on input line 11.
@@ -1294,7 +1289,7 @@ Overfull \hbox (26.76176pt too wide) in paragraph at lines 21--21
  []
 
 [11]) [12] (./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
-<./figures/Fusions_architektur.png, id=239, 839.135pt x 1122.1925pt>
+<./figures/Fusions_architektur.png, id=234, 839.135pt x 1122.1925pt>
 File: ./figures/Fusions_architektur.png Graphic file (type png)
 <use ./figures/Fusions_architektur.png>
 Package pdftex.def Info: ./figures/Fusions_architektur.png  used on input line 18.
@@ -1305,32 +1300,73 @@ Overfull \hbox (5.29176pt too wide) in paragraph at lines 29--30
  []
 
 [14 <./figures/Fusions_architektur.png>]
-<./figures/masking_attention_is_all_you_need.png, id=258, 1401.235pt x 829.0975pt>
+<./figures/masking_attention_is_all_you_need.png, id=253, 1401.235pt x 829.0975pt>
 File: ./figures/masking_attention_is_all_you_need.png Graphic file (type png)
 <use ./figures/masking_attention_is_all_you_need.png>
 Package pdftex.def Info: ./figures/masking_attention_is_all_you_need.png  used on input line 45.
 (pdftex.def)             Requested size: 320.57364pt x 189.67633pt.
- [15 <./figures/masking_attention_is_all_you_need.png>]) [16]
-LaTeX Font Info:    Calculating math sizes for size <13.24945> on input line 261.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13.24945> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 261.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.80466> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 261.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.94974> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 261.
- [17] [18]
-Overfull \hbox (0.4019pt too wide) in paragraph at lines 287--287
+ [15 <./figures/masking_attention_is_all_you_need.png>]) [16] [17]
+Overfull \hbox (21.74068pt too wide) in paragraph at lines 258--258
+[]\T1/ptm/m/n/22.8996 Methodik: Gewichtete Ag-gre-ga-tion von Threat
+ []
+
+(./Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex
+Overfull \hbox (3.1534pt too wide) in paragraph at lines 10--11
+\T1/ptm/m/n/11.04124 dieses Sät-ti-gungsver-hal-ten wird sichergestellt, dass zusät-zliche De-tek-tio-nen ab einem gewis-
+ []
+
+) (./Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex
+<./figures/agg_formel_vergleich.png, id=299, 1835.85875pt x 322.20375pt>
+File: ./figures/agg_formel_vergleich.png Graphic file (type png)
+<use ./figures/agg_formel_vergleich.png>
+Package pdftex.def Info: ./figures/agg_formel_vergleich.png  used on input line 6.
+(pdftex.def)             Requested size: 427.43153pt x 75.01483pt.
+
+Overfull \hbox (13.90425pt too wide) in paragraph at lines 12--14
+[]\T1/ptm/b/n/11.04124 Asymptotische Gewich-tungs-funk-tion: \T1/ptm/m/n/11.04124 Zur Mod-el-lierung der Rel-e-vanz wird eine Funk-tion gewählt,
+ []
+
+[18 <./figures/agg_formel_vergleich.png>]
+Overfull \hbox (21.09277pt too wide) in paragraph at lines 25--26
+[]\T1/ptm/m/n/11.04124 Die prak-tis-che Um-set-zung der beschriebe-nen Gewich-tungslogik ist in List-ing []10.3[] (\T1/aett/m/n/11.04124 aggregation.py\T1/ptm/m/n/11.04124 )
+ []
+
+
+Overfull \hbox (27.4073pt too wide) in paragraph at lines 35--36
+\T1/ptm/m/n/11.04124 Theory-Funktion wurde die \T1/ptm/m/it/11.04124 Lo-gis-tis-che Sigmoid-Funktion \T1/ptm/m/n/11.04124 evaluiert. Sie ist im Bere-ich des maschinellen
+ []
+
+[19]) (./Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex
+Overfull \hbox (40.58545pt too wide) in paragraph at lines 8--9
+\T1/ptm/m/n/11.04124 gegenüber vari-ablen Input-Kardinalitäten wird durch die Funk-tion \T1/aett/m/n/11.04124 ag-gre-gate_weighted_reports
+ []
+
+
+Overfull \hbox (6.79947pt too wide) in paragraph at lines 9--10
+\T1/ptm/m/n/11.04124 Funk-tion \T1/aett/m/n/11.04124 count_attack_ongoing_per_report\T1/ptm/m/n/11.04124 . Diese ex-trahiert die An-zahl der Einzelde-
+ []
+
+[20]) [21] [22]
+Overfull \hbox (0.4019pt too wide) in paragraph at lines 292--292
 []\T1/ptm/m/n/15.89941 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die
  []
 
-[19] [20]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 305.
+[23] [24]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 310.
  (./code_sections/reporter.py
 
 LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
-[21] [22]) [23] (./code_sections/queries.py [24]) [25] (./thesis.bbl
+[25] [26]) [27] (./code_sections/queries.py [28]) (./code_sections/aggregation.py [29]
+LaTeX Font Info:    Calculating math sizes for size <9.20114> on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.20114> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.80888> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.52074> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+ [30] [31]) [32] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1338,98 +1374,98 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 1.
 
-[26]) [27]
-Overfull \hbox (22.25372pt too wide) in alignment at lines 331--336
+[33]) [34]
+Overfull \hbox (22.25372pt too wide) in alignment at lines 341--346
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 336--342
+Overfull \hbox (22.25372pt too wide) in alignment at lines 346--352
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 342--344
+Overfull \hbox (22.25372pt too wide) in alignment at lines 352--354
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 344--346
+Overfull \hbox (22.25372pt too wide) in alignment at lines 354--356
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 []|\T1/ptm/m/n/11.04124 Grammatik- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 []|\T1/ptm/m/n/11.04124 Der gener-ierte Out-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 wurde auss-chlieÿlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 zur Über-prü-fung und
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 348--349
+Underfull \hbox (badness 1960) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 Op-ti-mierung der Gram-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 matik, Rechtschrei-bung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 und Les-barkeit ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 wen-det. Sämtliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 y-sen, In-ter-pre-ta-tio-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 und wis-senschaftliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 \T1/ptm/m/n/11.04124 Schlussfol-gerun-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 []|\T1/ptm/m/n/11.04124 Umformulierung von
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 \T1/ptm/m/n/11.04124 Sätzen zur besseren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 \T1/ptm/m/n/11.04124 Ver-ständlichkeit und
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 346--350
+Overfull \hbox (22.25372pt too wide) in alignment at lines 356--360
  [] [] [] [] [] 
  []
 
@@ -1438,7 +1474,10 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 356.
+(scrbook)              This could result in several error messages on input line 366.
+
+
+LaTeX Warning: Marginpar on page  moved.
 
 
 LaTeX Warning: Marginpar on page  moved.
@@ -1449,7 +1488,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 375.
+(scrbook)              This could result in several error messages on input line 386.
 
 (./thesis.tdo)
 \tf@tdo=\write6
@@ -1459,7 +1498,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.375 \newpage
+l.386 \newpage
                [2] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1476,18 +1515,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32425 strings out of 476106
- 607647 string characters out of 5793932
- 2148975 words of memory out of 5000000
- 53435 multiletter control sequences out of 15000+600000
- 632568 words of font info for 173 fonts, out of 8000000 for 9000
+ 32652 strings out of 476106
+ 612731 string characters out of 5793932
+ 2181975 words of memory out of 5000000
+ 53528 multiletter control sequences out of 15000+600000
+ 630202 words of font info for 172 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 122i,9n,121p,10968b,2395s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,9n,121p,10968b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (33 pages, 786694 bytes).
+Output written on thesis.pdf (40 pages, 888146 bytes).
 PDF statistics:
- 876 PDF objects out of 1000 (max. 8388607)
- 790 compressed objects within 8 object streams
- 348 named destinations out of 1000 (max. 500000)
- 426 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1064 PDF objects out of 1200 (max. 8388607)
+ 967 compressed objects within 10 object streams
+ 468 named destinations out of 1000 (max. 500000)
+ 415 words of extra memory for PDF output out of 10000 (max. 10000000)
 

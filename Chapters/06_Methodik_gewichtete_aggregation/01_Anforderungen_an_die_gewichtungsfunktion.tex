@@ -1,0 +1,11 @@
+\section{Anforderungen an die Gewichtungsfunktion}
+
+Für die Konzeption der Gewichtungsfunktion ergeben sich aus dem Anwendungskontext der CTI-Reports folgende zentrale Anforderungen:
+
+\begin{itemize}
+    \item \textbf{Kardinalitätsinvarianz und Extraktion eines konsistenten Merkmalsraums:} Da die Anzahl der liefernden Knoten und damit der eingehenden CTI-Reports im operativen Betrieb stetig fluktuiert, muss die Gewichtungsfunktion eine beliebige Anzahl von Input-Mengen verarbeiten können. Ziel ist die Extraktion einer gleichbleibenden Informationsmenge (Fixed-Size Representation) aus diesen variablen Eingangsdaten \cite[Sec.~1]{zaheer2017deepsets} \cite[Sec.~1]{velickovic2018gat}. Dies stellt sicher, dass der resultierende Merkmalsvektor unabhängig von der ursprünglichen Report-Menge eine uniforme Struktur aufweist, was die notwendige Voraussetzung für die Performanz und Stabilität nachgelagerter Machine-Learning-Algorithmen ist (siehe Kapitel~\ref{chapter:diskussion_und_forschungsluecke}).
+
+    \item \textbf{Relevanzbasierte Gewichtung der Detektionen:} Um die Qualität der aggregierten Ergebnisse zu steigern, muss die Funktion die Relevanz der einzelnen CTI-Reports differenziert bewerten. Dies erfolgt auf Basis der in den Reports enthaltenen Einzeldetektionen. Durch die Einbeziehung dieser qualitativen Informationen in den Aggregationsprozess wird eine präzisere und aussagekräftigere Informationsverdichtung ermöglicht, wobei CTI-Reports mit einer erhöhten Anzahl an Einzeldetektionen eine höhere Relevanz in der Aggregation zugeordnet wird.
+
+    \item \textbf{Asymptotisches Sättigungsverhalten der Gewichtung:} Um eine übermäßige Dominanz einzelner Berichte mit extrem hohen Detektionszahlen zu vermeiden, darf die Gewichtungsfunktion kein unbegrenztes Wachstum aufweisen. Stattdessen wird eine Funktion gefordert, die gegen einen fest definierten Grenzwert (Asymptote) konvergiert. Durch dieses Sättigungsverhalten wird sichergestellt, dass zusätzliche Detektionen ab einem gewissen Schwellenwert nur noch einen marginalen Einfluss auf die Gesamtgewichtung haben, was eine Verzerrung der Ergebnisse durch statistische Ausreißer verhindert.
+\end{itemize}

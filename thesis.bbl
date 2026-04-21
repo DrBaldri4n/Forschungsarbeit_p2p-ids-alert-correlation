@@ -47,6 +47,12 @@ W.~W. Lo, S.~Layeghy, M.~Sarhan, M.~Gallagher, and M.~Portmann.
 \newblock 2022.
 \newblock Schlägt E-GraphSAGE vor, ein GNN-basiertes Netzwerk-Intrusion-Detection-System, das sowohl Kanten-Features als auch topologische Informationen aus Netzwerkflussdaten für die Erkennung von Angriffen in IoT-Netzwerken nutzt.
 
+\bibitem{norstad1999utility}
+J.~Norstad.
+\newblock An introduction to utility theory.
+\newblock 1999.
+\newblock Erläutert die mathematischen Grundlagen von Nutzenfunktionen, insbesondere die Konzepte der Nicht-Sättigung und Risikoaversion[cite: 11, 26]. Das Dokument führt die negative Exponential-Nutzenfunktion zur Modellierung konstanter absoluter Risikoaversion (CARA) ein und zeigt, wie mittels positiver affiner Transformationen konsistente Präferenzstrukturen skaliert werden können[cite: 112, 385, 412].
+
 \bibitem{pytorch2024multihead}
 {PyTorch Contributors}.
 \newblock {\em MultiheadAttention --- {PyTorch} 2.4 Documentation}.
@@ -68,6 +74,12 @@ A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez, {\L}.~Ka
 \newblock Attention is all you need.
 \newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)}, 2017.
 \newblock Führt die Transformer-Architektur ein, die ausschließlich auf Attention-Mechanismen basiert und Rekurrenz sowie Faltungen vollständig ersetzt, und erzielt State-of-the-Art-Ergebnisse bei maschineller Übersetzung.
+
+\bibitem{velickovic2018gat}
+P.~Veli{\v{c}}kovi{\'{c}}, G.~Cucurull, A.~Casanova, A.~Romero, P.~Li{\`{o}}, and Y.~Bengio.
+\newblock Graph attention networks.
+\newblock 2018.
+\newblock Präsentiert Graph Attention Networks (GATs), die Masked Self-Attention nutzen, um Knoten-Repräsentationen in Graphen zu lernen, ohne kostspielige Matrixoperationen oder Vorabkenntnis der Graphstruktur zu benötigen[cite: 19, 20].
 
 \bibitem{vinyals2016orderm}
 O.~Vinyals, S.~Bengio, and M.~Kudlur.

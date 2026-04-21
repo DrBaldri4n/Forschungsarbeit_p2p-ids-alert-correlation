@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1776419530.60995 "thesis.aux" "thesis.bbl" "thesis" 1776419533.51862 0
-  "./references.bib" 1776415806.76291 19102 d46fa440f2376f9a383b6efb5a5e103f ""
+["bibtex thesis"] 1776775227.09224 "thesis.aux" "thesis.bbl" "thesis" 1776775241.16988 0
+  "./references.bib" 1776773010.61929 20295 e8421e31aa60b2150c54eb404932c0de ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "thesis.aux" 1776419533.21501 42437 68e47059739070c8444ceeca0961a5cd "pdflatex"
+  "thesis.aux" 1776775239.68179 42116 7bd4717b2540197563c66507a9b79516 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1776419530.68376 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1776419533.51881 0
+["pdflatex"] 1776775227.5722 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1776775241.17116 0
   "/etc/texmf/web2c/texmf.cnf" 1722698732.88771 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1776416058.14869 13601 3c0a4022d57288c68774d6600f83987e ""
+  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1776760115.75474 14248 c76e6596f0df41736a10ac33e52b7499 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -268,8 +268,12 @@
   "Chapters/03_Systemarchitektur_und_Detection_Framework/01_Systemüberblick_und_verteilte_Kommunikation.tex" 1774274565.26196 6100 05e70236b7aba92b2318fe8114ebe332 ""
   "Chapters/03_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex" 1774278761.56207 1836 2c27adfa4a47973b8412e17f57c2a91e ""
   "Chapters/03_Systemarchitektur_und_Detection_Framework/03_Detection_Units_der_Ladeinfrastruktur.tex" 1774961601.49007 6240 20eef7e8a6e3df8b8e9da3be9cf8294b ""
-  "Chapters/04_konzeption_des_thread_reports/thread_report.tex" 1775119882.83335 7069 3cf6e7dc3f60132827523612ff3204d7 ""
-  "Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex" 1776419526.26209 9136 9d1754a646f7a339581810d18ed333df ""
+  "Chapters/04_konzeption_des_thread_reports/thread_report.tex" 1776677955.86516 7069 3cf6e7dc3f60132827523612ff3204d7 ""
+  "Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex" 1776672127.32292 9870 99c21748de12e0e9f3c455f73bf7d4d5 ""
+  "Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex" 1776773923.09283 2200 2d75a7c00bc2f55121e174c9165b289d ""
+  "Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex" 1776775065.23472 5431 93a8f40add4e8ed48aa1dffcc0c5b710 ""
+  "Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex" 1776775211.87194 3085 bf3970abf520c21e8135888fdcb0787c ""
+  "code_sections/aggregation.py" 1776678444.27418 3292 e4668b840b38732765610e9f44b0a702 ""
   "code_sections/queries.py" 1774279796.3852 4144 7edd2b16b9b8242c8829100a38e6ff84 ""
   "code_sections/reporter.py" 1774878689.88104 4606 cb26957fe33298ed8685e9919aea6668 ""
   "figures/DataFlowIPFS.drawio.png" 1774001585.55875 56836 d8736c841d69902d15367555e622ce03 ""
@@ -278,15 +282,16 @@
   "figures/System.jpg" 1774001585.59175 70976 3cf4e7ce8f48be3c19201461c9ad1575 ""
   "figures/SystemDiagramv2.drawio.png" 1774277389.48096 108127 e62178aebe8597e67238ebca0c2d6db1 ""
   "figures/Test-Mesh.jpg" 1774001585.61275 26709 81ed902996ed14a8b7bfdc6fae26f033 ""
+  "figures/agg_formel_vergleich.png" 1776764013.68341 85733 fb48de3d3cee3c3803f774489d2bec0b ""
   "figures/deployment_software_modules_v1.drawio.png" 1774001585.53175 85961 ef6279e6834a33123df366fa3a7b84c0 ""
   "figures/masking_attention_is_all_you_need.png" 1776084913.10818 142484 cc4bd145d246eba6bf0d9bade406d4ef ""
   "logos/oth-logo.png" 1491634092 72704 28cd978a7a026ba33f822ab10581c80a ""
-  "thesis.aux" 1776419533.21501 42437 68e47059739070c8444ceeca0961a5cd "pdflatex"
-  "thesis.bbl" 1776419530.67804 5864 44964a1b047de9ad93645f15ff9bd3eb "bibtex thesis"
-  "thesis.out" 1776419531.88402 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.tdo" 1776419533.22301 2374 6cbeb4842d8606e91e68fe7dc75f4df6 "pdflatex"
-  "thesis.tex" 1776416058.14869 13601 3c0a4022d57288c68774d6600f83987e ""
-  "thesis.toc" 1776419533.22301 5026 d681d2182d423f7791aa7fc51adddcf6 "pdflatex"
+  "thesis.aux" 1776775239.68179 42116 7bd4717b2540197563c66507a9b79516 "pdflatex"
+  "thesis.bbl" 1776775227.49985 6798 a1d13abbf193909b80b070ece5936474 "bibtex thesis"
+  "thesis.out" 1776775233.45882 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.tdo" 1776775239.71879 2569 7e2d024d5ddab22d62879ce5ef6c09b7 "pdflatex"
+  "thesis.tex" 1776760115.75474 14248 c76e6596f0df41736a10ac33e52b7499 ""
+  "thesis.toc" 1776775239.71779 4683 a437efcba896bd90e1562ebcbfca6918 "pdflatex"
   "thesisclass.cls" 1760532836 7338 846104f6b6832a0fb61015bbee24f22d ""
   (generated)
   "thesis.aux"

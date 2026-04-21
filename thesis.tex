@@ -74,9 +74,10 @@
            {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
            {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
            {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-           {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+           {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1 {Σ}{{$\Sigma$}}1
            {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
 }
+
 %\newcommand{\mytype}{\iflanguage{english}{Bachelor's Thesis}{Bachelorarbeit}} 
 \newcommand{\mytype}{\iflanguage{english}{Research work}{Masterarbeit}} 
 %\newcommand{\mytype}{\iflanguage{english}{Seminar Thesis}{Seminararbeit}} 
@@ -249,22 +250,26 @@
 \chapter{Theoretische Grundlagen der Informationsfusion}
 \label{theoretische_grundlagen_der_informationsfusion}
     \input{Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex}
-    \section{State-of-the-Art: Deep Sets und Attention Mechanismen}
+    % \section{State-of-the-Art: Deep Sets und Attention Mechanismen}
     % TODO: Wissenschaftliche Begründung der Methodenwahl (Deep Sets + Attention) hier einarbeiten
 
 \newpage
 
-\chapter{Methodik: Gewichtete Aggregation mittels Utility Theory}
-    \section{Anforderungen an die Gewichtungsfunktion}
-    \section{Mathematische Modellierung}
-        % \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
-		\subsection{Die Gewichtungsformel: \texorpdfstring{$w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}{w(n) formula}}
-		\todohl{}{NIcht in die überschrift}
-        \subsection{Parameteranalyse: Monotonie und Diminishing Returns}
-        \subsection{Abgrenzung zur originären Utility Theory}
-        % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
-        %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
-    \section{Implementierung des Attention-basierten Selektionsmodells}
+\chapter{Methodik: Gewichtete Aggregation von Threat Reports}
+	\input{Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex}
+	\input{Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex}
+	\input{Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex}
+	
+    % \section{Anforderungen an die Gewichtungsfunktion}
+    % \section{Mathematische Modellierung}
+    %     % \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
+	% 	\subsection{Die Gewichtungsformel: \texorpdfstring{$w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}{w(n) formula}}
+	% 	\todohl{}{NIcht in die überschrift}
+    %     \subsection{Parameteranalyse: Monotonie und Diminishing Returns}
+    %     \subsection{Abgrenzung zur originären Utility Theory}
+    %     % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
+    %     %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
+    % \section{Implementierung des Attention-basierten Selektionsmodells}
 
 \newpage
 
@@ -302,14 +307,19 @@
   language=Python,
   caption={reporter.py -- Logik der Report-Generierung},
   label={lst:reporter}
-]{code_sections/reporter.py}
+]{code\_sections/reporter.py}
 
 \lstinputlisting[
   language=Python,
-  caption={queries.py – Logik der Datenbankabfragen},
+  caption={queries.py -- Logik der Datenbankabfragen},
   label={lst:queries}
-]{code_sections/queries.py}
+]{code\_sections/queries.py}
 
+\lstinputlisting[
+  language=Python,
+  caption={aggregation.py -- Implementierung der Gewichtungsfunktion und Aggregationslogik},
+  label={lst:aggregation}
+]{code\_sections/aggregation.py}
 
 \newpage
 
@@ -345,8 +355,8 @@ Kapitel & KI-Tool & Version & Anwendung & Erklärung/Kommentar \\
 \bottomrule
 \endlastfoot
 % Dokumentation der Perplexity AI-Nutzung
-1.0--4.2 & Perplexity AI & 2024 & Grammatik- und Rechtschreibkorrektion & Der generierte Output wurde ausschließlich zur Überprüfung und Optimierung der Grammatik, Rechtschreibung und Lesbarkeit verwendet. Sämtliche fachlichen Inhalte, Analysen, Interpretationen und wissenschaftliche Schlussfolgerungen stammen vollständig von mir. \\
-1.0--4.2 & Perplexity AI & 2024 & Verbesserung der Lesbarkeit & Umformulierung von Sätzen zur besseren Verständlichkeit und Fluss des Textes, ohne inhaltliche Veränderungen. \\
+1.0--4.2 & Perplexity AI & 2026 & Grammatik- und Rechtschreibkorrektion & Der generierte Output wurde ausschließlich zur Überprüfung und Optimierung der Grammatik, Rechtschreibung und Lesbarkeit verwendet. Sämtliche fachlichen Inhalte, Analysen, Interpretationen und wissenschaftliche Schlussfolgerungen stammen vollständig von mir. \\
+1.0--4.2 & Gemini AI & 2026 & Verbesserung der Lesbarkeit & Umformulierung von Sätzen zur besseren Verständlichkeit und Fluss des Textes, ohne inhaltliche Veränderungen. \\
 \end{longtable}
 %% ==================
 
@@ -369,6 +379,7 @@ Ich versichere hiermit wahrheitsgemäß, die Arbeit selbstständig verfasst und 
 
 \todohl{Anomaly Detection Einheit | Anomalydetectioneinheit | usw..}{immer gleich schreiben}
 \todohl{Detection oder Detektion}{immer gleich schreiben}
+\todohl{}{zu jeder quelle auf welche ich im text verweise noch den abschnitt wo es im jeweiligen paper zu fiden ist hinzufügen}
 
 \newpage
 \listoftodos
