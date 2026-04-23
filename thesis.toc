@@ -36,13 +36,13 @@
 \contentsline {subsection}{\numberline {6.2.2}Sigmoid-Funktion}{19}{subsection.6.2.2}%
 \contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{20}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Evaluation}{22}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Qualität der aggregierten Threat Reports}{22}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Nützlichkeit für die interne Nutzung der Knoten}{22}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{23}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{23}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{23}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{23}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Zusammenfassung und Fazit}{24}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Quellcode}{25}{chapter.10}%
-\contentsline {chapter}{Bibliography}{33}{section*.27}%
+\contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Vergleich der Gewichtungsfunktionen}{24}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Echo Chamber Analyse}{24}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{26}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{26}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{26}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{26}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Quellcode}{27}{chapter.9}%
+\contentsline {chapter}{Bibliography}{37}{section*.35}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

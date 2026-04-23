@@ -198,6 +198,7 @@
 	MSE 	  & Mean Squared Error \\
 	LSTM 	  & Long Short Term Memory \\
 	GAT	 	  & Graph Attention Networks \\
+	NaN	   	  & Not a Number \\
 	
 
 
@@ -260,31 +261,16 @@
 	\input{Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex}
 	\input{Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex}
 	\input{Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex}
-	
-    % \section{Anforderungen an die Gewichtungsfunktion}
-    % \section{Mathematische Modellierung}
-    %     % \subsection{Die Gewichtungsformel: $w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}
-	% 	\subsection{Die Gewichtungsformel: \texorpdfstring{$w(n) = BASE\_WEIGHT + (MAX\_WEIGHT - BASE\_WEIGHT) \times (1 - \exp(-K \cdot n))$}{w(n) formula}}
-	% 	\todohl{}{NIcht in die überschrift}
-    %     \subsection{Parameteranalyse: Monotonie und Diminishing Returns}
-    %     \subsection{Abgrenzung zur originären Utility Theory}
-    %     % TODO: Die Adaption der Utility Theory für Gewichtungsfunktionen methodisch begründen
-    %     %       und ggf. alternative Ansätze abwägen; Einschränkungen in der Diskussion thematisieren
-    % \section{Implementierung des Attention-basierten Selektionsmodells}
 
-\newpage
-
-% \chapter{Erweiterung der Systemarchitektur und Implementierung}
-%     \section{Generierte Threat Reports: Format und Struktur}
-%     \section{Integration von Threat Reporter und Aggregationslogik}
-%     \section{Architektur der Fusionskomponente im P2P-Netzwerk}
-    % TODO Grafik einfügen wie die Architektur nun verändert wurde
-    
 \newpage
 
 \chapter{Evaluation}
-    \section{Qualität der aggregierten Threat Reports}
-    \section{Nützlichkeit für die interne Nutzung der Knoten}
+	\input{Chapters/07_Evaluation/01_report_generierung.tex}
+	\input{Chapters/07_Evaluation/02_vergleich_der_gewichtungsfunktionen.tex}
+	\input{Chapters/07_Evaluation/03_echo_chamber_analyse.tex}
+
+    % \section{Qualität der aggregierten Threat Reports}
+    % \section{Nützlichkeit für die interne Nutzung der Knoten}
 
 \newpage
 
@@ -294,9 +280,11 @@
     \section{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
     \section{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
 
-\newpage
+	- weniger Daten bessere ergebnisse wie in kapitel Konzetiop des Threat Reports beschrieben?
+	- 30 sekunden intervall gut oder soll es verößert verkleinert werden?
 
-\chapter{Zusammenfassung und Fazit}
+% \newpage
+% \chapter{Zusammenfassung und Fazit}
 
 \newpage
 
@@ -321,6 +309,12 @@
   caption={aggregation.py -- Implementierung der Gewichtungsfunktion und Aggregationslogik},
   label={lst:aggregation}
 ]{code\_sections/aggregation.py}
+
+\lstinputlisting[
+  language=Python,
+  caption={filters.py -- Logik der Filterung von CTI-Reports},
+  label={lst:filter}
+]{code\_sections/filters.py}
 
 \newpage
 

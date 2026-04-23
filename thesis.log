@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  22 APR 2026 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  23 APR 2026 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1182,14 +1182,14 @@ LaTeX Warning: Marginpar on page 2 moved.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.229 \newpage
+l.230 \newpage
                [2] (./Chapters/02_related_work/01_related_work.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.235 \newpage
+l.236 \newpage
                [3]
-Overfull \hbox (3.3057pt too wide) in paragraph at lines 237--237
+Overfull \hbox (3.3057pt too wide) in paragraph at lines 238--238
 []\T1/ptm/m/n/22.8996 Systemarchitektur und De-tec-tion Frame-work 
  []
 
@@ -1288,8 +1288,12 @@ Overfull \hbox (26.76176pt too wide) in paragraph at lines 21--21
 []\T1/ptm/m/n/15.89941 Statistische Merk-mal-sag-gre-ga-tion mit-tels Sliding-Window-Analyse 
  []
 
-[11]) [12] (./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
-<./figures/Fusions_architektur.png, id=234, 839.135pt x 1122.1925pt>
+[11]
+
+LaTeX Warning: Marginpar on page 12 moved.
+
+) [12] (./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
+<./figures/Fusions_architektur.png, id=236, 839.135pt x 1122.1925pt>
 File: ./figures/Fusions_architektur.png Graphic file (type png)
 <use ./figures/Fusions_architektur.png>
 Package pdftex.def Info: ./figures/Fusions_architektur.png  used on input line 18.
@@ -1300,13 +1304,13 @@ Overfull \hbox (5.29176pt too wide) in paragraph at lines 29--30
  []
 
 [14 <./figures/Fusions_architektur.png>]
-<./figures/masking_attention_is_all_you_need.png, id=253, 1401.235pt x 829.0975pt>
+<./figures/masking_attention_is_all_you_need.png, id=256, 1401.235pt x 829.0975pt>
 File: ./figures/masking_attention_is_all_you_need.png Graphic file (type png)
 <use ./figures/masking_attention_is_all_you_need.png>
 Package pdftex.def Info: ./figures/masking_attention_is_all_you_need.png  used on input line 45.
 (pdftex.def)             Requested size: 320.57364pt x 189.67633pt.
  [15 <./figures/masking_attention_is_all_you_need.png>]) [16] [17]
-Overfull \hbox (21.74068pt too wide) in paragraph at lines 259--259
+Overfull \hbox (21.74068pt too wide) in paragraph at lines 260--260
 []\T1/ptm/m/n/22.8996 Methodik: Gewichtete Ag-gre-ga-tion von Threat
  []
 
@@ -1316,7 +1320,7 @@ Overfull \hbox (3.1534pt too wide) in paragraph at lines 10--11
  []
 
 ) (./Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex
-<./figures/agg_formel_vergleich.png, id=299, 1835.85875pt x 322.20375pt>
+<./figures/agg_formel_vergleich.png, id=302, 1835.85875pt x 322.20375pt>
 File: ./figures/agg_formel_vergleich.png Graphic file (type png)
 <use ./figures/agg_formel_vergleich.png>
 Package pdftex.def Info: ./figures/agg_formel_vergleich.png  used on input line 6.
@@ -1327,8 +1331,8 @@ Overfull \hbox (13.90425pt too wide) in paragraph at lines 12--14
  []
 
 [18 <./figures/agg_formel_vergleich.png>]
-Overfull \hbox (21.09277pt too wide) in paragraph at lines 25--26
-[]\T1/ptm/m/n/11.04124 Die prak-tis-che Um-set-zung der beschriebe-nen Gewich-tungslogik ist in List-ing []10.3[] (\T1/aett/m/n/11.04124 aggregation.py\T1/ptm/m/n/11.04124 )
+Overfull \hbox (15.57216pt too wide) in paragraph at lines 25--26
+[]\T1/ptm/m/n/11.04124 Die prak-tis-che Um-set-zung der beschriebe-nen Gewich-tungslogik ist in List-ing []9.3[] (\T1/aett/m/n/11.04124 aggregation.py\T1/ptm/m/n/11.04124 )
  []
 
 
@@ -1347,23 +1351,75 @@ Overfull \hbox (6.79947pt too wide) in paragraph at lines 10--11
  []
 
 
-Overfull \hbox (10.0113pt too wide) in paragraph at lines 11--12
-\T1/ptm/m/n/11.04124 definierten Gren-zw-ert kon-vergieren (siehe Kapi-tel []6.2[]). Während die Utility-Theory-Funktion
+Overfull \hbox (22.40038pt too wide) in paragraph at lines 11--12
+\T1/aett/m/n/11.04124 add_report_weight_sigmoid \T1/ptm/m/n/11.04124 (List-ing []9.3[]) sind so konzip-iert, dass sie gegen einen definierten
  []
 
-[20]) [21] [22]
-Overfull \hbox (0.4019pt too wide) in paragraph at lines 293--293
+[20]) [21] (./Chapters/07_Evaluation/01_report_generierung.tex
+<figures/gewichtung_utility_theory_5_CTIreports.png, id=347, 614.295pt x 103.38625pt>
+File: figures/gewichtung_utility_theory_5_CTIreports.png Graphic file (type png)
+<use figures/gewichtung_utility_theory_5_CTIreports.png>
+Package pdftex.def Info: figures/gewichtung_utility_theory_5_CTIreports.png  used on input line 10.
+(pdftex.def)             Requested size: 363.31941pt x 61.14722pt.
+<figures/Threat_report_auszug.png, id=348, 1818.795pt x 106.3975pt>
+File: figures/Threat_report_auszug.png Graphic file (type png)
+<use figures/Threat_report_auszug.png>
+Package pdftex.def Info: figures/Threat_report_auszug.png  used on input line 21.
+(pdftex.def)             Requested size: 427.43153pt x 25.0034pt.
+<figures/Threat_report_auszug_attackprobability.png, id=349, 1818.795pt x 83.31125pt>
+File: figures/Threat_report_auszug_attackprobability.png Graphic file (type png)
+<use figures/Threat_report_auszug_attackprobability.png>
+Package pdftex.def Info: figures/Threat_report_auszug_attackprobability.png  used on input line 22.
+(pdftex.def)             Requested size: 427.43153pt x 19.57814pt.
+ [22 <./figures/gewichtung_utility_theory_5_CTIreports.png> <./figures/Threat_report_auszug.png> <./figures/Threat_report_auszug_attackprobability.png>]
+<figures/Threat_report_Zeile0.png, id=362, 1724.4425pt x 27.10126pt>
+File: figures/Threat_report_Zeile0.png Graphic file (type png)
+<use figures/Threat_report_Zeile0.png>
+Package pdftex.def Info: figures/Threat_report_Zeile0.png  used on input line 39.
+(pdftex.def)             Requested size: 427.43153pt x 6.71739pt.
+<figures/Threat_report_auszug_NaN.png, id=363, 1724.4425pt x 79.29625pt>
+File: figures/Threat_report_auszug_NaN.png Graphic file (type png)
+<use figures/Threat_report_auszug_NaN.png>
+Package pdftex.def Info: figures/Threat_report_auszug_NaN.png  used on input line 40.
+(pdftex.def)             Requested size: 427.43153pt x 19.6546pt.
+<figures/Threat_report_auszug_NaN_aggregation.png, id=364, 910.40125pt x 271.0125pt>
+File: figures/Threat_report_auszug_NaN_aggregation.png Graphic file (type png)
+<use figures/Threat_report_auszug_NaN_aggregation.png>
+Package pdftex.def Info: figures/Threat_report_auszug_NaN_aggregation.png  used on input line 49.
+(pdftex.def)             Requested size: 427.43153pt x 127.23941pt.
+
+Overfull \hbox (1.58572pt too wide) in paragraph at lines 65--68
+[]\T1/ptm/b/n/11.04124 Szenario 4 ^^U Manuell ma-nip-ulierter Ausreiÿer-Report \T1/ptm/m/n/11.04124 Alle De-tec-tions auf pos-i-tiv gesetzt
+ []
+
+) (./Chapters/07_Evaluation/02_vergleich_der_gewichtungsfunktionen.tex [23 <./figures/Threat_report_Zeile0.png> <./figures/Threat_report_auszug_NaN.png> <./figures/Threat_report_auszug_NaN_aggregation.png>]
+Overfull \hbox (13.76065pt too wide) in paragraph at lines 37--38
+[]\T1/ptm/m/n/11.04124 Utility The-ory: sen-si-tiver gegenüber schwachen Sig-nalen, höheres Risiko False-Positive-Verstärkung 
+ []
+
+) (./Chapters/07_Evaluation/03_echo_chamber_analyse.tex
+Overfull \hbox (7.8428pt too wide) in paragraph at lines 39--1
+[]\T1/ptm/m/n/11.04124 Sigmoid: kon-ser-va-tiver, benötigt Min-destzahl an De-tec-tions für sig-nifikante Gewich-tungser-höhung,
+ []
+
+[24])
+Overfull \hbox (11.65129pt too wide) in paragraph at lines 35--271
+[]\T1/ptm/m/n/11.04124 Mögliche Gegen-maÿ-nahme als Aus-blick: rep-u-ta-tions-basierte Gewich-tung, Byzantine-fault-tolerante
+ []
+
+[25]
+Overfull \hbox (0.4019pt too wide) in paragraph at lines 279--279
 []\T1/ptm/m/n/15.89941 Auswirkungen un-ter-schiedlicher Gewich-tungsstrate-gien auf die
  []
 
-[23] [24]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 311.
+[26]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 299.
  (./code_sections/reporter.py
 
 LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
-[25] [26]) [27] (./code_sections/queries.py [28]) (./code_sections/aggregation.py [29] [30]
+[27] [28]) [29] (./code_sections/queries.py [30]) (./code_sections/aggregation.py [31] [32]
 LaTeX Font Info:    Calculating math sizes for size <9.20114> on input line 60.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.20114> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
@@ -1371,7 +1427,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.80888> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.52074> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
- [31]) [32] (./thesis.bbl
+ [33]) (./code_sections/filters.py [34] [35]) [36] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1379,98 +1435,98 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 1.
 
-[33]) [34]
-Overfull \hbox (22.25372pt too wide) in alignment at lines 342--347
+[37]) [38]
+Overfull \hbox (22.25372pt too wide) in alignment at lines 336--341
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 347--353
+Overfull \hbox (22.25372pt too wide) in alignment at lines 341--347
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 353--355
+Overfull \hbox (22.25372pt too wide) in alignment at lines 347--349
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 355--357
+Overfull \hbox (22.25372pt too wide) in alignment at lines 349--351
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--359
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\T1/ptm/m/n/11.04124 Grammatik- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 []|\T1/ptm/m/n/11.04124 Der gener-ierte Out-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 wurde auss-chlieÿlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 zur Über-prü-fung und
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 359--360
+Underfull \hbox (badness 1960) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 Op-ti-mierung der Gram-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 matik, Rechtschrei-bung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 und Les-barkeit ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 wen-det. Sämtliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 y-sen, In-ter-pre-ta-tio-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 und wis-senschaftliche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 \T1/ptm/m/n/11.04124 Schlussfol-gerun-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 []|\T1/ptm/m/n/11.04124 Umformulierung von
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 \T1/ptm/m/n/11.04124 Sätzen zur besseren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 \T1/ptm/m/n/11.04124 Ver-ständlichkeit und
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 357--361
+Overfull \hbox (22.25372pt too wide) in alignment at lines 351--355
  [] [] [] [] [] 
  []
 
@@ -1479,7 +1535,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 367.
+(scrbook)              This could result in several error messages on input line 361.
 
 
 LaTeX Warning: Marginpar on page  moved.
@@ -1493,7 +1549,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 387.
+(scrbook)              This could result in several error messages on input line 381.
 
 (./thesis.tdo)
 \tf@tdo=\write6
@@ -1503,7 +1559,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.387 \newpage
+l.381 \newpage
                [2] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1520,18 +1576,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32676 strings out of 476106
- 613097 string characters out of 5793932
- 2207975 words of memory out of 5000000
- 53526 multiletter control sequences out of 15000+600000
+ 32913 strings out of 476106
+ 618786 string characters out of 5793932
+ 2212975 words of memory out of 5000000
+ 53653 multiletter control sequences out of 15000+600000
  630202 words of font info for 172 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,9n,121p,10968b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (40 pages, 889626 bytes).
+Output written on thesis.pdf (44 pages, 1098672 bytes).
 PDF statistics:
- 1096 PDF objects out of 1200 (max. 8388607)
- 999 compressed objects within 10 object streams
- 494 named destinations out of 1000 (max. 500000)
- 415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1248 PDF objects out of 1440 (max. 8388607)
+ 1133 compressed objects within 12 object streams
+ 591 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 

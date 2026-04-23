@@ -22,6 +22,7 @@
 
     Neben den instantanen Merkmalswerten (Features) und Anomalie-Indikatoren der Detektionseinheit werden zusätzlich historische Daten mittels \textit{Sliding Windows} importiert. Pro Threat Report werden drei dieser Fenster definiert, welche jeweils den aktuellen Datenpunkt in Relation zu zwei vorangegangenen Zeitpunkten setzen:
 
+    \todohl{Logikfrage.}{ist das wirklich immer im vergleich oder zeigt mir das die min/max/avg werte innerhalb des fensters an?}
     \begin{itemize}
         \item \textbf{Window 1:} 0 Sekunden im Vergleich mit -30 s und -60 s
         \item \textbf{Window 2:} -30 Sekunden im Vergleich mit -60 s und -90 s
@@ -32,10 +33,10 @@
     % heigl2021 "we computed the descriptive statistics maximum, minimum, mean and median values of ∆ts for each"
     % boswell2025 "This sliding window approach generates a series of aggregated features for each time interval, capturing characteristics such as flow rate, directional ratios, entropy metrics, and packet-level statistics."
 
-attack scenario
+\todohl{attack scenario}{Deutsch schreiben!}
     \begin{itemize}
-        \item \textbf{Mittelwert (Average):} Der Durchschnittswert innerhalb des Fensters.
-        \item \textbf{Extremwerte:} Minimum und Maximum im jeweiligen Intervall.
+        \item \textbf{Mittelwert:} \textit{Average} der Durchschnittswert innerhalb des Fensters.
+        \item \textbf{Extremwerte:} \textit{Minimum} und \textit{Maximum} im jeweiligen Intervall.
         \item \textbf{Median:} Der Zentralwert der Datenpunkte.
         \item \textbf{Zuwachs (Increase):} Die relative oder absolute Veränderung innerhalb des Fensters.
         \item \textbf{Summe:} Die kumulierten Werte des jeweiligen Zeitraums.

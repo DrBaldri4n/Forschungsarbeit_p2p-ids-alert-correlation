@@ -1,0 +1,70 @@
+\section{Generierung der Threat Reports}
+
+Um das System umfassend evaluieren zu können, wurden beispielhafte Threat Reports generiert, die ein breites Spektrum potenzieller Szenarien abdecken.
+Wie in Kapitel \ref{sec:detection_einheiten_der_ladeinfrastruktur} (Detection-Einheiten der Ladeinfrastruktur) dargelegt, wird ein Großteil der Flooding-Attacken durch die implementierten Detektionsmechanismen erkannt. Für die Testgenerierung wurde daher eine UDP-Flooding-Attacke mittels des Tools \texttt{hping3} durchgeführt: \\
+\texttt{hping3 --flood --udp -p 80 <IP-Adresse der Wallbox>}. \\
+Dabei reagierte wie erwartet lediglich die \textit{Power Temperature Detection} nicht, da diese ausschließlich physikalische Parameter wie Temperatur und Leistung überwacht und keine netzwerkspezifischen Daten analysiert. In diesem Szenario resultieren daraus fünf CTI-Reports, die variierende Feature-Werte und zeitlich leicht verschobene positive Detektionen aufweisen.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/gewichtung_utility_theory_5_CTIreports.png}
+    \caption{Output der Aggregation der fünf CTI-Reports aus Szenario 1}
+    \label{fig:auszug_threat_report_szenario1}
+\end{figure}
+
+Zur besseren Evaluation der Code-Struktur werden die relevantesten Parameter bei jeder Ausführung protokolliert und ausgegeben.
+
+In der folgenden Abbildungen werden die kumulierten Werte des Threat Reports verdeutlicht, darunter statistische Kennzahlen wie Durchschnitt (Avg), Minimum, Maximum, Median, Anstieg (Increase) sowie die Gesamtsumme. Die Analyse erfolgt über Sliding Windows, die vom aktuellen Zeitpunkt (Offset 0s) bis zu einem Rückblick von -60s reichen. Im vorliegenden Fall ist ersichtlich, dass die \textit{Attack Probability} der Hardware-Detection mit einer Wahrscheinlichkeit von über 0,98 identifiziert wurde. Diese sinkt im aktuellsten Zeitfenster (Offset 0s) signifikant auf einen Wert unter 0,01 ab. Dies deutet darauf hin, dass das Angriffsereignis entweder beendet oder erfolgreich abgewehrt wurde.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Threat_report_auszug.png}
+    \includegraphics[width=1\textwidth]{figures/Threat_report_auszug_attackprobability.png}
+    \caption{Übersicht der generierten Threat-Report-Szenarien}
+    \label{fig:auszug_threat_report}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Szenario 1 – NaN-Werte (Error Handling):} Zur Untersuchung des Umgangs mit NaN-Werten (Not-a-Number).
+    In diesem Szenario muss sichergestellt werden, dass die Generierung von Threat Reports auch bei unvollständigen oder fehlerhaften Daten robust bleibt. So kann es im laufenden Betrieb vorkommen, dass beispielsweise aufgrund von Netzwerkproblemen oder Sensor ausfällen von exportern keine Daten mehr über Prometheus bezogen werden könnnen (siehe Details zur Systemarchitektur siehe Kapitel 3 \ref{chapter:systemarchitektur}).
+    Die entscheidung des kompletten ausschlusses solcher Reports basiert auf der Tatsache, dass ein Report ohne valide Daten keine Informationsgrundlage bietet, um den Angriffsstatus der Wallbox zu beurteilen. Eine Substitution der NaN-Werte durch 0 oder andere Default-Werte wurde als nicht sinnvoll erachtet, da dies das Ergebnis der Bedrohungsanalyse verfälschen könnte \todohl{Somit wäre eine Ersetzung von NaN-Werten durch 0 oder andere Werte nicht sinnvoll gewesen.}{Quelle dafür hinzufügen}.
+    
+    So wurde im code eine funktion implementiert welche die generierten CTI-Reports auf NaN-Werte überprüft und diese gegebenenfalls ausschließt siehe Listing \ref{lst:filter} unter der funktion \texttt{filter\_reports\_with\_NaN}.
+    Aufgrund dieser implementierung wird erwartet, dass der erstellte CTI-Report mit ausgefallenen exporter und daraus resolutierenden NaN Werten bereits vor der Aggregation mit anderen Reports ausgeschlossen wird, und der User über diesen ausschluss informiert wird.
+
+    Um dieses Szeanario zu erzeugen, wurde während der kontinuierlichen Reporterstellung ein Datenexporter terminiert und neugestartet. Dies führte zu einer erhöhten Anzahl an NaN-Werten in den generierten CTI-Reports, da Feature-Werte über Prometheus nicht mehr bezogen werden konnten (Details zur Systemarchitektur siehe Kapitel~\ref{chapter:systemarchitektur}).
+    
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=1\textwidth]{figures/Threat_report_Zeile0.png}
+        \includegraphics[width=1\textwidth]{figures/Threat_report_auszug_NaN.png}
+        \caption{Auszug eines CTI-Reports aus Szenario 2 mit NaN-Werten}
+        \label{fig:auszug_threat_report_NaN}
+    \end{figure}
+
+    Infolgedessen wurde der betroffene CTI-Report bereits vor der Aggregation mit anderen Reports ausgeschlossen.
+
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=1\textwidth]{figures/Threat_report_auszug_NaN_aggregation.png}
+        \caption{Auszug der versuchten Aggregation aus Szenario 2 mit NaN-Werten}
+        \label{fig:auszug_threat_report_NaN_werte}
+    \end{figure}
+
+    Aus diesem Auszug der Aggregation von Reports Kann versgestellt werden das das zu erwartetende ergebniss eingetroffen ist.
+
+    \item \textbf{Szenario 2 – Verschobene timeline}
+    Wie wurde die Timeline manipuliert
+    Auswirkung auf validate\_same\_metrics Aggregation
+
+
+    \item \textbf{Szenario 3 – Alle Detections negativ}
+    Baseline-Report (Normalzustand)
+    Dient als Referenz für Kapitel 7.2
+
+    \item \textbf{Szenario 4 – Manuell manipulierter Ausreißer-Report}
+    Alle Detections auf positiv gesetzt
+    Dient als Grundlage für Ausreißer-Analyse in Kapitel 7.2
+
+
+\end{itemize}
