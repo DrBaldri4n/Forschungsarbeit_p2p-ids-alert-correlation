@@ -1,39 +1,39 @@
-\section{Vergleich der Gewichtungsfunktionen}
+% \section{Vergleich der Gewichtungsfunktionen}
 
 
 
 
-Vergleich der Gewichtungsfunktion:
-erstmal die baisc durch einfachs testen des codes welche reports hat er rausgefiltert? NaN und verschobene Timeline?
-Das alles kurz erklären das er die reports richtig rausgefiltert hat.
-Dann die gewichtung der einzelenen reports anschauen und wie sehr der ausreiser alles verändert hat oder eben nicht, 
-wie ist die veränderung des aggregierten Reports anhand der anzahl der inkludierten Threat reports
-nochmal den unterschied der S kurzve von Sigmoid und im vergleich die UtilityTheory funktion welche am anfang einen starken anstieg hat, wie könnte sich das in der theory auswikrungen auf den späteren einsatz der jeweiligen formel haben.
-Utitlity Theory wallboxen welche evtl. nur eine detection kurzeitig positiv einzeldetection liefert wird im vergleich zur sigmoid funktion direkt mehr bewertet und einbezogen.
-Andrerseit könnte es bei der sigmoid funktion passieren das ein report welcher nur eine detection bei einem angriff auslösst und eigeneltich richtig ist nur minimal höhrere gewichtung als andere bekommt.
+% Vergleich der Gewichtungsfunktion:
+% erstmal die baisc durch einfachs testen des codes welche reports hat er rausgefiltert? NaN und verschobene Timeline?
+% Das alles kurz erklären das er die reports richtig rausgefiltert hat.
+% Dann die gewichtung der einzelenen reports anschauen und wie sehr der ausreiser alles verändert hat oder eben nicht, 
+% wie ist die veränderung des aggregierten Reports anhand der anzahl der inkludierten Threat reports
+% nochmal den unterschied der S kurzve von Sigmoid und im vergleich die UtilityTheory funktion welche am anfang einen starken anstieg hat, wie könnte sich das in der theory auswikrungen auf den späteren einsatz der jeweiligen formel haben.
+% Utitlity Theory wallboxen welche evtl. nur eine detection kurzeitig positiv einzeldetection liefert wird im vergleich zur sigmoid funktion direkt mehr bewertet und einbezogen.
+% Andrerseit könnte es bei der sigmoid funktion passieren das ein report welcher nur eine detection bei einem angriff auslösst und eigeneltich richtig ist nur minimal höhrere gewichtung als andere bekommt.
 
 
 
 
-Gewicht jedes Reports unter Utility-Theory vs. Sigmoid tabellarisch gegenüberstellen
+% Gewicht jedes Reports unter Utility-Theory vs. Sigmoid tabellarisch gegenüberstellen
 
-Fokus: Wie stark verändert der Ausreißer-Report (Szenario 5) den aggregierten Output?
+% Fokus: Wie stark verändert der Ausreißer-Report (Szenario 5) den aggregierten Output?
 
-Metriken: MAE / relative Abweichung vom Aggregat ohne Ausreißer als Baseline
-%%%%%%%%%%%%%%%%%%%%%%
-Schrittweise Reports hinzufügen (1 -> N) und Veränderung des aggregierten Feature-Vektors beobachten
+% Metriken: MAE / relative Abweichung vom Aggregat ohne Ausreißer als Baseline
+% %%%%%%%%%%%%%%%%%%%%%%
+% Schrittweise Reports hinzufügen (1 -> N) und Veränderung des aggregierten Feature-Vektors beobachten
 
-Zeigt: Wie stabil konvergiert der Aggregat mit steigender Knotenzahl?
+% Zeigt: Wie stabil konvergiert der Aggregat mit steigender Knotenzahl?
 
 
-%%%%%%%%%%%%%%Plot beider Kurven (Verweis auf Abbildung 9, Kapitel 6.2)
+% %%%%%%%%%%%%%%Plot beider Kurven (Verweis auf Abbildung 9, Kapitel 6.2)
 
-Utility Theory: starker Anstieg bei kleinen n -> Reports mit nur einer positiven Einzeldetection werden direkt stärker gewichtet
+% Utility Theory: starker Anstieg bei kleinen n -> Reports mit nur einer positiven Einzeldetection werden direkt stärker gewichtet
 
-Sigmoid: moderater Anstieg bis Wendepunkt n0 -> Reports mit wenigen Detections erhalten kaum erhöhte Gewichtung
+% Sigmoid: moderater Anstieg bis Wendepunkt n0 -> Reports mit wenigen Detections erhalten kaum erhöhte Gewichtung
 
-Implikation für den Einsatz:
+% Implikation für den Einsatz:
 
-Utility Theory: sensitiver gegenüber schwachen Signalen, höheres Risiko False-Positive-Verstärkung
+% Utility Theory: sensitiver gegenüber schwachen Signalen, höheres Risiko False-Positive-Verstärkung
 
-Sigmoid: konservativer, benötigt Mindestzahl an Detections für signifikante Gewichtungserhöhung, möglicherweise blinde Flecken bei isolierten Einzeldetections
+% Sigmoid: konservativer, benötigt Mindestzahl an Detections für signifikante Gewichtungserhöhung, möglicherweise blinde Flecken bei isolierten Einzeldetections

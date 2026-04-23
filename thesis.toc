@@ -38,11 +38,11 @@
 \contentsline {chapter}{\numberline {7}Evaluation}{22}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{22}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Vergleich der Gewichtungsfunktionen}{24}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Echo Chamber Analyse}{24}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{26}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{26}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{26}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{26}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Quellcode}{27}{chapter.9}%
-\contentsline {chapter}{Bibliography}{37}{section*.35}%
+\contentsline {section}{\numberline {7.3}Echo Chamber Analyse}{25}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{27}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{27}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{27}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{27}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Quellcode}{28}{chapter.9}%
+\contentsline {chapter}{Bibliography}{38}{section*.37}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

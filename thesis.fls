@@ -641,6 +641,11 @@ INPUT ./figures/Threat_report_auszug_NaN_aggregation.png
 INPUT ./figures/Threat_report_auszug_NaN_aggregation.png
 INPUT ./figures/Threat_report_auszug_NaN_aggregation.png
 INPUT ./figures/Threat_report_auszug_NaN_aggregation.png
+INPUT ./figures/aggregation_mit_time_skew.png
+INPUT ./figures/aggregation_mit_time_skew.png
+INPUT ./figures/aggregation_mit_time_skew.png
+INPUT ./figures/aggregation_mit_time_skew.png
+INPUT ./figures/aggregation_mit_time_skew.png
 INPUT ./Chapters/07_Evaluation/02_vergleich_der_gewichtungsfunktionen.tex
 INPUT ./Chapters/07_Evaluation/02_vergleich_der_gewichtungsfunktionen.tex
 INPUT Chapters/07_Evaluation/02_vergleich_der_gewichtungsfunktionen.tex
