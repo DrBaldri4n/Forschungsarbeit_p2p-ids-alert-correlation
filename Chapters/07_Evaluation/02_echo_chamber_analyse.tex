@@ -1,0 +1,25 @@
+\section{Analyse des Echo-Chamber-Effekts}
+
+\subsection{Definition und theoretischer Kontext}
+Der Echo-Chamber-Effekt beschreibt im Kontext kollaborativer Intrusion Detection Systeme (CIDS) ein Phänomen, bei dem eine Mehrheit fehlerhafter oder kompromittierter Knoten durch korrelierende Fehlmeldungen den aggregierten Bedrohungsstatus des Gesamtsystems signifikant verzerrt. 
+\cite{debar2001aggregation} demonstrieren, dass eine unkontrollierte Aggregation von Alarmen (Alerts) zu einer potenziell verfälschten Sicherheitsbewertung führen kann. Übertragen auf das vorliegende P2P-Szenario impliziert dies: Sofern eine signifikante Menge der Knoten fälschlicherweise einen Angriff meldet, signalisiert der aggregierte CTI-Report einen Angriffsstatus, obwohl korrekt messende Knoten zeitgleich einen benignen Zustand detektieren.
+
+\subsection{Formalisierung des Szenarios}
+Sei $M$ die Anzahl fehlerhafter Knoten, die fälschlicherweise einen Angriff (Status 1) melden, und $K$ die Anzahl korrekter Knoten, welche einen benignen Zustand (Status 0) identifizieren. Der aggregierte Output $agg$ berechnet sich aus der gewichteten Summe der individuellen CTI-Reports gemäß der Aggregationsfunktion \texttt{aggregate\_weighted\_reports} (vgl. Listing~\ref{lst:aggregation}):
+
+\begin{equation}
+    agg = \frac{\sum_{i} \text{report}_i \cdot \text{weight}_i}{\sum_{i} \text{weight}_i}
+\end{equation}
+
+Sobald das gewichtete Verhältnis von $M$ zu $K$ einen kritischen Schwellenwert überschreitet, divergiert der Aggregatwert in Richtung des Angriffsstatus, ungeachtet der konsistenten Benign-Meldungen der $K$ korrekten Knoten.
+
+\begin{itemize}
+    \item \textbf{Einfluss der Utility-Theory-Funktion:}
+    Unter Anwendung der Utility-Theory-Funktion erzielen fehlerhafte Knoten bereits bei einer geringen Anzahl positiver Detektionen eine vergleichsweise hohe Gewichtung. Dies ist auf den konkaven Verlauf der Funktion zurückzuführen, die ihren steilsten Anstieg bei $n=1$ aufweist. Infolgedessen kann bereits eine moderate Anzahl fehlerhafter Knoten mit mittlerer Detektionsrate den Aggregatwert entscheidend verzerren. Das System erweist sich unter dieser Funktion somit als besonders anfällig gegenüber dem Echo-Chamber-Effekt bei moderaten $M/K$-Verhältnissen.
+    
+    \item \textbf{Einfluss der Sigmoid-Funktion:}
+    Die Sigmoid-Funktion dämpft diesen Effekt durch die Einführung eines Wendepunkts $n_0$. Fehlerhafte Knoten mit wenigen positiven Einzeldetektionen erhalten zunächst eine geringe Gewichtung und erreichen erst nach Überschreiten des Schwellenwerts $n_0$ signifikanten Einfluss. Dennoch wirken sich extreme Ausreißer Knoten mit einer sehr hohen Anzahl an Fehldetektionen ähnlich gravierend aus wie bei der Utility-Theory-Funktion, da beide Funktionen asymptotisch gegen das Maximum $W_{max} = 3$ konvergieren (Kapitel~\ref{sec:vergleich_der_gewichtungsfunktionen}).
+\end{itemize}
+
+\subsection{Einordnung und Ausblick}
+Es ist festzustellen, dass keine der untersuchten Funktionen das Echo-Chamber-Problem vollständig zu lösen vermag. Beide Ansätze begrenzen zwar durch $W_{max}$ den maximalen Einfluss eines einzelnen Reports, eliminieren jedoch nicht die strukturelle Verzerrung durch eine korrelierte Mehrheit. Diese Problematik wird als offene Forschungsfrage in Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (\textit{Diskussion und Forschungslücke}) weiterführend thematisiert.

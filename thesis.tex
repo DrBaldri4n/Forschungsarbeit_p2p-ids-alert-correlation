@@ -199,6 +199,7 @@
 	LSTM 	  & Long Short Term Memory \\
 	GAT	 	  & Graph Attention Networks \\
 	NaN	   	  & Not a Number \\
+	CIDS	  & kollaborativer Intrusion Detection Systeme \\
 	
 
 
@@ -266,8 +267,7 @@
 
 \chapter{Evaluation}
 	\input{Chapters/07_Evaluation/01_report_generierung.tex}
-	\input{Chapters/07_Evaluation/02_vergleich_der_gewichtungsfunktionen.tex}
-	\input{Chapters/07_Evaluation/03_echo_chamber_analyse.tex}
+	\input{Chapters/07_Evaluation/02_echo_chamber_analyse.tex}
 
     % \section{Qualität der aggregierten Threat Reports}
     % \section{Nützlichkeit für die interne Nutzung der Knoten}
@@ -316,6 +316,14 @@
   caption={filters.py -- Logik der Filterung von CTI-Reports},
   label={lst:filter}
 ]{code\_sections/filters.py}
+
+\lstinputlisting[
+  language=Python,
+  caption={config.py -- Einstellbare Parameter},
+  label={lst:config}
+]{code\_sections/config.py}
+
+
 
 \newpage
 
@@ -376,6 +384,7 @@ Ich versichere hiermit wahrheitsgemäß, die Arbeit selbstständig verfasst und 
 \todohl{Anomaly Detection Einheit | Anomalydetectioneinheit | usw..}{immer gleich schreiben}
 \todohl{Detection oder Detektion}{immer gleich schreiben}
 \todohl{}{zu jeder quelle auf welche ich im text verweise noch den abschnitt wo es im jeweiligen paper zu fiden ist hinzufügen}
+\todohl{„Detection" und „Detektion" sowie „Anomaly" und „Anomalie"}{einheitliche benennung}
 
 \newpage
 \listoftodos

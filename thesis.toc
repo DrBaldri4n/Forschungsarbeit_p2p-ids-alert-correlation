@@ -38,11 +38,16 @@
 \contentsline {chapter}{\numberline {7}Evaluation}{22}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{22}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Vergleich der Gewichtungsfunktionen}{24}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Echo Chamber Analyse}{25}{section.7.3}%
+\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{25}{paragraph*.36}%
+\contentsline {paragraph}{\nonumberline 2. Angepasste Sigmoid-Funktion:}{25}{paragraph*.38}%
+\contentsline {section}{\numberline {7.3}Analyse des Echo-Chamber-Effekts}{25}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Definition und theoretischer Kontext}{25}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Formalisierung des Szenarios}{26}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Einordnung und Ausblick}{26}{subsection.7.3.3}%
 \contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{27}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}{27}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}{27}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}{27}{section.8.3}%
 \contentsline {chapter}{\numberline {9}Quellcode}{28}{chapter.9}%
-\contentsline {chapter}{Bibliography}{38}{section*.37}%
+\contentsline {chapter}{Bibliography}{39}{section*.39}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
