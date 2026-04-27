@@ -17,6 +17,7 @@ Dies verhindert eine Verzerrung durch CTI-Reports mit extrem vielen positiven Ei
 
 Die Gewichtung der Reports erfolgt über die folgende Funktion:
 \begin{equation}
+\label{eq:utility_function}
     w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot (1 - e^{-K \cdot n})
 \end{equation}
 
@@ -38,13 +39,13 @@ Durch eine positive affine Transformation sowie eine Verschiebung um den Ankerpu
 
 Die Gewichtung der Reports erfolgt über die folgende Funktion:
 \begin{equation}
+    \label{eq:sigmoid_function}
     w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot
     \left(
         \frac{1}{1 + e^{-k\,(n - n_0)}}
         -
         \frac{1}{1 + e^{-k\,(1 - n_0)}}
     \right)
-    \label{eq:sigmoid_weight}
 \end{equation}
 
 Der Subtraktionsterm $\tfrac{1}{1 + e^{-k\,(1 - n_0)}}$ stellt den Ankerpunkt bei $n = 1$ sicher: Er verschiebt die gesamte Kurve vertikal so, dass $w(1) = W_{\text{base}}$ exakt erfüllt ist, unabhängig von der Wahl der Parameter $k$ und $n_0$.

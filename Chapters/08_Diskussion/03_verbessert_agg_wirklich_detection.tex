@@ -1,0 +1,34 @@
+\section{Verbessert Aggregation wirklich die Detection}
+Die zentrale Frage dieser Arbeit ist, ob die vorgestellten kollaborative Aggregation von CTI-Reports die Detektionsqualität der eizelnen Knoten empirisch messbar verbessert. Die folgenden Unterabschnitte identifizieren konkret Einflussgrößen (siehe Listing~\ref{lst:config}), deren systematische Untersuchung einer zukünftigen Arbeit unterliegt. 
+
+\subsection{Datenqualität vs. Datenmenge}
+% These: filterReportsWithNaN + filterReportsByTimeSkew → Qualität schlägt Quantität
+% Forschungsfrage: Ab welchem Filteranteil leidet die Aggregationsqualität messbar?
+Die implementierten Filtermechanismen \texttt{filterReportsWithNaN} und \texttt{filterReportsByTimeSkew} reduzieren die Anzahl eingehender CTI-Reports aktiv vor der Aggregation. Die zugrundeliegende These lautet: Ein vollständiger, zeitlich konsistenter Report trägt mehr zur Aggregationsqualität bei als eine größere Menge verrauschter oder unvollständiger Berichte.
+Es bleibt offen, ab welchem Filteranteil der verbleibende Informationsgehalt nicht mehr ausreicht, um eine zuverlässige Aggregation zu gewährleisten.
+
+
+\subsection{Abtastintervall}
+% Aktuell: 3 Datenpunkte bei t=0s, -30s, -60s
+% Trade-off: kurz → Rauschen + Systemlast; lang → träge Reaktion
+% Forschungsfrage: True-Positive-Rate bei 15s / 30s / 60s / 120s?
+Wie in Kapitel~\ref{sec:treat_report_datenmanagement} beschrieben, erfasst der Threat-Reporter aktuell drei Datenpunkte bei $t = 0$\,s, $t = -30$\,s und $t = -60$\,s. Die Wahl des 30-Sekunden-Intervalls stellt einen nicht empirisch validierten Kompromiss dar: Kürzere Intervalle erhöhen das Rauschen und die auslastung im IPFS-Netzwerk, während längere Intervalle die Reaktionsfähigkeit auf laufende Angriffe verringern und veraltete Kontextinformation in die Aggregation einbringen. Der Einfluss variierender Intervalle auf die True-Positiv-Rate des Gesamtsystems ist emprisch zu quantifizieren.
+
+
+\subsection{\texttt{MAX\_TIME\_SKEW\_SECONDS}}
+% Aktuell: 90s hardcodiert
+% Zu klein → legitime Knoten ausgeschlossen; zu groß → veraltete Reports
+% Forschungsfrage: Optimaler Wert in Abhängigkeit der IPFS-Netzwerklatenz?
+Der Parameter \texttt{MAX\_TIME\_SKEW\_SECONDS} ist aktuell auf $90$\,s hardcodiert. Bei einer zukünftigen Arbeit muss untersucht werden welcher gewählte Schwellenwert die Bedrohungseinschätzung durch den Aggregierten CTI-Report nicht verzerrt und die Gesamtergebnisse verbessert werden. 
+
+\subsection{Echo-Chamber-Effekt}
+% W_max=3 dämpft Ausreißer, eliminiert aber NICHT korrelierte Mehrheit
+% Ansätze: Byzantine Fault Tolerance, Trust Score, Kreuzvalidierung.
+Wie in Kapitel~\ref{sec:analyse_des_echo_chamber_effekts} formalisiert, bezeichnet der Echo-Chamber-Effekt das Szenario, in dem eine korrelierte Mehrheit kompromittierter Knoten den aggregierten CTI-Report systematisch verzerrt. Der definierte Grenzwert $W_{\text{max}} = 3$ dämpft den Einfluss einzelner Ausreißer, eliminiert jedoch nicht die strukturelle Verzerrung durch eine gleichartig manipulierte Mehrheit. Zur Adressierung dieser Forschungslücke kommen folgende Ansätze in Betracht: \todohl{die Integration von \textit{Byzantine Fault Tolerance}-Mechanismen in die Aggregationslogik, eine reputationsbasierte Knotengewichtung über die Zeit (\textit{Trust Score}) sowie die Kreuzvalidierung aggregierter Reports mit den lokalen Detektionsergebnissen des empfangenden Knotens als unabhängigem Anker.}{Quelle!!}
+
+
+\subsection{Evaluation auf öffentlichem Datensatz}
+% Aktuell: eine ChargeIQ-Wallbox → geringe externe Validität
+% Kandidaten: CICIDS2017/2018, N-BaIoT, IoT-Benchmarks
+% Forschungsfrage: Generalisiert das Verfahren außerhalb der eigenen Infrastruktur?
+Die Evaluation der vorliegenden Arbeit basiert ausschließlich auf einer physischen Testumgebung mit einer einzelnen ChargeIQ-Wallbox (siehe Kapitel~\ref{chapter:systemarchitektur}), was die externe Validität der Ergebnisse erheblich einschränkt. Ob das entwickelte Aggregations- und Gewichtungsverfahren auf Infrastrukturen außerhalb der eigenen Ladeumgebung generalisiert, bleibt ungeklärt. Als geeignete Evaluationsgrundlagen für zukünftige Arbeiten kommen etablierte IDS-Benchmarkdatensätze wie CICIDS2017/2018 \todohl{cite-sharafaldin2018cicids}{Datensatz?}, N-BaIoT \todohl{cite-meidan2018nbaiot}{Quelle bzw. geeigneten Datensatz finden} oder IoT-spezifische Datensätze in Betracht. Erst eine solche Evaluation ermöglicht eine wissenschaftlich belastbare Aussage über den tatsächlichen Mehrwert des kollaborativen Ansatzes gegenüber rein lokaler Anomalieerkennung.

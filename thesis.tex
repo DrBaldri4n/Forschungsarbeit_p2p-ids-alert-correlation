@@ -200,6 +200,7 @@
 	GAT	 	  & Graph Attention Networks \\
 	NaN	   	  & Not a Number \\
 	CIDS	  & kollaborativer Intrusion Detection Systeme \\
+	SOC		  & Security Operations Center \\
 	
 
 
@@ -276,17 +277,9 @@
 
 \chapter{Diskussion und Forschungslücken}
 \label{chapter:diskussion_und_forschungsluecke}
-    \section{Auswirkungen unterschiedlicher Gewichtungsstrategien auf die Report-Qualität}
-    \section{Potenzial der LLM-gestützten Aufbereitung für externe CTI-Nutzung}
-    \section{Untersuchung des Einflusses von Report-Aggregation auf Detectionsergebnisse (Echo-Chamber-Effekt?)}
-
-	- weniger Daten bessere ergebnisse wie in kapitel Konzetiop des Threat Reports beschrieben?
-	- 30 sekunden intervall gut oder soll es verößert verkleinert werden?
-	- MAX\_TIME\_SKEW\_SECONDS = 90 sekdunden gut oder soll es verößert verkleinert werden?
-	- Echo-Chamber-Effekt
-
-% \newpage
-% \chapter{Zusammenfassung und Fazit}
+	\input{Chapters/08_Diskussion/01_welche_gewichtung_besser.tex}
+	\input{Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex}
+	\input{Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex}
 
 \newpage
 

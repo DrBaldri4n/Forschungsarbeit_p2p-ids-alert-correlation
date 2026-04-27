@@ -1,0 +1,15 @@
+\section{Auswirkungen der Gewichtungsstrategien auf die Report-Qualität}
+
+Die im Kapitel~\ref{sec:auswahl_der_gewichtungsfunktion} (Auswahl der Gewichtungsfunktion) angepassten Funktionen erfüllen die in Kapitel~\ref{sec:anforderungen_an_die_gewichtungsfunktion} (Anforderungen an die Gewichtungsfunktion) definierten Anforderungen. Sie unterscheiden sich jedoch strukturell in ihrem Verhalten bei niedrigen positiven Einzeldetektionsergebnissen, was unmittelbare Auswirkungen auf die Robustheit der Aggregation haben kann.
+
+Die Utility-Theory-Funktion \ref{eq:utility_function} basiert auf dem Prinzip des abnehmenden Grenznutzens (\textit{Diminishing Returns}), formalisiert durch die \textit{Negative Exponential Utility Function} mit konstanter absoluter Risikoaversion (CARA)~\cite{norstad1999utility}:
+
+Die Utility-Funktion ist rein konkav: Der stärkste Gewichtungsanstieg findet bereits bei $n = 1$ statt (siehe Abbildung~\ref{fig:vergleich_gewichtungsfunktionen}), was dazu führt, dass CTI-Reports mit wenigen Einzeldetektionen bereits signifikant gewichtet werden~\cite{norstad1999utility}. Dies birgt das Risiko einer erhöhten Anfälligkeit gegenüber Rauschen, da auch vereinzelte, potenziell fehlerhafte Detektionen einen starken Einfluss auf die Aggregation ausüben (siehe Kapitel~\ref{sec:vergleich_der_gewichtungsfunktionen}).
+
+Die angepasste Sigmoid-Funktion \ref{eq:sigmoid_function} ist ursprünglich als Aktivierungsfunktion in neuronalen Netzen und insbesondere in Graph Attention Networks zur Gewichtung von Nachbarschaftsinformationen etabliert~\cite{velickovic2018gat}. Sie weist durch ihren S-förmigen Verlauf einen Wendepunkt bei $n_0$ auf (siehe Abbildung~\ref{fig:vergleich_gewichtungsfunktionen}):
+
+Unterhalb von $n_0$ steigt das Gewicht moderat an, erst nach Überschreiten dieser Schwelle wird ein CTI-Report als signifikant eingestuft. Dieses Verhalten modelliert implizit einen Mindestkonsensmechanismus und ist robuster gegenüber vereinzelten Fehldetektionen als die Utility-Theory-Funktion.
+
+Beide Funktionen konvergieren asymptotisch gegen $W_{\text{max}} = 3$, wodurch die Dominanz statistischer Ausreißer strukturell begrenzt wird (siehe Kapitel~\ref{sec:vergleich_der_gewichtungsfunktionen}). Der wesentliche Unterschied liegt im Bereich kleiner $n$: Während die Utility-Theory-Funktion bereits einzelne Detektionen stark gewichtet, verzögert die Sigmoid-Funktion diesen Anstieg bis zum Erreichen des Wendepunkts $n_0$.
+
+Die Hyperparameter $k$, $n_0$ und $W_{\text{max}}$ wurden in der vorliegenden Arbeit nicht empirisch optimiert, sondern als Referenzwerte festgesetzt. Eine systematische Evaluation auf realen Datensätzen ist daher Gegenstand zukünftiger Arbeiten.
