@@ -1,29 +1,13 @@
 \section{Aufbau der Arbeit}
 
-	Zunächst wird die Systemarchitektur im zur Verfügung stehenden Peer-to-Peer-Netzwerk beschrieben
-	sowie die implementierten Detektionen und die Datenakquise über Prometheus empirisch erläutert und differenziert.
+Die vorliegende Arbeit gliedert sich wie folgt: Zunächst wird in \textbf{Kapitel \ref{chapter:systemarchitektur}}  die \textbf{Systemarchitektur} des ReSiLENT-Systems dargelegt. Der Fokus liegt dabei auf der dezentralen Kommunikation via IPFS sowie den vier Detektionseinheiten, welche physikalische, systemnahe und netzwerkbasierte Anomalien auf Wallbox-Ebene erfassen.
 
-	\todohl{Darauf folgend wird die Konzeption des Threat Reporters vorgestellt, welcher die Detektionsergebnisse
-	in einem standardisierten Format aggregiert und über definierte Schnittstellen zwischen den Knoten überträgt.}
-	{Vielleicht finde ich eine begründung warum ich genaue diese events in den hardware report gepackt habe?}
+\textbf{Kapitel \ref{chapter:thread_report}} beschreibt die \textbf{Konzeption des Threat Reporters}. Es wird erläutert, wie Detektionsergebnisse unter Anwendung zeitlicher Diskretisierung und Sliding-Window-Analysen in einem standardisierten CSV-Format aggregiert und im Peer-to-Peer-Netzwerk distribuiert werden.
 
-	\todohl{Anschließend werden die theoretischen Grundlagen der Informationsfusion präsentiert.}
-	{TODO: Sollte hier wissenschaftlich begründet werden, warum die Wahl auf eine Kombination
-	     aus Deep Sets und Attention-Mechanismen gefallen ist?}
+In \textbf{Kapitel \ref{chapter:theoretische_grundlagen_der_informationsfusion}} werden die \textbf{theoretischen Grundlagen der Informationsfusion} adressiert. Angesichts variabler Eingabemengen wird die methodische Wahl einer Kombination aus \textit{Deep Sets} zur Gewährleistung der Permutationsinvarianz und \textit{Attention}-Mechanismen zur dynamischen Relevanzbewertung begründet.
 
-	\todohl{Darauf folgend wird die Methodik der gewichteten Aggregation mittels Utility Theory beschrieben.}
-	{TODO: Die Formel der Utility Theory wurde nicht originär für Gewichtungsfunktionen entwickelt.
-	     Wie problematisch ist das? Sollte dies in der Diskussion thematisiert oder direkt
-	     eine alternative Methode verwendet werden?}
+Darauf aufbauend stellt \textbf{Kapitel \ref{chapter:methodik_gewichtete_agg_von_threat_reports}} die \textbf{Methodik der gewichteten Aggregation} vor. Hierbei werden die \textit{Negative Exponential Utility Function} sowie eine \textit{logistische Sigmoid-Funktion} hinsichtlich ihres asymptotischen Sättigungsverhaltens und ihrer Robustheit gegenüber statistischen Ausreißern evaluiert.
 
-	\todohl{Anschließend wird die erweiterte Architektur und umsetzung der Vorgestellten Methodik beschrieben.
-	Die Daraus generierten Threat Reports werden präsentiert und hinsichtlich ihrer Qualität und Nützlichkeit für die interne Nutzung der Knoten bewertet.}
-	{TODO: Fokus darauf legen wie die zuvor beschriebenen Methoden in die Architektur einbepflegt wurden}
+Die \textbf{Implementierung} und Integration dieser Modelle in den ReSiLENT-Datenfluss werden in \textbf{Kapitel \ref{chapter:evaluation}} beschrieben. Die resultierenden aggregierten CTI-Reports werden präsentiert und hinsichtlich ihrer Qualität für die knoteninterne Nutzung bewertet.
 
-	Die anschließende Diskussion der Ergebnisse führt zur \todohl{Identifikation einer Forschungslücke}{Welche Forschungslücke?},
-	welche in zukünftigen Arbeiten weiter untersucht werden sollte.
-	\todohl{}{TODO: Mögliche Forschungslücken:
-	     - Untersuchung der Auswirkungen von unterschiedlichen Gewichtungsstrategien Aggregation auf die Qualität der aggregierten Reports
-	     - Erweiterung um die LLM gestützte Aufbereitung der Reports für die externe Nutzung
-		   - Untersuchung ob der vorgestellte ablauf, erstellen der reports, aggregieren und nutzung der nachbar reports wirklich zu verbesserten Detectionsergebnissen führt (Echo-Chamber-Effekt?).}
-
+Abschließend erfolgt in \textbf{Kapitel \ref{chapter:diskussion_und_forschungsluecke}} eine \textbf{Diskussion der Ergebnisse}. Dabei werden kritische Forschungslücken identifiziert, insbesondere die empirische Validierung der Gewichtungsstrategien, das Potenzial LLM-gestützter Aufbereitung für SOC-Operatoren sowie die Untersuchung systemischer Risiken wie des \textit{Echo-Chamber-Effekts}.

@@ -1,20 +1,20 @@
     \section{Zentralisiertes Datenmanagement und Merkmalsextraktion für den Threat Report}
     \label{sec:treat_report_datenmanagement}
 
-    Um die Interoperabilität und Standardisierung des Threat Reports zu gewährleisten, wurde entschieden, die erforderlichen Daten zentral aus der Lokalen Prometheus-Datenbank zu extrahieren, anstatt diese einzeln von den jeweiligen Detection-Einheiten abzurufen. Hierfür wurden spezifische Prometheus-Exporter für die Detektionseinheiten entworfen und integriert. Diese stellen die Daten kontinuierlich über die lokalen Ports 2112, 2113, 2115 und 2116 bereit.
+    Um die Kompatibilität und Standardisierung des Threat Reports zu gewährleisten, wurde entschieden, die erforderlichen Daten zentral aus der Lokalen Prometheus-Datenbank zu extrahieren, anstatt diese einzeln von den jeweiligen Detection-Einheiten abzurufen. Hierfür wurden spezifische Prometheus-Exporter für die Detection-Einheiten entworfen und integriert. Diese stellen die Daten kontinuierlich über die lokalen Ports 2112, 2113, 2115 und 2116 bereit.
 
     Die über die Exporter gelieferten Datensätze umfassen sowohl die Klassifizierung der Anomalien (Attack oder Benign) als auch sämtliche Features, die für die jeweilige Detektion herangezogen wurden. Dieser umfassende Ansatz ist notwendig, da eine zukünftige Optimierung der Gesamtdetektion mittels eines Machine-Learning-Modells vorgesehen ist. Um ein qualitativ hochwertiges Training des Modells zu ermöglichen, kann eine möglichst breite Basis an Inputdaten den Lernprozess signifikant verbessern \cite{heigl2021exploiting}.\\
     % Quelle: „The number of data sources—single or multiple—clarifies whether the alert correlation method is sourced by either a single data source [...] or by a collaborative set, which allows for a more precise and coherent view about the observed system."
     
-    Die Grundlage hierfür bildete eine detaillierte Analyse der Detektionseinheiten sowie ein tiefgreifendes Verständnis der bereitgestellten Datenstrukturen, wie bereits in Kapitel~\ref{sec:detection_einheiten_der_ladeinfrastruktur} (Detection Einheiten der Ladeinfrastruktur) dargelegt.
+    Die Grundlage hierfür bildete eine detaillierte Analyse der Detection-Einheiten sowie ein tiefgreifendes Verständnis der bereitgestellten Datenstrukturen, wie bereits in Kapitel~\ref{sec:detection_einheiten_der_ladeinfrastruktur} (Detection-Einheiten der Ladeinfrastruktur) dargelegt.
     % Wie in Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücke) näher beschrieben, soll das spätere Modell zunächst einen Feature-Selection-Prozess durchlaufen, um die signifikantesten Merkmale für die Detektion zu identifizieren und so die Modellkomplexität bei gleichbleibender Präzision zu reduzieren.
 
-    Der Threat Report importiert diese Daten über Prometheus und überführt sie in ein CSV-Format. Das CSV-Format wurde aufgrund seiner weitreichenden Kompatibilität und einfachen Handhabung und Menschenlesbarkeit gewählt. Zusätzlich überschreiten die generierten Thread Reports eine Dateigröße von maximal 30\,kB nicht und somit bieten Zeilenbasierte formate wie CSV oder JSON gegenüber spaltenorientierten Formaten wie \textit{Parquet} keine Nachteile. Im Gegenteil Parquet-spezifischer Metadaten-Overhead kann bei derart kleinen Dateien den Großteil der Dateigröße ausmachen, während die Vorteile (Kompression, spaltenbasierter Zugriff) erst bei Dateigrößen im Bereich mehrerer hundert Megabyte relevant werden \cite{taylordavies2023parquet} \cite{celerdata2024parquet}.
+    Der Threat Report importiert diese Daten über Prometheus und überführt sie in ein CSV-Format. Das CSV-Format wurde aufgrund seiner weitreichenden Kompatibilität und einfachen Handhabung und Menschenlesbarkeit gewählt. Zusätzlich überschreiten die generierten Threat Reports eine Dateigröße von maximal 30\,kB nicht und somit bieten zeilenbasierte Formate wie CSV oder JSON gegenüber spaltenorientierten Formaten wie \textit{Parquet} keine Nachteile. Im Gegenteil: Der Parquet-spezifischer Metadaten-Overhead kann bei derart kleinen Dateien den Großteil der Dateigröße ausmachen, während die Vorteile (Kompression, spaltenbasierter Zugriff) erst bei Dateigrößen im Bereich mehrerer hundert Megabyte relevant werden \cite{taylordavies2023parquet} \cite{celerdata2024parquet}.
 
     \section{Zeitliche Diskretisierung und Intervalldefinition}
 
-    Um die Systemressourcen des \textit{Raspberry Pi Zero 2 W} zu schonen und gleichzeitig das Datenaufkommen zu begrenzen, ohne die Detektionssicherheit zu beeinträchtigen, wurde ein Zeitfenster von 60 Sekunden gewählt, das in 30-Sekunden-Intervallen unterteilt ist. Dieser Ansatz ermöglicht es, umfassende Informationen der Detektionseinheiten zu erhalten. Die Parameter für diese Zeitintervalle wurden bewusst variabel gestaltet. Dies schafft die Grundlage für zukünftige Untersuchungen, wie sie in Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücke) beschrieben sind, um den Einfluss unterschiedlicher Zeitfenster auf die Qualität der Reports empirisch zu evaluieren.\\
-    Die aktuell implementierte Sequenz umfasst drei Datenpunkte: den aktuellen Zeitpunkt (0 Sekunden) sowie die Zustände der Detektionseinheiten vor 30 und 60 Sekunden. Durch diese Struktur wird eine Timeline generiert, die den zeitlichen Verlauf der Detektion über drei Messpunkte abbildet, welches eine verbesserte Darstellung des zeitlichen Verlaufs ermöglicht als isolierte Zeitpunkte zu betrachten \cite{zhang2019iacf} \cite{heigl2021exploiting}.
+    Um die Systemressourcen des \textit{Raspberry Pi Zero 2 W} zu schonen und gleichzeitig das Datenaufkommen zu begrenzen, ohne die Detektionssicherheit zu beeinträchtigen, wurde ein Zeitfenster von jeweils 60 Sekunden gewählt, das in 30-Sekunden-Intervallen verschoben ist. Dieser Ansatz ermöglicht es, umfassende Informationen der Detection-Einheiten zu erhalten. Die Parameter für diese Zeitintervalle wurden bewusst variabel gestaltet (siehe Listing~\ref{lst:reporter}). Dies schafft die Grundlage für zukünftige Untersuchungen, wie sie in Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücke) beschrieben sind, um den Einfluss unterschiedlicher Zeitfenster auf die Qualität der Reports empirisch zu evaluieren.\\
+    Die aktuell implementierte Sequenz umfasst drei Datenpunkte: den aktuellen Zeitpunkt (0 Sekunden) sowie die Zustände der Zeitfenster von vor 30 und 60 Sekunden. Durch diese Struktur wird eine Timeline generiert, die den zeitlichen Verlauf der Detektion über drei Messfenster abbildet, welches eine verbesserte Darstellung des zeitlichen Verlaufs ermöglicht, anstatt isolierte Zeitpunkte zu betrachten \cite{zhang2019iacf} \cite{heigl2021exploiting}.
     % TSS is not an accurate algorithm that can extract real attack sessions precisely, but a method more reasonable for organizing intrusion actions than time-windows for its effort in preventing irrational division. Zhang et al. (2022) argue that the TSS method is more reasonable for organizing intrusion actions than time-windows for its effort in preventing irrational division.
     % A series of intrusion actions done by an attacker is more concentrative in the temporal dimension than random false positives. heigl2021exploiting
 
@@ -22,25 +22,24 @@
 
     Neben den instantanen Merkmalswerten (Features) und Anomalie-Indikatoren der Detektionseinheit werden zusätzlich historische Daten mittels \textit{Sliding Windows} importiert. Pro Threat Report werden drei dieser Fenster definiert, welche jeweils den aktuellen Datenpunkt in Relation zu zwei vorangegangenen Zeitpunkten setzen:
 
-    \todohl{Logikfrage.}{ist das wirklich immer im vergleich oder zeigt mir das die min/max/avg werte innerhalb des fensters an?}
     \begin{itemize}
-        \item \textbf{Window 1:} 0 Sekunden im Vergleich mit -30 s und -60 s
-        \item \textbf{Window 2:} -30 Sekunden im Vergleich mit -60 s und -90 s
-        \item \textbf{Window 3:} -60 Sekunden im Vergleich mit -120 s und -150 s
+        \item \textbf{Window 1:} 0 Sekunden bis -60 Sekunden
+        \item \textbf{Window 2:} -30 Sekunden bis -90 Sekunden
+        \item \textbf{Window 3:} -60 Sekunden bis -120 Sekunden
     \end{itemize}
 
     Innerhalb dieser Zeitfenster werden für die statistische Auswertung anhand klassischer Kennzahlen berechnet \cite{heigl2021exploiting} \cite{boswell2025flare}:
     % heigl2021 "we computed the descriptive statistics maximum, minimum, mean and median values of ∆ts for each"
     % boswell2025 "This sliding window approach generates a series of aggregated features for each time interval, capturing characteristics such as flow rate, directional ratios, entropy metrics, and packet-level statistics."
 
-\todohl{attack scenario}{Deutsch schreiben!}
+Die statistische Auswertung der Merkmale im Zeitverlauf umfasst folgende Kennzahlen:
     \begin{itemize}
         \item \textbf{Mittelwert:} \textit{Average} der Durchschnittswert innerhalb des Fensters.
         \item \textbf{Extremwerte:} \textit{Minimum} und \textit{Maximum} im jeweiligen Intervall.
         \item \textbf{Median:} Der Zentralwert der Datenpunkte.
-        \item \textbf{Zuwachs (Increase):} Die relative oder absolute Veränderung innerhalb des Fensters.
+        \item \textbf{Anstieg (Increase):} Die relative oder absolute Veränderung innerhalb des Fensters.
         \item \textbf{Summe:} Die kumulierten Werte des jeweiligen Zeitraums.
     \end{itemize}
 
-    Durch diese Methodik entsteht ein umfassender Report, der nicht nur eine Momentaufnahme der Detektionseinheiten liefert, sondern auch die zeitliche Entwicklung über die letzten 60 Sekunden bzw. durch die Sliding Windows bis zu 150 Sekunden in die Vergangenheit abbildet. Diese Datenbasis dient als Input für eine spätere Aufbereitung und trainings eines Machine-Learning-Modells, welcher in Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücke) beschrieben sind.\\
+    Durch diese Methodik entsteht ein umfassender Report, der nicht nur eine Momentaufnahme der Detection-Einheiten liefert, sondern auch die zeitliche Entwicklung über die letzten 60 Sekunden bzw. durch die Sliding Windows bis zu 120 Sekunden in die Vergangenheit abbildet. Diese Datenbasis dient als Input für eine spätere Aufbereitung und trainings eines Machine-Learning-Modells, welcher in Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücke) beschrieben sind.\\
     Der für diesen Abschnitt implementierte Quellcode, welcher die Logik der Datenabfrage sowie die Generierung des Reports umfasst, ist im Anhang unter Listing~\ref{lst:reporter} (\texttt{reporter.py}) und Listing~\ref{lst:queries} (\texttt{queries.py}) dokumentiert.

@@ -23,12 +23,12 @@ bereitstellt und sowohl den Cybersecurity- und Detection-Modulen als auch
 Werkzeugen zur Datenaufbereitung zugänglich macht.
 
 Die Architektur ist auf kollaborative Angriffserkennung ausgelegt: Über den
-\textit{ipfs-wrapper} und dessen \textbf{Publish-Subscribe-Mechanismus} (detailliert in Abbildung~\ref{fig:ipfs_network}) teilen Ladesäulen Kontextinformationen mit allen Netzwerkteilnehmern und können somit die situative Wahrnehmung über die gesamte Ladeinfrastruktur hinweg verbessern.
+\texttt{ipfs-wrapper} und dessen \textbf{Publish-Subscribe-Mechanismus} (detailliert in Abbildung~\ref{fig:ipfs_network} und~\ref{fig:dataflow}) teilen Ladesäulen Kontextinformationen mit allen Netzwerkteilnehmern und könnten somit die situative Wahrnehmung über die gesamte Ladeinfrastruktur hinweg verbessern.
 
 \subsection{Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch}
 
 Für die verteilte Kommunikation zwischen den Detection Units und dem Cloud
-Dashboard wird ein \textbf{privates IPFS-Netzwerk} eingesetzt. Im Gegensatz
+Dashboard wird ein privates IPFS-Netzwerk eingesetzt. Im Gegensatz
 zum öffentlichen IPFS-Netz wird der Zugang durch einen gemeinsamen
 \textit{Swarm Key} beschränkt, sodass ausschließlich autorisierte Knoten dem
 Netzwerk beitreten können. Die Netzwerktopologie ist in
@@ -37,21 +37,21 @@ Abbildung~\ref{fig:ipfs_network} dargestellt.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{./figures/Test-Mesh.jpg}
-    \caption{Topologie des privaten IPFS-Netzwerks mit Bootstrap-Node und
+    \caption{Topologie des privaten IPFS-Netzwerks mit Bootstrap-Knoten und
     Client-Peers}
     \label{fig:ipfs_network}
 \end{figure}
 
-Der Netzbeitritt erfolgt über einen dedizierten \textbf{Bootstrap-Node},
+Der Netzbeitritt erfolgt über einen dedizierten \textbf{Bootstrap-Knoten},
 der auf dem Server des Cloud Dashboards betrieben wird. Neue Peers melden
-sich beim Bootstrap-Node an, erhalten die Multiaddresses (\textit{MADDR})
+sich beim Bootstrap-Knoten an, erhalten die Multiaddresses (\textit{MADDR})
 der bekannten Peers und kommunizieren anschließend direkt miteinander, ohne
-den Bootstrap-Node als Relay zu verwenden. Jeder Knoten betreibt
+den Bootstrap-Knoten als Relay zu verwenden. Jeder Knoten betreibt
 einen lokalen \textbf{IPFS-Peer-Daemon}, der über den \texttt{ipfs-wrapper}, wie in Abbildung~\ref{fig:dataflow} dargestellt, in die
 Systemarchitektur eingebunden ist.
 
 Für die Benachrichtigung über neue Daten wird der
-\textbf{Publish-Subscribe-Mechanismus} von IPFS genutzt: Sobald neue Messdaten erhoben werden, können diese veröffentlicht werden indem sie die zugehörige CID zusammen mit der eigenen MADDR über einen gemeinsam abonnierten Kanal an alle Teilnehmer versendet. Die Empfänger rufen die Datei daraufhin direkt beim Ursprungs-Peer ab. Da eine CID dem kryptografischen Hash des jeweiligen Inhalts entspricht, ist die Datenintegrität implizit gewährleistet, ohne dass zusätzliche Signaturmechanismen erforderlich sind.
+\textbf{Publish-Subscribe-Mechanismus} von IPFS genutzt: Sobald neue Messdaten erhoben werden, können diese veröffentlicht werden indem die Wallbox die zugehörige CID zusammen mit der eigenen MADDR über einen gemeinsam abonnierten Kanal an alle Teilnehmer versendet. Die Empfänger rufen die Datei daraufhin direkt beim Ursprungs-Peer ab. Da eine CID dem kryptografischen Hash des jeweiligen Inhalts entspricht, ist die Datenintegrität implizit gewährleistet, ohne dass zusätzliche Signaturmechanismen erforderlich sind.
 
 \subsection{End-to-End-Datenfluss}
 
@@ -75,7 +75,7 @@ Der vollständige Datenfluss vom Sensor bis zur Visualisierung lässt sich in dr
 Der \textit{Aggregator} innerhalb des Knotens sammelt die Messdaten. Prometheus scraped alle Exporter in konfigurierbaren Intervallen. Der \textit{Reporter} liest die aggregierten Daten aus der Prometheus-Datenbank und übermittelt sie an den \texttt{ipfs-wrapper}.
 
 \paragraph{Transport (IPFS-Netzwerk)}
-Der \texttt{ipfs-wrapper} nimmt die Datei entgegen, publiziert sie im lokalen IPFS-Node und erhält eine CID zurück. Anschließend wird die CID zusammen mit der eigenen MADDR über den konfigurierten \textbf{Publish-Subscribe-Mechanismus} im privaten IPFS-Netz verbreitet. Die eigentlichen Messdaten werden dabei nicht aktiv gepusht, lediglich der Zeiger (CID) wird distribuiert.
+Der \texttt{ipfs-wrapper} nimmt die Datei entgegen, publiziert sie im lokalen IPFS-Knoten und erhält eine CID zurück. Anschließend wird die CID zusammen mit der eigenen MADDR über den konfigurierten \textbf{Publish-Subscribe-Mechanismus} im privaten IPFS-Netz verbreitet. Die eigentlichen Messdaten werden dabei nicht aktiv gepusht, lediglich der Zeiger (CID) wird verteilt.
 
 \paragraph{Persistierung und Visualisierung (Cloud Dashboard)}
 Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des \texttt{ipfs-wrapper} die CID und MADDR und leitet diese per \textbf{WebSocket} an den Collector weiter. Der Collector fordert daraufhin die vollständige Datei über den lokalen IPFS-Peer an, der sie in Chunks vom Ursprungs-Peer abruft. Der \textit{File Extractor} verarbeitet die Rohdaten und persistiert die Messwerte in \textbf{InfluxDB}. Grafana greift auf InfluxDB zu und stellt die Zeitreihendaten im Dashboard dar (vgl. Abbildung~\ref{fig:cloud_dashboard}).
@@ -87,4 +87,4 @@ Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des 
     \label{fig:cloud_dashboard}
 \end{figure}
 
-Dieses Verständnis der Systemarchitektur und des Datenflusses bildet die Grundlage für die folgende Arbeit zur Implementierung des CTI-Reports und später des aggregierten CTI-Reports. 
+Dieses Verständnis der Systemarchitektur und des Datenflusses bildet die Grundlage für die folgende Arbeit zur Implementierung des CTI-Reports und dessen spätere Aggregation. 
