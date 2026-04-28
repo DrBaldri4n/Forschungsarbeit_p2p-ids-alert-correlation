@@ -23,6 +23,12 @@ J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova.
 \newblock 2019.
 \newblock Führt BERT ein, ein bidirektionales Repräsentationsmodell, das durch Masked Language Modeling (MLM) und Next Sentence Prediction (NSP) tiefen Kontext aus beiden Richtungen gleichzeitig lernt und damit neue Bestleistungen in elf NLP-Aufgaben erzielte[cite: 557, 564, 567, 580, 583].
 
+\bibitem{hasan2021missingvalue}
+M.~K. Hasan, M.~A. Alam, S.~Roy, A.~Dutta, M.~T. Jawad, and S.~Das.
+\newblock Missing value imputation affects the performance of machine learning: A review and analysis of the literature 2010--2021.
+\newblock {\em Informatics in Medicine Unlocked}, 27, 2021.
+\newblock Systematischer Review von 191 Artikeln (2010--2021) zu Missing Value Imputation (MVI) mittels der PRISMA-Methode. Zeigt, dass fehlende Werte in Datensätzen zu verzerrten statistischen Ergebnissen führen können und dass die Wahl einer geeigneten Imputationsstrategie die Performance nachgelagerter ML-Klassifikatoren signifikant beeinflusst. Einfache statistische Verfahren wie Mean-Imputation reduzieren die Varianz der imputierten Variablen und erhalten Inter-Attributkorrelationen nicht~[Table~1]. ML-basierte Verfahren (z.\,B. KNNMVI, RFMVI) erzielen im Vergleich zu naiven Substitutionen konsistent bessere Klassifikationsergebnisse~[Table~2].
+
 \bibitem{heigl2021exploiting}
 M.~Heigl, E.~Weigelt, A.~Urmann, D.~Fiala, and M.~Schramm.
 \newblock Exploiting the outcome of outlier detection for novel attack pattern recognition on streaming data.
@@ -58,6 +64,12 @@ J.~Norstad.
 \newblock {\em MultiheadAttention --- {PyTorch} 2.4 Documentation}.
 \newblock Meta AI, 2024.
 \newblock Zugriff am: 13. April 2026.
+
+\bibitem{perezmaldonado2025sigmoid}
+M.~T. Pérez-Maldonado, J.~Bravo-Castillero, R.~Mansilla, and R.~O. Caballero-Pérez.
+\newblock New sigmoid curves: Beyond the traditional logistic models.
+\newblock {\em Revista Cubana de Física}, 42(44), 2025.
+\newblock Definiert S-förmige oder sigmoidale Kurven als Lösungen autonomer Differentialgleichungen erster Ordnung. Das Paper zeigt auf, wie diese Kurven stufenähnliches Verhalten kontinuierlich approximieren und nutzt neue Modelle, um die Ausbreitung von Krankheiten (am Beispiel von COVID-19) präziser als herkömmliche logistische Modelle abzubilden.
 
 \bibitem{soelch2019deepsetAgg}
 M.~Sölch, A.~Akhundov, P.~van~der Smagt, and J.~Bayer.
