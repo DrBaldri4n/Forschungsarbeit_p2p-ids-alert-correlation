@@ -14,37 +14,42 @@ def add_report_weight(
 ) -> pd.DataFrame:
     """
     Berechnet Gewichte basierend auf angepassten UtilityTheory-Funktion:
-    utilityTheory(n)=W_{base}+(W_{max}-W_{base}) (1-exp^(-(K (n-1))))
+    utilityTheory(n)=W_{base}+(W_{max}-W_{base}) (1-exp^(-(K (n))))
     """
     out = df_counts.copy()
-    n = pd.to_numeric(out[n_col], errors="coerce").fillna(0).to_numpy()
-    out[out_col] = BASE_WEIGHT + (MAX_WEIGHT - BASE_WEIGHT) * (1.0 - np.exp(-K * n))
+    n = pd.to_numeric(out[n_col], errors="coerce").fillna(0).to_numpy() + 1
+    out[out_col] = BASE_WEIGHT + (MAX_WEIGHT - BASE_WEIGHT) * (1.0 - np.exp(-K * (n - 1)))
     return out
 
 def add_report_weight_sigmoid(
     df_counts: pd.DataFrame,
     n_col: str = "n_attacks",
     out_col: str = "weight",
-    n0: float = 5.0,  # Wendepunkt der Sigmoid-Kurve
+    n0: float = 10.0,   # Wendepunkt
+    k: float = 0.5,    # Steilheit
+    base_weight: float = 1.0,
+    max_weight: float = 3.0,
 ) -> pd.DataFrame:
     """
-    Berechnet Gewichte basierend auf angepassten Sigmoid-Funktion:
-    sigmoid(n) = W_base + (W_max - W_base) * ( (1/(1+exp(-k(n-n0)))) - (1/(1+exp(-k(1-n0)))) )
+    sigmoid(n) = base_weight + (max_weight - base_weight) *
+                 ( (1/(1+exp(-k(n-n0)))) - (1/(1+exp(-k(1-n0)))) )
     """
     out = df_counts.copy()
-    n = pd.to_numeric(out[n_col], errors="coerce").fillna(0).to_numpy()
-
-    sig_n = 1.0 / (1.0 + np.exp(-K * (n - n0)))
+    n = pd.to_numeric(out[n_col], errors="coerce").fillna(0).to_numpy() + 1
     
+
+    sig_n = 1.0 / (1.0 + np.exp(-k * (n - n0)))
+
     # Korrektur-Term, damit die Kurve bei n=1 genau bei 0 startet 
-    sig_1 = 1.0 / (1.0 + np.exp(-K * (1.0 - n0)))
+    sig_1 = 1.0 / (1.0 + np.exp(-k * (1.0 - n0)))
+
     
     # Skalierung auf den Bereich zwischen BASE_WEIGHT und MAX_WEIGHT
-    out[out_col] = BASE_WEIGHT + (MAX_WEIGHT - BASE_WEIGHT) * (sig_n - sig_1)
-    
-    # Falls n < 1 vorkommt negative Gewichte unter BASE_WEIGHT vermeiden
-    out[out_col] = out[out_col].clip(lower=BASE_WEIGHT)
-    
+    out[out_col] = base_weight + (max_weight - base_weight) * (sig_n - sig_1)
+
+    # verhindert Werte < base_weight
+    out[out_col] = out[out_col].clip(lower=base_weight)
+
     return out
 
 def aggregate_weighted_reports(

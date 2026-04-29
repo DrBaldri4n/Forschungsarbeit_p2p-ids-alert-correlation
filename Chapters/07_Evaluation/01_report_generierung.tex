@@ -12,7 +12,7 @@ Dabei reagierte lediglich die \textit{Power Temperature Detection} nicht, da die
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.85\textwidth]{figures/gewichtung_utility_theory_5_CTIreports.png}
-    \caption{Output der Aggregation von fünf CTI-Reports}
+    \caption{Output der Aggregation von fünf CTI-Reports (Utility-Theory-Funktion)}
     \label{fig:auszug_threat_report}
 \end{figure}
 
@@ -50,21 +50,21 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
         \begin{figure}[ht]
             \centering
             \includegraphics[width=1\textwidth]{figures/Threat_report_auszug_NaN_aggregation.png}
-            \caption{Auszug der Aggregation aus Szenario~1 mit NaN-Werten}
+            \caption{Auszug der Aggregation aus Szenario~1 mit NaN-Werten (Utility-Theory-Funktion)}
             \label{fig:auszug_threat_report_NaN_werte}
         \end{figure}
 
         Dieser Auszug der Aggregation bestätigt das erwartete Ergebnis.
 
     \item \textbf{Szenario 2 – Verschobene Zeitreihe:} 
-        Eine Aggregation von CTI-Reports unterschiedlicher Knoten kann zu zeitlichen Verschiebungen führen, da die Knoten ihre Ergebnisse variabel über den Pub/Sub-Kanal an ihre Nachbarn weitergeben. zu einer verzerrten Darstellung der Bedrohungsanalyse führen, da die Merkmale unterschiedliche Systemzustände repräsentieren und keine konsistente Informationsbasis bilden. Die Auswirkungen zeitlicher Verschiebungen auf die Aggregationsqualität sowie die optimale Wahl des Schwellenwerts \texttt{MAX\_TIME\_SKEW\_SECONDS} sind Gegenstand empirischer Evaluierungen (siehe Kapitel~\ref{chapter:diskussion_und_forschungsluecke}).
+        Eine Aggregation von CTI-Reports unterschiedlicher Knoten kann zu zeitlichen Verschiebungen führen, da die Knoten ihre Ergebnisse variabel über den Pub/Sub-Kanal an ihre Nachbarn weitergeben. Dies kann zu einer verzerrten Darstellung der Bedrohungsanalyse führen, da die Merkmale unterschiedliche Systemzustände repräsentieren und keine konsistente Informationsbasis bilden. Die Auswirkungen zeitlicher Verschiebungen auf die Aggregationsqualität sowie die optimale Wahl des Schwellenwerts \texttt{MAX\_TIME\_SKEW\_SECONDS} sind Gegenstand empirischer Evaluierungen (siehe Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücken)).
         
         Das erwartete Ergebnis ist, dass der betroffene CTI-Report bereits vor der Aggregation ausgeschlossen und der Nutzer über diesen Ausschluss informiert wird. Um dies zu evaluieren, wurde einem der sechs CTI-Reports eine zeitliche Verschiebung von $+3$ Minuten hinzugefügt. Dies überschreitet den definierten Grenzwert von \texttt{MAX\_TIME\_SKEW\_SECONDS}~$= 90\,\text{s}$, weshalb dieser CTI-Report ignoriert und der Nutzer darüber informiert werden soll.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{figures/aggregation_mit_time_skew.png}
-        \caption{Auszug der Aggregation aus Szenario~2 mit zeitlicher Verschiebung}
+        \caption{Auszug der Aggregation aus Szenario~2 mit zeitlicher Verschiebung (Sigmoid-Funktion)}
         \label{fig:auszug_threat_report_time_skew}
     \end{figure}
 
@@ -79,9 +79,9 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
         
         Um dieses Szenario zu validieren, wurden CTI-Reports generiert, während sich die Ladeinfrastruktur in einem regulären Betriebszustand (\textit{benign}) befand. Dies resultiert in durchgehend negativen Detektionswerten ($0$).
 
-        % \begin{equation}
-        %     w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot (1 - e^{-K \cdot n})
-        % \end{equation}
+        \begin{equation}
+            w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot (1 - e^{-K \cdot (n - 1)})
+        \end{equation}
         \begin{equation}
             w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot
             \left(
@@ -94,20 +94,20 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
 
         Da für $n = 1$ beide Formeln den Wert 1 liefern, entspricht dies dem erwarteten Output in der Zusammenfassung des aggregierten Reports.
 
-        % \begin{figure}[H]
-        %     \centering
-        %     \includegraphics[width=1\textwidth]{figures/aggregierter_threat_report_utility.png}
-        %     \caption{Auszug eines aggregierten Berichts (Utility Theory) aus Szenario 3}
-        %     \label{fig:auszug_threat_report_n1}
-        % \end{figure}
-        % \begin{figure}[H]
-        %     \centering
-        %     \includegraphics[width=1\textwidth]{figures/aggregierter_threat_report_sigmoid.png}
-        %     \caption{Auszug eines aggregierten Berichts (Sigmoid) aus Szenario 3}
-        %     \label{fig:auszug_threat_report_n1_sigmoid}
-        % \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\textwidth]{figures/threat_report_idle.png}
+            \caption{Auszug eines aggregierten Berichts (Utility Theory) aus Szenario 3}
+            \label{fig:auszug_threat_report_n1}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\textwidth]{figures/threat_report_idle.png}
+            \caption{Auszug eines aggregierten Berichts (Sigmoid) aus Szenario 3}
+            \label{fig:auszug_threat_report_n1_sigmoid}
+        \end{figure}
 
-        Die Zusammenfassungen der aggregierten Reports verdeutlichen, dass für jeden Report die identische Gewichtung von $1$ berechnet wurde. Ein Abgleich der resultierenden CSV-Dateien bestätigt zudem die Übereinstimmung der beiden Ansätze in diesem Grenzszenario. 
+        Die Zusammenfassungen der aggregierten Reports verdeutlichen, dass für jeden Report die identische Gewichtung von $1$ berechnet wurde. 
 
         % \begin{figure}[H]
         %     \centering
@@ -124,24 +124,39 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
         \paragraph{1. Exponentielle Utility-Funktion:}
         Die Sättigung der exponentiellen Funktion gegen den Grenzwert lässt sich wie folgt herleiten:
 
-
-        \begin{align*}
-        \lim_{n \to \infty} w(n) &= \lim_{n \to \infty} \left[ 1 + (3 - 1) \cdot (1 - e^{-0,1 \cdot n}) \right] \\
-        &= 1 + 2 \cdot (1 - \lim_{n \to \infty} e^{-0,1 \cdot n}) \\
-        &= 1 + 2 \cdot (1 - 0) \\
-        &= \mathbf{3}
-        \end{align*}
+        \begin{align}
+        \lim_{n \to \infty} w(n)
+        &= \lim_{n \to \infty} \left[
+            1 + (3 - 1) \cdot \left(1 - e^{-0{,}1 \cdot n - 1}\right)
+        \right] \\[6pt]
+        &= 1 + 2 \cdot \left(
+            1 - \underbrace{\lim_{n \to \infty} e^{-0{,}1 \cdot n - 1}}_{\to\, 0,\;
+            \text{da } {-0{,}1n - 1} \to -\infty}
+        \right) \\[6pt]
+        &= 1 + 2 \cdot (1 - 0) \\[6pt]
+        &= 3
+        \end{align}
 
         \paragraph{2. Angepasste Sigmoid-Funktion:}
         Analog dazu wird die Sättigung für die Sigmoid-Funktion berechnet:
  
-        \begin{align*}
-        \lim_{n \to \infty} w(n) &= \lim_{n \to \infty} \left[ W_{base} + (W_{max} - W_{base}) \left( \frac{1}{1+e^{-k(n-n_0)}} - \frac{1}{1+e^{k n_0}} \right) \right] \\
-        &= 1 + 2 \cdot \left( \lim_{n \to \infty} \frac{1}{1+e^{-k(n-n_0)}} - \frac{1}{1+e^{k n_0}} \right) \\
-        &= 1 + 2 \cdot \left( 1 - \frac{1}{1+e^{k n_0}} \right) \\
-        &\approx 1 + 2 \cdot 1 = \mathbf{3}
-        \end{align*}
-
-        Hinweis: Der Term $\frac{1}{1+e^{k n_0}}$ wirkt als konstanter Offset. Für große $n_0$ strebt dieser gegen Null, wodurch das theoretische Maximum von $3$ nahezu erreicht wird.
-
+        \begin{align}
+        \lim_{n \to \infty} w(n)
+        &= \lim_{n \to \infty} \left[
+            W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
+            \underbrace{\left(
+                \frac{1}{1+e^{-k(n-n_0)}}
+                - \frac{1}{1+e^{-k(1-n_0)}}
+            \right)}_{\text{Sigmoid-Differenz}}
+        \right] \\[6pt]
+        &= W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
+            \left(
+                \underbrace{\lim_{n \to \infty} \frac{1}{1+e^{-k(n-n_0)}}}_{\to\, 1,\; \text{da } e^{-k(n-n_0)} \to 0}
+                - \frac{1}{1+e^{-k(1-n_0)}}
+            \right) \\[6pt]
+        &= W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
+            \cdot \frac{e^{-k(1-n_0)}}{1+e^{-k(1-n_0)}} \\[6pt]
+        &= 1 + 2 \cdot \frac{e^{4{,}5}}{1+e^{4{,}5}} \\[6pt]
+        &\approx 2{,}978
+        \end{align}
     \end{itemize}

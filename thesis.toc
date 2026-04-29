@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.2}Zielsetzung der Arbeit}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{1}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Systemarchitektur und Detection Framework}{4}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Systemarchitektur und Detektion Framework}{4}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Systemüberblick und verteilte Kommunikation}{4}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch}{5}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}End-to-End-Datenfluss}{5}{subsection.3.1.2}%
@@ -38,21 +38,21 @@
 \contentsline {chapter}{\numberline {7}Evaluation}{21}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{21}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Vergleich der Gewichtungsfunktionen}{23}{section.7.2}%
-\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{24}{paragraph*.25}%
-\contentsline {paragraph}{\nonumberline 2. Angepasste Sigmoid-Funktion:}{24}{paragraph*.27}%
-\contentsline {section}{\numberline {7.3}Analyse des Echo-Chamber-Effekts}{24}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Definition und theoretischer Kontext}{24}{subsection.7.3.1}%
+\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{24}{paragraph*.27}%
+\contentsline {paragraph}{\nonumberline 2. Angepasste Sigmoid-Funktion:}{24}{paragraph*.29}%
+\contentsline {section}{\numberline {7.3}Analyse des Echo-Chamber-Effekts}{25}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Definition und theoretischer Kontext}{25}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Formalisierung des Szenarios}{25}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Einordnung und Ausblick}{25}{subsection.7.3.3}%
-\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{26}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Auswirkungen der Gewichtungsstrategien auf die Report-Qualität}{26}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für die externe CTI-Nutzung}{26}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Verbessert Aggregation wirklich die Detection}{27}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Datenqualität vs. Datenmenge}{27}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Abtastintervall}{27}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}\texttt {MAX\_TIME\_SKEW\_SECONDS}}{27}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Echo-Chamber-Effekt}{27}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Evaluation auf öffentlichem Datensatz}{28}{subsection.8.3.5}%
-\contentsline {chapter}{\numberline {9}Quellcode}{29}{chapter.9}%
-\contentsline {chapter}{Bibliography}{40}{section*.33}%
+\contentsline {subsection}{\numberline {7.3.3}Einordnung und Ausblick}{26}{subsection.7.3.3}%
+\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{27}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Auswirkungen der Gewichtungsstrategien auf die Report-Qualität}{27}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für die externe CTI-Nutzung}{27}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Verbessert Aggregation wirklich die Detection}{28}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Datenqualität vs. Datenmenge}{28}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Abtastintervall}{28}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Verschobene Zeitfenster}{28}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Echo-Chamber-Effekt}{28}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Evaluation auf öffentlichem Datensatz}{29}{subsection.8.3.5}%
+\contentsline {chapter}{\numberline {9}Quellcode}{30}{chapter.9}%
+\contentsline {chapter}{Bibliography}{42}{section*.35}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

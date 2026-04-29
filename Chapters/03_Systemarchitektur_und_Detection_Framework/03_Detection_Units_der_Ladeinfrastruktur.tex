@@ -31,7 +31,7 @@ Im Folgenden werden die vier Hauptdetektionseinheiten der Testumgebung vorgestel
             \item \textit{Konstantreihe + Sprung:} Wenn ein Temperatursprung bei einer ansonsten konstanten Reihe eine Toleranz von $> 1$ überschreitet, wird eine Anomalie gemeldet.
             \item \textit{Anomalie durch Z-Score:} Wenn die Standardabweichung der Temperaturwerte einen Z-Score von $> 3,0$ erreicht, löst die Anomalieerkennung aus.
         \end{itemize}
-        \item \textbf{Wattmeter-Überwachung:} Analog zur System- und Leistungsanomaliedetektion (siehe Kapitel~\ref{subsec:System_und_Leistungsanomaliedetektion}) ruft diese Detektion ebenfalls vier Metriken zu Spannung und Leistung der letzten 60 Sekunden ab. Die Detektion prüft, ob diese Werte fest definierte Schwellenwerte (Minimum oder Maximum) unter- bzw. überschreiten.
+        \item \textbf{Wattmeter-Überwachung:} Analog zur System- und Leistungsanomaliedetektion (siehe Kapitel~\ref{subsec:System_und_Leistungsanomaliedetektion} (System und Leistungsanomaliedetektion)) ruft diese Detektion ebenfalls vier Metriken zu Spannung und Leistung der letzten 60 Sekunden ab. Die Detektion prüft, ob diese Werte fest definierte Schwellenwerte (Minimum oder Maximum) unter- bzw. überschreiten.
     \end{itemize}
 
     Sobald die Temperatur- und/oder die Wattmeter-Überwachung eine positive Anomalie detektieren, schlägt auch der kombinierte Alarm \textit{detection\_power\_temperature} aus.
