@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1777540639.90265 "thesis.aux" "thesis.bbl" "thesis" 1777540710.99944 0
+["bibtex thesis"] 1777546635.8617 "thesis.aux" "thesis.bbl" "thesis" 1777546725.80389 0
   "./references.bib" 1777540630.2145 23837 f2dbacc0b397df088f63d37eb1b18a14 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "thesis.aux" 1777540710.55827 49038 0967739643ca0f64a2da1a1a8f5a307e "pdflatex"
+  "thesis.aux" 1777546725.24589 48693 f733a72bd101e1453fe603597a2a18cb "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1777540705.93189 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1777540711.00006 0
+["pdflatex"] 1777546720.15948 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1777546725.80429 0
   "/etc/texmf/web2c/texmf.cnf" 1722698732.88771 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1777536819.63098 14078 1a3fe452d64a443750bc60748b728988 ""
+  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1777546718.16159 14293 abd537a57b8f792a818fd1a17a9110cd ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -277,7 +277,7 @@
   "Chapters/07_Evaluation/02_echo_chamber_analyse.tex" 1777297153.57433 3574 bad3c5411ddebda4f7cf469169dd84a1 ""
   "Chapters/08_Diskussion/01_welche_gewichtung_besser.tex" 1777537191.37881 2981 425172fed13b88fa173921b1c2d2f437 ""
   "Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex" 1777296000.33171 710 10f1b5acb6577e7120d15666b050a1a4 ""
-  "Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex" 1777540705.67528 4255 1e44da174c38adbfa9b12de2a508a14d ""
+  "Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex" 1777546628.11841 4418 58bc0a3d973ae27d92422617c4f910af ""
   "code_sections/aggregation.py" 1777450060.46398 4385 5a728d11d1e85f68c7ecb003464a16f4 ""
   "code_sections/attackCount.py" 1777437490.40267 1366 56142ffb03b38b71a7d063793f2adcc2 ""
   "code_sections/config.py" 1776943508.97514 1167 ce18283c3787b413d41f2ef000327d7f ""
@@ -302,12 +302,12 @@
   "figures/masking_attention_is_all_you_need.png" 1776084913.10818 142484 cc4bd145d246eba6bf0d9bade406d4ef ""
   "figures/threat_report_idle.png" 1777448602.73352 27775 d65ce1e7ba5e85bb391ffa52b653949f ""
   "logos/oth-logo.png" 1491634092 72704 28cd978a7a026ba33f822ab10581c80a ""
-  "thesis.aux" 1777540710.55827 49038 0967739643ca0f64a2da1a1a8f5a307e "pdflatex"
-  "thesis.bbl" 1777540639.98947 8980 e62f4ece78b44d726dfd0fa09acccf06 "bibtex thesis"
-  "thesis.out" 1777540708.03628 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.tdo" 1777540710.56927 1316 e8eef631f55d6cf47949028b14e71f3c "pdflatex"
-  "thesis.tex" 1777536819.63098 14078 1a3fe452d64a443750bc60748b728988 ""
-  "thesis.toc" 1777540710.56927 5571 2f4b7eff1dfc0ed8c2ce887710828ff0 "pdflatex"
+  "thesis.aux" 1777546725.24589 48693 f733a72bd101e1453fe603597a2a18cb "pdflatex"
+  "thesis.bbl" 1777546636.00979 8980 e62f4ece78b44d726dfd0fa09acccf06 "bibtex thesis"
+  "thesis.out" 1777546722.3014 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.tdo" 1777546725.2609 1081 e61540a4468aeef2523f823321eaef03 "pdflatex"
+  "thesis.tex" 1777546718.16159 14293 abd537a57b8f792a818fd1a17a9110cd ""
+  "thesis.toc" 1777546725.2609 5592 d90c17932402e06e99c8e63a424531fd "pdflatex"
   "thesisclass.cls" 1760532836 7338 846104f6b6832a0fb61015bbee24f22d ""
   (generated)
   "thesis.aux"
