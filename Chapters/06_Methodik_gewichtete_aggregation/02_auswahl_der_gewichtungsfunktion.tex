@@ -16,7 +16,7 @@ Durch eine positive affine Transformation \cite[Sec.~3]{norstad1999utility} wird
 Die Gewichtung der Reports erfolgt über die folgende Funktion:
 \begin{equation}
 \label{eq:utility_function}
-    w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot (1 - e^{-K \cdot (n)})
+    w(n) = W_{\text{base}} + (W_{\text{max}} - W_{\text{base}}) \cdot (1 - e^{-K \cdot (n - 1)})
 \end{equation}
 
 Wie die Kurve verdeutlicht, erfahren CTI-Reports mit einer steigenden Anzahl positiver Detektionen ($n$) eine kontinuierlich höhere Gewichtung ($w$). Diese konvergiert gegen einen definierten Grenzwert von $W_{\text{max}} = 3$, wodurch eine übermäßige Dominanz einzelner CTI-Reports mit extrem hohen positiven Einzeldetektionen (Ausreißer) unterdrückt wird \cite[Sec.~8]{norstad1999utility}. Gleichzeitig stellt der Achsenabschnitt bei $n = 1$ sicher, dass jeder CTI-Report mit einem Basisgewicht von $W_{\text{base}} = 1$ in die Aggregation einfließt, um eine Mindestrelevanz aller vorliegenden Informationen zu gewährleisten.
