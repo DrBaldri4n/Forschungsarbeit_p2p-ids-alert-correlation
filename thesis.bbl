@@ -110,4 +110,10 @@ K.~Zhang, F.~Zhao, S.~Luo, Y.~Xin, and H.~Zhu.
 \newblock An intrusion action-based {IDS} alert correlation analysis and prediction framework, 2019.
 \newblock Schlägt das IACF-Framework vor, das Alarme auf Basis intrinsischer Korrelationen zu Intrusion Actions gruppiert und mittels zeitbasierter Sequenzanalyse (TSS) zu Sessions zusammenführt, um mehrstufige Angriffe zu rekonstruieren und vorherzusagen.
 
+\bibitem{zhang2022reputation}
+X.~Zhang, X.~Miao, and M.~Xue.
+\newblock A reputation-based approach using consortium blockchain for cyber threat intelligence sharing.
+\newblock {\em Security and Communication Networks}, 2022.
+\newblock Schlägt ein blockchain-basiertes CTI-Sharing-Modell vor, das Consortium-Blockchain mit einem verteilten Reputationsmanagementsystem kombiniert. Eingeführt wird der \textit{Proof-of-Reputation}-Konsensalgorithmus (PoR), der Knoten anhand ihres Verhaltens im Netzwerk bewertet und byzantinische Angriffe durch kompromittierte Mitglieder abwehrt, die falsche CTI-Reports einschleusen.
+
 \end{thebibliography}

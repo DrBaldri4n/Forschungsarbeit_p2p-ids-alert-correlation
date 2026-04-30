@@ -54,5 +54,5 @@
 \contentsline {subsection}{\numberline {8.3.4}Echo-Chamber-Effekt}{28}{subsection.8.3.4}%
 \contentsline {subsection}{\numberline {8.3.5}Evaluation auf öffentlichem Datensatz}{29}{subsection.8.3.5}%
 \contentsline {chapter}{\numberline {9}Quellcode}{30}{chapter.9}%
-\contentsline {chapter}{Bibliography}{42}{section*.34}%
+\contentsline {chapter}{Bibliography}{42}{section*.33}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
