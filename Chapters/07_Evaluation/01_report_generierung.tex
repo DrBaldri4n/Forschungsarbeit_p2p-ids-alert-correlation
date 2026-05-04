@@ -1,7 +1,7 @@
 \section{Generierung der Threat Reports}
 \label{sec:generierung_der_threat_reports}
 
-Um das System evaluieren zu können, wurden beispielhafte Threat Reports generiert, die ein breites Spektrum potenzieller Szenarien abdecken. Wie in Kapitel~\ref{sec:detection_einheiten_der_ladeinfrastruktur} (Detection-Einheiten der Ladeinfrastruktur) dargelegt, werden Flooding-Attacken durch einen Großteil der implementierten Detektionsmechanismen erkannt. Für die Testgenerierung wurde daher eine UDP-Flooding-Attacke mittels des Tools \texttt{hping3} durchgeführt:
+Um das System evaluieren zu können, wurden beispielhafte Threat Reports generiert, die ein breites Spektrum potenzieller Szenarien abdecken. Wie in Kapitel~\ref{sec:detection_einheiten_der_ladeinfrastruktur} (Detektionseinheiten der Ladeinfrastruktur) dargelegt, werden Flooding-Attacken durch einen Großteil der implementierten Detektionsmechanismen erkannt. Für die Testgenerierung wurde daher eine UDP-Flooding-Attacke mittels des Tools \texttt{hping3} durchgeführt:
 
 \begin{center}
     \texttt{hping3 --flood --udp -p 80 <IP-Adresse der Wallbox>}
@@ -18,7 +18,7 @@ Dabei reagierte lediglich die \textit{Power Temperature Detection} nicht, da die
 
 Zur besseren Evaluation der Code-Struktur werden die relevantesten Parameter bei jeder Ausführung protokolliert und ausgegeben.
 
-In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports verdeutlicht, darunter statistische Kennzahlen wie Durchschnitt (Avg), Minimum (Min), Maximum (Max), Median, Anstieg (Increase) sowie die Gesamtsumme. Die Analyse erfolgt über Sliding Windows, die vom aktuellen Zeitpunkt (Offset 0s) bis zu einem Rückblick von $-120\,\text{s}$ reichen (siehe Kapitel~\ref{sec:treat_report_datenmanagement} (Konzeption des Threat Reports)). Im vorliegenden Fall ist ersichtlich, dass die \textit{Attack Probability} der Hardware-Detection mit einer Wahrscheinlichkeit von über $0{,}98$ identifiziert wurde. Diese sinkt im aktuellsten Zeitfenster (Offset 0s) signifikant auf einen Wert unter $0{,}01$ ab. Dies deutet darauf hin, dass das Angriffsereignis entweder beendet oder erfolgreich abgewehrt wurde.
+In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports verdeutlicht, darunter statistische Kennzahlen wie Durchschnitt (Avg), Minimum (Min), Maximum (Max), Median, Anstieg (Increase) sowie die Gesamtsumme. Die Analyse erfolgt über Sliding Windows, die vom aktuellen Zeitpunkt (Offset 0s) bis zu einem Rückblick von $-120\,\text{s}$ reichen (siehe Kapitel~\ref{sec:treat_report_datenmanagement} (Konzeption des Threat Reports)). Im vorliegenden Fall ist ersichtlich, dass die \textit{Attack Probability} der Hardware-Detektion mit einer Wahrscheinlichkeit von über $0{,}98$ identifiziert wurde. Diese sinkt im aktuellsten Zeitfenster (Offset 0s) signifikant auf einen Wert unter $0{,}01$ ab. Dies deutet darauf hin, dass das Angriffsereignis entweder beendet oder erfolgreich abgewehrt wurde.
 
 \begin{figure}[ht]
     \centering

@@ -8,7 +8,7 @@ Die gewählten Parameter, wie beispielsweise der Steigungsfaktor $k$ oder der We
 
 \begin{itemize}
     \item \textbf{Erzeugung fester Merkmalsvektoren:}
-    Die Anforderung der Invarianz gegenüber variablen Eingabekardinalitäten wird durch die Funktion \texttt{aggregate\_weighted\_reports} (Listing~\ref{lst:aggregation}) realisiert. In Anlehnung an den Attention-Mechanismus ermöglicht dieser Ansatz die Verarbeitung einer beliebigen Anzahl von Eingangsgrößen, während gleichzeitig ein Merkmalsvektor mit invarianter Dimension (\textit{Fixed-Size Input}) extrahiert wird \cite{velickovic2018gat}. Dies stellt die notwendige Kompatibilität für nachgelagerte Machine-Learning-Modelle sicher.
+    Die Anforderung der Invarianz gegenüber variablen Eingabekardinalitäten wird durch die Funktion \texttt{aggregate\_weighted\_reports} (Listing~\ref{lst:aggregation}) realisiert. In Anlehnung an den Attention-Mechanismus ermöglicht dieser Ansatz die Verarbeitung einer beliebigen Anzahl von Eingangsgrößen, während gleichzeitig ein Merkmalsvektor mit invarianter Dimension (Fixed-Size Input) extrahiert wird \cite{velickovic2018gat}. Dies stellt die notwendige Kompatibilität für nachgelagerte Machine-Learning-Modelle sicher.
 
     \item \textbf{Relevanzbasierte Gewichtung:}
     Die qualitative Differenzierung der CTI-Reports erfolgt in der Funktion \texttt{count\_attack\_ongoing\_per\_report} (Listing~\ref{lst:attackCount}). Diese extrahiert die Anzahl der Einzeldetektionen innerhalb eines CTI-Reports und überführt diese als quantitative Basis in den Gewichtungsprozess. Damit wird sichergestellt, dass die Aggregation die Informationsdichte der einzelnen Quellen berücksichtigt.

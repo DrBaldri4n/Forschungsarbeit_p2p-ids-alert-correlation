@@ -9,7 +9,7 @@
     
     \begin{itemize}
         \item Jeder Knoten erstellt einen standardisierten Threat Report, wie in Kapitel~\ref{chapter:thread_report} (Konzeption des Threat Reporters) beschrieben, welcher detaillierte Informationen über die lokale Bedrohungslage enthält.
-        \item Die Informationen werden an die Nachbarn in einem Peer-to-Peer-Netzwerk über die Pub/Sub-Infrastruktur weitergegeben, wie in Kapitel~\ref{chapter:systemarchitektur} (Systemarchitektur und Detection Framework) dargelegt. Dies erfolgt in einem festen Intervall von 60 Sekunden.
+        \item Die Informationen werden an die Nachbarn in einem Peer-to-Peer-Netzwerk über die Pub/Sub-Infrastruktur weitergegeben, wie in Kapitel~\ref{chapter:systemarchitektur} (Systemarchitektur und Detektion Framework) dargelegt. Dies erfolgt in einem festen Intervall von 60 Sekunden.
         \item Für die verbesserte Erkennung stehen jedem einzelnen Knoten zu jedem Intervall eine variable Anzahl an Threat Reports von den Nachbar Knoten zur Verfügung. Dies ist dem dynamischen Aufbau der Netzwerktopologie sowie potenziellen Latenzen geschuldet.
         \item Es gilt, eine Methode zu entwickeln, welche die Relevanz der einzelnen Knoten bewertet und somit die Gewichtung der Informationen jedes einzelnen Threat Reports dynamisch und intelligent anpasst.
     \end{itemize}

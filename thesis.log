@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  30 APR 2026 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  4 MAY 2026 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1254,8 +1254,6 @@ Overfull \hbox (21.74068pt too wide) in paragraph at lines 263--263
  []
 
 (./Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 7.
-
 Overfull \hbox (7.23933pt too wide) in paragraph at lines 7--8
 \T1/ptm/m/n/11.04124 der einge-hen-den CTI-Reports im op-er-a-tiven Be-trieb kon-tinuier-lich vari-iert, muss die Gewich-
  []
@@ -1312,11 +1310,6 @@ Overfull \hbox (6.96277pt too wide) in paragraph at lines 16--18
  []
 
 [19]) [20] (./Chapters/07_Evaluation/01_report_generierung.tex
-Overfull \hbox (2.03513pt too wide) in paragraph at lines 4--5
-\T1/ptm/m/n/11.04124 Lade-in-fras-truk-tur) dargelegt, wer-den Flooding-Attacken durch einen Groÿteil der im-ple-men-tierten
- []
-
-
 Overfull \hbox (8.14014pt too wide) in paragraph at lines 10--11
 []\T1/ptm/m/n/11.04124 Dabei reagierte lediglich die \T1/ptm/m/it/11.04124 Power Tem-per-a-ture De-tec-tion \T1/ptm/m/n/11.04124 nicht, da diese auss-chlieÿlich physikalis-
  []
@@ -1326,17 +1319,17 @@ Overfull \hbox (11.6519pt too wide) in paragraph at lines 10--11
 \T1/ptm/m/n/11.04124 che Pa-ram-e-ter wie Tem-per-atur und Leis-tung überwacht, keine net-zw-erk-spez-i-fis-chen Daten analysiert
  []
 
-<figures/gewichtung_utility_theory_5_CTIreports.png, id=367, 761.84625pt x 139.52126pt>
+<figures/gewichtung_utility_theory_5_CTIreports.png, id=366, 761.84625pt x 139.52126pt>
 File: figures/gewichtung_utility_theory_5_CTIreports.png Graphic file (type png)
 <use figures/gewichtung_utility_theory_5_CTIreports.png>
 Package pdftex.def Info: figures/gewichtung_utility_theory_5_CTIreports.png  used on input line 14.
 (pdftex.def)             Requested size: 363.31941pt x 66.53513pt.
-<figures/Threat_report_auszug.png, id=369, 1818.795pt x 106.3975pt>
+<figures/Threat_report_auszug.png, id=368, 1818.795pt x 106.3975pt>
 File: figures/Threat_report_auszug.png Graphic file (type png)
 <use figures/Threat_report_auszug.png>
 Package pdftex.def Info: figures/Threat_report_auszug.png  used on input line 25.
 (pdftex.def)             Requested size: 427.43153pt x 25.0034pt.
-<figures/Threat_report_auszug_attackprobability.png, id=370, 1818.795pt x 83.31125pt>
+<figures/Threat_report_auszug_attackprobability.png, id=369, 1818.795pt x 83.31125pt>
 File: figures/Threat_report_auszug_attackprobability.png Graphic file (type png)
 <use figures/Threat_report_auszug_attackprobability.png>
 Package pdftex.def Info: figures/Threat_report_auszug_attackprobability.png  used on input line 26.
@@ -1351,12 +1344,12 @@ Overfull \hbox (67.91185pt too wide) in paragraph at lines 36--37
 \T1/ptm/m/n/11.04124 über-prüft und diese gegebe-nen-falls auss-chlieÿt (siehe List-ing []9.4[], Funk-tion \T1/aett/m/n/11.04124 fil-ter_reports_with_NaN\T1/ptm/m/n/11.04124 ).
  []
 
-<figures/Threat_report_Zeile0.png, id=385, 1724.4425pt x 27.10126pt>
+<figures/Threat_report_Zeile0.png, id=384, 1724.4425pt x 27.10126pt>
 File: figures/Threat_report_Zeile0.png Graphic file (type png)
 <use figures/Threat_report_Zeile0.png>
 Package pdftex.def Info: figures/Threat_report_Zeile0.png  used on input line 42.
 (pdftex.def)             Requested size: 427.43153pt x 6.71739pt.
-<figures/Threat_report_auszug_NaN.png, id=386, 1724.4425pt x 79.29625pt>
+<figures/Threat_report_auszug_NaN.png, id=385, 1724.4425pt x 79.29625pt>
 File: figures/Threat_report_auszug_NaN.png Graphic file (type png)
 <use figures/Threat_report_auszug_NaN.png>
 Package pdftex.def Info: figures/Threat_report_auszug_NaN.png  used on input line 43.
@@ -1366,7 +1359,7 @@ Overfull \hbox (1.67531pt too wide) in paragraph at lines 48--49
 []\T1/ptm/m/n/11.04124 Infolgedessen wurde der be-trof-fene CTI-Report bere-its vor der Ag-gre-ga-tion aus-geschlossen. 
  []
 
-<figures/Threat_report_auszug_NaN_aggregation.png, id=387, 982.67125pt x 245.91875pt>
+<figures/Threat_report_auszug_NaN_aggregation.png, id=386, 982.67125pt x 245.91875pt>
 File: figures/Threat_report_auszug_NaN_aggregation.png Graphic file (type png)
 <use figures/Threat_report_auszug_NaN_aggregation.png>
 Package pdftex.def Info: figures/Threat_report_auszug_NaN_aggregation.png  used on input line 52.
@@ -1382,7 +1375,7 @@ Overfull \hbox (3.67297pt too wide) in paragraph at lines 59--61
  []
 
 [22 <./figures/Threat_report_Zeile0.png> <./figures/Threat_report_auszug_NaN.png> <./figures/Threat_report_auszug_NaN_aggregation.png>]
-<figures/aggregation_mit_time_skew.png, id=399, 986.68625pt x 315.1775pt>
+<figures/aggregation_mit_time_skew.png, id=398, 986.68625pt x 315.1775pt>
 File: figures/aggregation_mit_time_skew.png Graphic file (type png)
 <use figures/aggregation_mit_time_skew.png>
 Package pdftex.def Info: figures/aggregation_mit_time_skew.png  used on input line 66.
@@ -1392,7 +1385,7 @@ Overfull \hbox (5.59015pt too wide) in paragraph at lines 77--79
 \T1/ptm/m/n/11.04124 tungs-funk-tion) er-läutert, wird je-dem Re-port eine Ba-sis-gewich-tung von $\OML/ztmcm/m/it/11.04124 W[] \OT1/ztmcm/m/n/11.04124 = 1$ \T1/ptm/m/n/11.04124 zugewiesen,
  []
 
-<figures/threat_report_idle.png, id=401, 561.09625pt x 162.6075pt>
+<figures/threat_report_idle.png, id=400, 561.09625pt x 162.6075pt>
 File: figures/threat_report_idle.png Graphic file (type png)
 <use figures/threat_report_idle.png>
 Package pdftex.def Info: figures/threat_report_idle.png  used on input line 99.
@@ -1416,12 +1409,12 @@ Overfull \hbox (14.02757pt too wide) in paragraph at lines 1--1
 []\T1/ptm/m/n/15.89941 Auswirkungen der Gewich-tungsstrate-gien auf die Report-Qualität 
  []
 
-) (./Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex
-Overfull \hbox (4.55182pt too wide) in paragraph at lines 1--1
-[]\T1/ptm/m/n/15.89941 Potenzial der LLM-gestützten Auf-bere-itung für die ex-terne CTI-
+
+Overfull \hbox (9.89677pt too wide) in paragraph at lines 7--8
+\T1/ptm/m/n/11.04124 Rauschen oder dem Echo-Chamber-Effekt (siehe Kapi-tel []7.3[] (Anal-yse des Echo-Chamber-Effekts)),
  []
 
-) (./Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex [27]
+) (./Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex) (./Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex [27]
 Overfull \hbox (21.35806pt too wide) in paragraph at lines 8--9
 []\T1/ptm/m/n/11.04124 Die im-ple-men-tierten Fil-ter-mech-a-nis-men \T1/aett/m/n/11.04124 fil-ter-Re-portsWith-NaN \T1/ptm/m/n/11.04124 und \T1/aett/m/n/11.04124 fil-ter-Re-ports-By-TimeSkew
  []
@@ -1454,7 +1447,22 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 1.
 
-[42] [43]) [44]
+[42]
+Underfull \hbox (badness 1521) in paragraph at lines 63--67
+[]\T1/ptm/m/n/11.04124 PyTorch Con-trib-u-tors.  \T1/ptm/m/it/11.04124 Mul-ti-hea-dAt-ten-tion --- Py-Torch 2.4 Doc-u-men-ta-tion\T1/ptm/m/n/11.04124 .  Meta
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 63--67
+\T1/ptm/m/n/11.04124 AI, 2024.  Zu-griff am: 13. April 2026. Of-fizielle PyTorch-Dokumentation der
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 63--67
+\T1/aett/m/n/11.04124 torch.nn.MultiheadAttention\T1/ptm/m/n/11.04124 -Klasse. Im-ple-men-tiert Multi-Head At-ten-tion nach
+ []
+
+[43]) [44]
 Overfull \hbox (22.25372pt too wide) in alignment at lines 348--353
  [] [] [] [] [] 
  []
@@ -1556,28 +1564,13 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 373.
 
-
-LaTeX Warning: Marginpar on page  moved.
-
-
-LaTeX Warning: Marginpar on page  moved.
-
-
-LaTeX Warning: Marginpar on page  moved.
-
-
-LaTeX Warning: Marginpar on page  moved.
-
-
-LaTeX Warning: Marginpar on page  moved.
-
 [1]
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 396.
+(scrbook)              This could result in several error messages on input line 389.
 
 (./thesis.tdo)
 \tf@tdo=\write6
@@ -1587,7 +1580,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.396 \newpage
+l.389 \newpage
                [2] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1604,18 +1597,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33054 strings out of 476106
- 621588 string characters out of 5793932
- 2186975 words of memory out of 5000000
- 53655 multiletter control sequences out of 15000+600000
+ 32881 strings out of 476106
+ 617656 string characters out of 5793932
+ 2184975 words of memory out of 5000000
+ 53490 multiletter control sequences out of 15000+600000
  630202 words of font info for 172 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,18n,121p,10968b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (50 pages, 1215302 bytes).
+Output written on thesis.pdf (50 pages, 1208878 bytes).
 PDF statistics:
- 1485 PDF objects out of 1728 (max. 8388607)
- 1358 compressed objects within 14 object streams
- 717 named destinations out of 1000 (max. 500000)
+ 1468 PDF objects out of 1728 (max. 8388607)
+ 1341 compressed objects within 14 object streams
+ 709 named destinations out of 1000 (max. 500000)
  519 words of extra memory for PDF output out of 10000 (max. 10000000)
 

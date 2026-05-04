@@ -3,12 +3,10 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: abbrv.bst
 Database file #1: references.bib
-Warning--entry type for "taylordavies2023parquet" isn't style-file defined
---line 239 of file references.bib
 Warning--entry type for "celerdata2024parquet" isn't style-file defined
---line 250 of file references.bib
-Warning--entry type for "zhang2019iacf" isn't style-file defined
---line 259 of file references.bib
+--line 15 of file references.bib
+Warning--entry type for "taylordavies2023parquet" isn't style-file defined
+--line 141 of file references.bib
 Warning--empty journal in debar2001aggregation
 Warning--empty journal in devlin2019bert
 Warning--empty journal in lee2019settransformer
@@ -19,43 +17,43 @@ Warning--empty journal in vinyals2016orderm
 Warning--empty journal in zaheer2017deepsets
 You've used 20 entries,
             2118 wiz_defined-function locations,
-            619 strings with 12627 characters,
-and the built_in function-call counts, 6459 in all, are:
-= -- 582
+            620 strings with 12418 characters,
+and the built_in function-call counts, 6617 in all, are:
+= -- 605
 > -- 471
 < -- 0
 + -- 189
 - -- 166
-* -- 450
-:= -- 1193
-add.period$ -- 76
+* -- 469
+:= -- 1218
+add.period$ -- 78
 call.type$ -- 20
 change.case$ -- 142
 chr.to.int$ -- 0
 cite$ -- 28
-duplicate$ -- 196
-empty$ -- 384
+duplicate$ -- 200
+empty$ -- 394
 format.name$ -- 166
-if$ -- 1248
+if$ -- 1279
 int.to.chr$ -- 0
 int.to.str$ -- 20
-missing$ -- 16
-newline$ -- 119
+missing$ -- 17
+newline$ -- 121
 num.names$ -- 40
-pop$ -- 153
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 123
 quote$ -- 0
 skip$ -- 141
 stack$ -- 0
-substring$ -- 137
+substring$ -- 180
 swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 80
 warning$ -- 8
-while$ -- 43
+while$ -- 45
 width$ -- 22
-write$ -- 231
-(There were 11 warnings)
+write$ -- 236
+(There were 10 warnings)
