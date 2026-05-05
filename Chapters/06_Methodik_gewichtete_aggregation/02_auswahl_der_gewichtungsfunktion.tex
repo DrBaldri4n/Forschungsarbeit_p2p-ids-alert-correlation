@@ -31,7 +31,7 @@ Die praktische Umsetzung der beschriebenen Gewichtungslogik ist in Listing~\ref{
 
 \subsection{Sigmoid-Funktion}
 
-\textbf{Asymptotische Gewichtungsfunktion mit S-förmigem Verlauf:} Als Alternative zur Utility-Theory-Funktion wurde die \textit{Logistische Sigmoid-Funktion} evaluiert. Sie ist im Bereich des maschinellen Lernens weit verbreitet und findet insbesondere in neuronalen Netzen Anwendung, etwa als Aktivierungsfunktion bei der Klassifikation sowie in Graph Attention Networks zur Aggregation von Nachbarknoten \cite{velickovic2018gat}. Ein weiterer Vorteil des \textit{Attention-based} Ansatzes ist, dass dieser eine beliebige Anzahl von Inputs verarbeiten kann \cite{velickovic2018gat}.
+\textbf{Asymptotische Gewichtungsfunktion mit S-förmigem Verlauf:} Als Alternative zur Utility-Theory-Funktion wurde die \textit{Logistische Sigmoid-Funktion} evaluiert. Sie ist im Bereich des\\maschinellen Lernens weit verbreitet und findet insbesondere in neuronalen Netzen Anwendung, etwa als Aktivierungsfunktion bei der Klassifikation sowie in Graph Attention Networks zur Aggregation von Nachbarknoten \cite{velickovic2018gat}. Ein weiterer Vorteil des \textit{Attention-based} Ansatzes ist, dass dieser eine beliebige Anzahl von Inputs verarbeiten kann \cite{velickovic2018gat}.
 
 Durch eine positive affine Transformation sowie eine Verschiebung um den Ankerpunkt wird die Funktion so skaliert und normiert, dass bei $n = 1$ stets $w(1) = W_{\text{base}}$ gilt. Dies stellt sicher, dass jeder CTI-Report mindestens mit dem Faktor $W_{\text{base}}$ in die gewichtete Aggregation einfließt. Im Code wird $n = 1$ als Standardwert verwendet, sodass Reports ohne positive Detektionen ($n_{\text{attacks}} = 0$) mit der Gewichtung $w(1) = W_{\text{base}}$ bewertet werden.
 

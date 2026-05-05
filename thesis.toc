@@ -5,54 +5,62 @@
 \contentsline {section}{\numberline {1.2}Zielsetzung der Arbeit}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{1}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Systemarchitektur und Detektion Framework}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Systemüberblick und verteilte Kommunikation}{4}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch}{5}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}End-to-End-Datenfluss}{5}{subsection.3.1.2}%
-\contentsline {paragraph}{\nonumberline Datenerhebung (Charging Station)}{6}{paragraph*.8}%
-\contentsline {paragraph}{\nonumberline Transport (IPFS-Netzwerk)}{6}{paragraph*.10}%
-\contentsline {paragraph}{\nonumberline Persistierung und Visualisierung (Cloud Dashboard)}{6}{paragraph*.12}%
-\contentsline {section}{\numberline {3.2}Physische Testumgebung}{7}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Detektionseinheiten der Ladeinfrastruktur}{8}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}{9}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Physikalische Signal- und Temperaturüberwachung (detection\_power\_temperature)}{9}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}KI-basierte Angriffserkennung im Netzwerk (ids\_power\_ai\_detection)}{10}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Hardware-Ereignisüberwachung (detection\_hardwareevents)}{10}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {4}Konzeption des Threat Reporters}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Zentralisiertes Datenmanagement und Merkmalsextraktion für den Threat Report}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Zeitliche Diskretisierung und Intervalldefinition}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Statistische Merkmalsaggregation mittels Sliding-Window-Analyse}{12}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Theoretische Grundlagen der Informationsfusion}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Vergleich von Aggregationsmethoden}{13}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Statische Aggregation}{14}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Padding und Masking}{15}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Deep Sets}{15}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Set2Set}{16}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Graph Neural Networks and Pooling}{16}{subsection.5.1.5}%
-\contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation von Threat Reports}{17}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Anforderungen an die Gewichtungsfunktion}{17}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Auswahl der Gewichtungsfunktion}{17}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Utility-Theory-Funktion}{18}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Sigmoid-Funktion}{18}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{19}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Funktionsverifikation}{21}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{21}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Vergleich der Gewichtungsfunktionen}{23}{section.7.2}%
-\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{24}{paragraph*.26}%
-\contentsline {paragraph}{\nonumberline 2. Angepasste Sigmoid-Funktion:}{24}{paragraph*.28}%
-\contentsline {section}{\numberline {7.3}Analyse des Echo-Chamber-Effekts}{25}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Definition und theoretischer Kontext}{25}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Formalisierung des Szenarios}{25}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Einordnung und Ausblick}{26}{subsection.7.3.3}%
-\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{27}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Auswirkungen der Gewichtungsstrategien auf die Report-Qualität}{27}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für CTI-Reports}{27}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Potenzial und Grenzen der Aggregation für die Detektionsqualität}{28}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Datenqualität vs. Datenmenge}{28}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Abtastintervall}{28}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Verschobene Zeitfenster}{28}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Echo-Chamber-Effekt}{29}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Evaluation auf öffentlichem Datensatz}{29}{subsection.8.3.5}%
-\contentsline {chapter}{\numberline {9}Quellcode}{30}{chapter.9}%
-\contentsline {chapter}{Bibliography}{42}{section*.29}%
+\contentsline {section}{\numberline {2.1}Anomalieerkennung und Alert-Aggregation in verteilten Systemen}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Informationsfusion mit variabler Eingabegröße und Attention-Mechanismen}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Kollaboratives CTI-Sharing, Gewichtungsstrategien und Datenqualität}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Systemarchitektur und Detektion Framework}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Systemüberblick und verteilte Kommunikation}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Privates IPFS-Netzwerk und Peer-to-Peer-Datenaustausch}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}End-to-End-Datenfluss}{6}{subsection.3.1.2}%
+\contentsline {paragraph}{\nonumberline Datenerhebung (Charging Station)}{7}{paragraph*.8}%
+\contentsline {paragraph}{\nonumberline Transport (IPFS-Netzwerk)}{7}{paragraph*.10}%
+\contentsline {paragraph}{\nonumberline Persistierung und Visualisierung (Cloud Dashboard)}{7}{paragraph*.12}%
+\contentsline {section}{\numberline {3.2}Physische Testumgebung}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Detektionseinheiten der Ladeinfrastruktur}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}System- und Leistungsanomaliedetektion}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Physikalische Signal- und Temperaturüberwachung}{10}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}KI-basierte Angriffserkennung im Netzwerk}{11}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Hardware-Ereignisüberwachung}{11}{subsection.3.3.4}%
+\contentsline {chapter}{\numberline {4}Konzeption des Threat Reporters}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Zentralisiertes Datenmanagement und Merkmalsextraktion für den Threat Report}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Zeitliche Diskretisierung und Intervalldefinition}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Statistische Merkmalsaggregation mittels Sliding-Window-Analyse}{13}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Theoretische Grundlagen der Informationsfusion}{14}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Vergleich von Aggregationsmethoden}{14}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Statische Aggregation}{15}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Padding und Masking}{16}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Deep Sets}{16}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Set2Set}{17}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Graph Neural Networks and Pooling}{17}{subsection.5.1.5}%
+\contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation von Threat Reports}{18}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Anforderungen an die Gewichtungsfunktion}{18}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Auswahl der Gewichtungsfunktion}{18}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Utility-Theory-Funktion}{19}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Sigmoid-Funktion}{19}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{20}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Funktionsverifikation}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Übersicht der generierten Szenarien}{22}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Szenario 1 – NaN-Werte (Fehlerbehandlung)}{23}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Szenario 2 – Verschobene Zeitreihe}{23}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Vergleich der Gewichtungsfunktionen}{24}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Szenario 3 – Uniforme negative Detektionen}{24}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Szenario 4 – Ausreißer-Report}{25}{subsection.7.3.2}%
+\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{25}{paragraph*.28}%
+\contentsline {paragraph}{\nonumberline 2. Angepasste Sigmoid-Funktion:}{26}{paragraph*.30}%
+\contentsline {section}{\numberline {7.4}Analyse des Echo-Chamber-Effekts}{26}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Definition und theoretischer Kontext}{26}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Formalisierung des Szenarios}{27}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Einordnung und Ausblick}{27}{subsection.7.4.3}%
+\contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{28}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Auswirkungen der Gewichtungsstrategien auf die Report-Qualität}{28}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für CTI-Reports}{28}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Potenzial und Grenzen der Aggregation für die Detektionsqualität}{29}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Datenqualität vs. Datenmenge}{29}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Abtastintervall}{29}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Verschobene Zeitfenster}{29}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Echo-Chamber-Effekt}{30}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Evaluation auf öffentlichem Datensatz}{30}{subsection.8.3.5}%
+\contentsline {chapter}{\numberline {9}Quellcode}{31}{chapter.9}%
+\contentsline {chapter}{Bibliography}{43}{section*.31}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

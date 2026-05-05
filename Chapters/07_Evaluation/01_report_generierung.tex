@@ -18,22 +18,25 @@ Dabei reagierte lediglich die \textit{Power Temperature Detection} nicht, da die
 
 Zur besseren Evaluation der Code-Struktur werden die relevantesten Parameter bei jeder Ausführung protokolliert und ausgegeben.
 
-In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports verdeutlicht, darunter statistische Kennzahlen wie Durchschnitt (Avg), Minimum (Min), Maximum (Max), Median, Anstieg (Increase) sowie die Gesamtsumme. Die Analyse erfolgt über Sliding Windows, die vom aktuellen Zeitpunkt (Offset 0s) bis zu einem Rückblick von $-120\,\text{s}$ reichen (siehe Kapitel~\ref{sec:treat_report_datenmanagement} (Konzeption des Threat Reports)). Im vorliegenden Fall ist ersichtlich, dass die \textit{Attack Probability} der Hardware-Detektion mit einer Wahrscheinlichkeit von über $0{,}98$ identifiziert wurde. Diese sinkt im aktuellsten Zeitfenster (Offset 0s) signifikant auf einen Wert unter $0{,}01$ ab. Dies deutet darauf hin, dass das Angriffsereignis entweder beendet oder erfolgreich abgewehrt wurde.
+% --- SUBSECTION FÜR DIE ALLGEMEINE ERKLÄRUNG DER MERKMALE ---
+\section{Übersicht der generierten Szenarien}
+    In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports verdeutlicht, darunter statistische Kennzahlen wie Durchschnitt (Avg), Minimum (Min), Maximum (Max), Median, Anstieg (Increase) sowie die Gesamtsumme. Die Analyse erfolgt über Sliding Windows, die vom aktuellen Zeitpunkt (Offset 0s) bis zu einem Rückblick von $-120\,\text{s}$ reichen (siehe Kapitel~\ref{sec:treat_report_datenmanagement} (Konzeption des Threat Reports)). Im vorliegenden Fall ist ersichtlich, dass die \textit{Attack Probability} der Hardware-Detektion mit einer Wahrscheinlichkeit von über $0{,}98$ identifiziert wurde. Diese sinkt im aktuellsten Zeitfenster (Offset 0s) signifikant auf einen Wert unter $0{,}01$ ab. Dies deutet darauf hin, dass das Angriffsereignis entweder beendet oder erfolgreich abgewehrt wurde.
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Threat_report_auszug.png}
-    \includegraphics[width=1\textwidth]{figures/Threat_report_auszug_attackprobability.png}
-    \caption{Übersicht der generierten Threat-Report-Szenarien}
-    \label{fig:auszug_threat_report}
-\end{figure}
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=1\textwidth]{figures/Threat_report_auszug.png}
+        \includegraphics[width=1\textwidth]{figures/Threat_report_auszug_attackprobability.png}
+        \caption{Übersicht der generierten Threat-Report-Szenarien}
+        \label{fig:auszug_threat_report}
+    \end{figure}
 
-\begin{itemize}
-    \item \textbf{Szenario 1 – NaN-Werte (Fehlerbehandlung):} 
-        In diesem Szenario muss sichergestellt werden, dass die Generierung von Threat Reports auch bei unvollständigen oder fehlerhaften Daten robust bleibt. So kann es im laufenden Betrieb vorkommen, dass aufgrund von Netzwerkproblemen oder Sensorausfällen von Exportern keine Daten mehr über Prometheus bezogen werden können (siehe Kapitel~\ref{chapter:systemarchitektur} (Details zur Systemarchitektur)). 
+% --- SZENARIO 1 ---
+\subsection{Szenario 1 – NaN-Werte (Fehlerbehandlung)}
+\label{subsec:szenario_1}
+In diesem Szenario muss sichergestellt werden, dass die Generierung von Threat Reports auch bei unvollständigen oder fehlerhaften Daten robust bleibt. So kann es im laufenden Betrieb vorkommen, dass aufgrund von Netzwerkproblemen oder Sensorausfällen von Exportern keine Daten mehr über Prometheus bezogen werden können (siehe Kapitel~\ref{chapter:systemarchitektur} (Details zur Systemarchitektur)). 
         Die Entscheidung zum vollständigen Ausschluss solcher Reports basiert auf der Tatsache, dass ein Report ohne valide Daten keine Informationsgrundlage bietet, um den Angriffsstatus der Wallbox zu beurteilen. Eine Substitution der NaN-Werte durch $0$ oder andere Standardwerte wurde als nicht sinnvoll erachtet, da dies das Ergebnis der Bedrohungsanalyse verfälschen könnte~\cite{hasan2021missingvalue}.
 
-        Es wurde eine Funktion implementiert, welche die generierten CTI-Reports auf NaN-Werte überprüft und diese gegebenenfalls ausschließt (siehe Listing~\ref{lst:filter}, Funktion \texttt{filter\_reports\_with\_NaN}). Aufgrund dieser Implementierung wird erwartet, dass ein CTI-Report mit resultierenden NaN-Werten bereits vor der Aggregation ausgeschlossen wird und der Nutzer über diesen Ausschluss informiert wird.
+        Es wurde eine Funktion implementiert, welche die generierten CTI-Reports auf NaN-Werte überprüft und diese gegebenenfalls ausschließt (siehe Listing~\ref{lst:filter}, Funktion\\\texttt{filter\_reports\_with\_NaN}). Aufgrund dieser Implementierung wird erwartet, dass ein CTI-Report mit resultierenden NaN-Werten bereits vor der Aggregation ausgeschlossen wird und der Nutzer über diesen Ausschluss informiert wird.
 
         Um dieses Szenario zu erzeugen, wurde während der kontinuierlichen Reporterstellung ein Datenexporter terminiert und neugestartet. Dies führte zu einer erhöhten Anzahl an NaN-Werten in den generierten CTI-Reports, da Feature-Werte über Prometheus nicht mehr bezogen werden konnten (siehe Kapitel~\ref{chapter:systemarchitektur} (Details zur Systemarchitektur)).
 
@@ -56,7 +59,9 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
 
         Dieser Auszug der Aggregation bestätigt das erwartete Ergebnis.
 
-    \item \textbf{Szenario 2 – Verschobene Zeitreihe:} 
+    % --- SZENARIO 2 ---
+    \subsection{Szenario 2 – Verschobene Zeitreihe}
+    \label{subsec:szenario_2}
         Eine Aggregation von CTI-Reports unterschiedlicher Knoten kann zu zeitlichen Verschiebungen führen, da die Knoten ihre Ergebnisse variabel über den Pub/Sub-Kanal an ihre Nachbarn weitergeben. Dies kann zu einer verzerrten Darstellung der Bedrohungsanalyse führen, da die Merkmale unterschiedliche Systemzustände repräsentieren und keine konsistente Informationsbasis bilden. Die Auswirkungen zeitlicher Verschiebungen auf die Aggregationsqualität sowie die optimale Wahl des Schwellenwerts \texttt{MAX\_TIME\_SKEW\_SECONDS} sind Gegenstand empirischer Evaluierungen (siehe Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücken)).
         
         Das erwartete Ergebnis ist, dass der betroffene CTI-Report bereits vor der Aggregation ausgeschlossen und der Nutzer über diesen Ausschluss informiert wird. Um dies zu evaluieren, wurde einem der sechs CTI-Reports eine zeitliche Verschiebung von $+3$ Minuten hinzugefügt. Dies überschreitet den definierten Grenzwert von \texttt{MAX\_TIME\_SKEW\_SECONDS}~$= 90\,\text{s}$, weshalb dieser CTI-Report ignoriert und der Nutzer darüber informiert werden soll.
@@ -71,11 +76,16 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
     Dieser Auszug der Aggregation bestätigt, dass CTI-Reports mit verschobenem Zeitfenster bereits vor der Aggregation ausgeschlossen werden und der Nutzer über diesen Ausschluss informiert wird.
 
 
+% ==========================================
+% NEUE SECTION
+% ==========================================
 \section{Vergleich der Gewichtungsfunktionen}
 \label{sec:vergleich_der_gewichtungsfunktionen}
 
-    \item \textbf{Szenario 3 – Uniforme negative Detektionen:}
-        Wie in Kapitel~\ref{sec:auswahl_der_gewichtungsfunktion} (Auswahl der Gewichtungsfunktion) erläutert, wird jedem Report eine Basisgewichtung von $W_{\text{base}} = 1$ zugewiesen, sofern keine positiven Detektionen vorliegen. In diesem Fall wird erwartet, dass die Ergebnisse der Sigmoid-Funktion und der Utility-Theory-Funktion identisch sind, da beide Funktionen bei einer Anzahl von $n=1$ positiven Detektionen (Referenzwert) auf den Wert $1$ normiert sind.
+    % --- SZENARIO 3 ---
+    \subsection{Szenario 3 – Uniforme negative Detektionen}
+    \label{subsec:szenario_3}
+    Wie in Kapitel~\ref{sec:auswahl_der_gewichtungsfunktion} (Auswahl der Gewichtungsfunktion) erläutert, wird jedem Report eine Basisgewichtung von $W_{\text{base}} = 1$ zugewiesen, sofern keine positiven Detektionen vorliegen. In diesem Fall wird erwartet, dass die Ergebnisse der Sigmoid-Funktion und der Utility-Theory-Funktion identisch sind, da beide Funktionen bei einer Anzahl von $n=1$ positiven Detektionen (Referenzwert) auf den Wert $1$ normiert sind.
         
         Um dieses Szenario zu validieren, wurden CTI-Reports generiert, während sich die Ladeinfrastruktur in einem regulären Betriebszustand (\textit{benign}) befand. Dies resultiert in durchgehend negativen Detektionswerten ($0$).
 
@@ -109,54 +119,64 @@ In den folgenden Abbildungen werden die kumulierten Werte des Threat Reports ver
 
         Die Zusammenfassungen der aggregierten Reports verdeutlichen, dass für jeden Report die identische Gewichtung von $1$ berechnet wurde. 
 
-        % \begin{figure}[H]
-        %     \centering
-        %     \includegraphics[width=1\textwidth]{figures/aggregierter_threat_report_gewichtung_1.png}
-        %     \caption{Auszug der aggregierten CSV-Datei aus Szenario 3 mit einheitlicher Gewichtung}
-        %     \label{fig:auszug_threat_report_n1_csv}
-        % \end{figure}
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=1\textwidth]{figures/agg_cti_report_header.png}
+            \includegraphics[width=1\textwidth]{figures/agg_cti_report_utility.png}
+            \caption{Übersicht Aggregierter CTI-Report Utility-Theory-Funktion}
+            \label{fig:agg_cti_report_utility}
+        \end{figure}
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=1\textwidth]{figures/agg_cti_report_header.png}
+            \includegraphics[width=1\textwidth]{figures/agg_cti_report_sigmoid.png}
+            \caption{Übersicht Aggregierter CTI-Report Sigmoid-Funktion}
+            \label{fig:agg_cti_report_sigmoid}
+        \end{figure}
+        
 
         Daraus lässt sich schließen, dass Reports mit einer gleichen Anzahl an positiven Einzeldetektionen innerhalb des Systems als gleichwertig eingestuft und mit der selben Relevanz gewichtet werden.
 
-    \item \textbf{Szenario 4 – Ausreißer-Report:}
-        Um nachzuweisen, dass die Gewichtung auch bei extremen Ausreißern den Grenzwert $W_{\text{max}} = 3$ nicht überschreitet, wird das Grenzverhalten (Limes) für $n \to \infty$ betrachtet.
+    % --- SZENARIO 4 ---
+    \subsection{Szenario 4 – Ausreißer-Report}
+    \label{subsec:szenario_4}   
+    Um nachzuweisen, dass die Gewichtung auch bei extremen Ausreißern den Grenzwert $W_{\text{max}} = 3$ nicht überschreitet, wird das Grenzverhalten (Limes) für $n \to \infty$ betrachtet.
 
-        \paragraph{1. Exponentielle Utility-Funktion:}
-        Die Sättigung der exponentiellen Funktion gegen den Grenzwert lässt sich wie folgt herleiten:
+    \paragraph{1. Exponentielle Utility-Funktion:}
+    Die Sättigung der exponentiellen Funktion gegen den Grenzwert lässt sich wie folgt herleiten:
 
-        \begin{align}
-        \lim_{n \to \infty} w(n)
-        &= \lim_{n \to \infty} \left[
-            1 + (3 - 1) \cdot \left(1 - e^{-0{,}1 \cdot n - 1}\right)
-        \right] \\[6pt]
-        &= 1 + 2 \cdot \left(
-            1 - \underbrace{\lim_{n \to \infty} e^{-0{,}1 \cdot n - 1}}_{\to\, 0,\;
-            \text{da } {-0{,}1n - 1} \to -\infty}
-        \right) \\[6pt]
-        &= 1 + 2 \cdot (1 - 0) \\[6pt]
-        &= 3
-        \end{align}
+    \begin{align}
+    \lim_{n \to \infty} w(n)
+    &= \lim_{n \to \infty} \left[
+        1 + (3 - 1) \cdot \left(1 - e^{-0{,}1 \cdot n - 1}\right)
+    \right] \notag \\[6pt]
+    &= 1 + 2 \cdot \left(
+        1 - \underbrace{\lim_{n \to \infty} e^{-0{,}1 \cdot n - 1}}_{\to\, 0,\;
+        \text{da } {-0{,}1n - 1} \to -\infty}
+    \right) \notag \\[6pt]
+    &= 1 + 2 \cdot (1 - 0) \notag \\[6pt]
+    &= 3 \label{eq:grenzwert}
+    \end{align}
 
-        \paragraph{2. Angepasste Sigmoid-Funktion:}
-        Analog dazu wird die Sättigung für die Sigmoid-Funktion berechnet:
- 
-        \begin{align}
-        \lim_{n \to \infty} w(n)
-        &= \lim_{n \to \infty} \left[
-            W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
-            \underbrace{\left(
-                \frac{1}{1+e^{-k(n-n_0)}}
-                - \frac{1}{1+e^{-k(1-n_0)}}
-            \right)}_{\text{Sigmoid-Differenz}}
-        \right] \\[6pt]
-        &= W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
-            \left(
-                \underbrace{\lim_{n \to \infty} \frac{1}{1+e^{-k(n-n_0)}}}_{\to\, 1,\; \text{da } e^{-k(n-n_0)} \to 0}
-                - \frac{1}{1+e^{-k(1-n_0)}}
-            \right) \\[6pt]
-        &= W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
-            \cdot \frac{e^{-k(1-n_0)}}{1+e^{-k(1-n_0)}} \\[6pt]
-        &= 1 + 2 \cdot \frac{e^{4{,}5}}{1+e^{4{,}5}} \\[6pt]
-        &\approx 2{,}978
-        \end{align}
-    \end{itemize}
+    \paragraph{2. Angepasste Sigmoid-Funktion:}
+    Analog dazu wird die Sättigung für die Sigmoid-Funktion berechnet:
+
+    \begin{align}
+    \lim_{n \to \infty} w(n)
+    &= \lim_{n \to \infty} \left[
+        W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
+        \underbrace{\left(
+            \frac{1}{1+e^{-k(n-n_0)}}
+            - \frac{1}{1+e^{-k(1-n_0)}}
+        \right)}_{\text{Sigmoid-Differenz}}
+    \right] \notag \\[6pt]
+    &= W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
+        \left(
+            \underbrace{\lim_{n \to \infty} \frac{1}{1+e^{-k(n-n_0)}}}_{\to\, 1,\; \text{da } e^{-k(n-n_0)} \to 0}
+            - \frac{1}{1+e^{-k(1-n_0)}}sd
+        \right) \notag \\[6pt]
+    &= W_{\text{base}} + (W_{\text{max}} - W_{\text{base}})
+        \cdot \frac{e^{-k(1-n_0)}}{1+e^{-k(1-n_0)}} \notag \\[6pt]
+    &= 1 + 2 \cdot \frac{e^{4{,}5}}{1+e^{4{,}5}} \notag \\[6pt]
+    &\approx 2{,}978 \label{eq:sigmoid_grenzwert}
+    \end{align}

@@ -3,7 +3,8 @@
 
 Im Folgenden werden die vier Hauptdetektionseinheiten der Testumgebung vorgestellt, die im Rahmen dieses Projektes implementiert wurden und für den \textit{Cyber Threat Report} sowie den \textit{Aggregierten Cyber Threat Report} von zentraler Bedeutung sind. 
 
-    \subsection{System- und Leistungsanomaliedetektion (pi\_anomaly\_detection)}
+    \subsection{System- und Leistungsanomaliedetektion}
+
     \label{subsec:System_und_Leistungsanomaliedetektion}
     Die Einheit \textit{pi\_anomaly\_detection} trifft Entscheidungen anhand der Metriken Shunt-Spannung, Bus-Spannung, Stromstärke und Leistung. Diese Messdaten werden von den Sensoren der Wallbox erfasst und an Prometheus weitergeleitet. Die beschriebene Detektionseinheit greift diese Daten über Prometheus ab und nutzt zwei Deep-Learning-Modelle:
     \begin{itemize}
@@ -19,10 +20,10 @@ Im Folgenden werden die vier Hauptdetektionseinheiten der Testumgebung vorgestel
     
     Die Detektionseinheit reagiert insbesondere auf Stromspitzen und -einbrüche.
 
-    \subsection{Physikalische Signal- und Temperaturüberwachung (detection\_power\_temperature)}
+    \subsection{Physikalische Signal- und Temperaturüberwachung}
     \label{subsec:physikalische_signale_und_temperaturueberwachung}
 
-    Diese Detektionseinheit arbeitet mit einer klassischen regelbasierten Logik, welche IDS-Muster zuordnet und auf Basis von Schwellenwerten für physikalische Parameter (Spannung, Leistung, Temperatur) Anomalien detektiert. Die Detektion ist in zwei Bereiche unterteilt:
+    Die Detektionseinheit \textit{detection\_power\_temperature} arbeitet mit einer klassischen regelbasierten Logik, welche IDS-Muster zuordnet und auf Basis von Schwellenwerten für physikalische Parameter (Spannung, Leistung, Temperatur) Anomalien detektiert. Die Detektion ist in zwei Bereiche unterteilt:
 
     \begin{itemize}
         \item \textbf{Temperaturüberwachung:} Diese Anomalieerkennung ruft die Temperaturdaten der letzten 60 Sekunden von Prometheus ab und erkennt Anomalien anhand von drei definierten Regeln:
@@ -36,15 +37,15 @@ Im Folgenden werden die vier Hauptdetektionseinheiten der Testumgebung vorgestel
 
     Sobald die Temperatur- und/oder die Wattmeter-Überwachung eine positive Anomalie detektieren, schlägt auch der kombinierte Alarm \textit{detection\_power\_temperature} aus.
 
-    \subsection{KI-basierte Angriffserkennung im Netzwerk (ids\_power\_ai\_detection)}
-    Diese Detektionskomponente analysiert dieselben vier physikalischen Messgrößen, die in Kapitel~\ref{subsec:System_und_Leistungsanomaliedetektion} beschrieben wurden, verzichtet jedoch vollständig auf statische Schwellenwerte. Stattdessen kommen zwei komplementäre Machine-Learning-Modelle zum Einsatz, die anomales Verhalten im zeitlichen Kontext erkennen:
+    \subsection{KI-basierte Angriffserkennung im Netzwerk}
+    Die Detektionskomponente \textit{ids\_power\_ai\_detection} analysiert dieselben vier physikalischen Messgrößen, die in Kapitel~\ref{subsec:System_und_Leistungsanomaliedetektion} beschrieben wurden, verzichtet jedoch vollständig auf statische Schwellenwerte. Stattdessen kommen zwei komplementäre Machine-Learning-Modelle zum Einsatz, die anomales Verhalten im zeitlichen Kontext erkennen:
 
     \begin{itemize}
         \item \textit{Isolation Forest:} Dies ist ein Verfahren, welches einzelne Messpunkte anhand ihrer statistischen Isolation im Merkmalsraum bewertet. Für jeden Messzeitpunkt wird ein Anomalie-Score berechnet. Weicht ein Datenpunkt signifikant vom gelernten Normalzustand ab, wird dies als Anomalie gewertet.
         \item \textit{LSTM-Autoencoder:} Wie für LSTM-Modelle (Long Short-Term Memory) üblich, betrachtet dieses Modell nicht nur einzelne Messwerte, sondern eine Sequenz von 60 Sekunden (bei einem Abfrageintervall von 5 Sekunden). Das Modell wurde auf normalem Betriebsverhalten trainiert und lernt, typische Zeitreihenmuster zu rekonstruieren. Zur Erkennung wird der \textit{Mean Squared Error} (MSE) zwischen der originalen Sequenz und ihrer Rekonstruktion berechnet. Überschreitet der MSE des aktuellen Fensters einen empirisch bestimmten Schwellenwert (\texttt{LSTM\_THRESHOLD} = 0,01), wird eine Anomalie ausgelöst.
     \end{itemize}
 
-    \subsection{Hardware-Ereignisüberwachung (detection\_hardwareevents)}
-    In diesem Verfahren werden knapp 20 relevante Hardware-Ereignisse kontinuierlich bewertet und mittels eines LSTM-Modells auf anomales Verhalten geprüft. 
+    \subsection{Hardware-Ereignisüberwachung}
+    In dem Verfahren der \textit{detection\_hardwareevents} werden knapp 20 relevante Hardware-Ereignisse kontinuierlich bewertet und mittels eines LSTM-Modells auf anomales Verhalten geprüft. 
 
     Das Modell analysiert die Daten in einem gleitenden Zeitfenster. Ergibt die Modellvorhersage eine Angriffswahrscheinlichkeit von über 50\,\%, wird das Ereignis als Anomalie klassifiziert. Die Ergebnisse, einschließlich der Einzelwahrscheinlichkeiten für \textit{benign} und \textit{attack}, werden über eine dedizierte Schnittstelle an Prometheus exportiert und zur Verfügung gestellt.
