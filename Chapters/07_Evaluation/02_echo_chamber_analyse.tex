@@ -6,7 +6,7 @@ Der Echo-Chamber-Effekt beschreibt im Kontext kollaborativer Intrusion Detection
 \cite{debar2001aggregation} demonstrieren, dass eine unkontrollierte Aggregation von Alarmen (Alerts) zu einer potenziell verfälschten Sicherheitsbewertung führen kann. Übertragen auf das vorliegende P2P-Szenario impliziert dies: Sofern eine signifikante Menge der Knoten fälschlicherweise einen Angriff meldet, signalisiert der aggregierte CTI-Report einen Angriffsstatus, obwohl korrekt messende Knoten zeitgleich einen benignen Zustand detektieren.
 
 \subsection{Formalisierung des Szenarios}
-Sei $M$ die Anzahl fehlerhafter Knoten, die fälschlicherweise einen Angriff (Status 1) melden, und $K$ die Anzahl korrekter Knoten, welche einen benignen Zustand (Status 0) identifizieren. Der aggregierte Output $agg$ berechnet sich aus der gewichteten Summe der individuellen CTI-Reports gemäß der Aggregationsfunktion \texttt{aggregate\_weighted\_reports} (vgl. Listing~\ref{lst:aggregation}):
+Sei $M$ die Anzahl fehlerhafter Knoten, die fälschlicherweise einen Angriff (Status 1) melden, und $K$ die Anzahl korrekter Knoten, welche einen benignen Zustand (Status 0) identifizieren. Der aggregierte Output $agg$ berechnet sich aus der gewichteten Summe der individuellen CTI-Reports gemäß der Aggregationsfunktion \texttt{aggregate\_weighted\_reports} (siehe Listing~\ref{lst:aggregation} (\texttt{aggregation.py})):
 
 \begin{equation}
     agg = \frac{\sum_{i} \text{report}_i \cdot \text{weight}_i}{\sum_{i} \text{weight}_i}
