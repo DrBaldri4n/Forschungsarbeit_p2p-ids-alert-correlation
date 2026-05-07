@@ -38,7 +38,7 @@ Im Folgenden werden die vier Hauptdetektionseinheiten der Testumgebung vorgestel
     Sobald die Temperatur- und/oder die Wattmeter-Überwachung eine positive Anomalie detektieren, schlägt auch der kombinierte Alarm \textit{detection\_power\_temperature} aus.
 
     \subsection{KI-basierte Angriffserkennung im Netzwerk}
-    Die Detektionskomponente \textit{ids\_power\_ai\_detection} analysiert dieselben vier physikalischen Messgrößen, die in Kapitel~\ref{subsec:System_und_Leistungsanomaliedetektion} beschrieben wurden, verzichtet jedoch vollständig auf statische Schwellenwerte. Stattdessen kommen zwei komplementäre Machine-Learning-Modelle zum Einsatz, die anomales Verhalten im zeitlichen Kontext erkennen:
+    Die Detektionskomponente \textit{ids\_power\_ai\_detection} analysiert dieselben vier physikalischen Messgrößen, die in Kapitel~\ref{subsec:System_und_Leistungsanomaliedetektion} (System- und Leistungsanomaliedetektion) beschrieben wurden, verzichtet jedoch vollständig auf statische Schwellenwerte. Stattdessen kommen zwei komplementäre Machine-Learning-Modelle zum Einsatz, die anomales Verhalten im zeitlichen Kontext erkennen:
 
     \begin{itemize}
         \item \textit{Isolation Forest:} Dies ist ein Verfahren, welches einzelne Messpunkte anhand ihrer statistischen Isolation im Merkmalsraum bewertet. Für jeden Messzeitpunkt wird ein Anomalie-Score berechnet. Weicht ein Datenpunkt signifikant vom gelernten Normalzustand ab, wird dies als Anomalie gewertet.

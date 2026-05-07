@@ -60,7 +60,7 @@ Der vollständige Datenfluss vom Sensor bis zur Visualisierung lässt sich in dr
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{./figures/DataFlowIPFS.drawio.png}
-    \caption{Datenfluss zwischen Charging Station (blau) und Cloud Dashboard (grün) über IPFS}
+    \caption{Datenfluss zwischen zwei Charging Stationen über IPFS}
     \label{fig:dataflow}
 \end{figure}
 
@@ -78,7 +78,7 @@ Der \textit{Aggregator} innerhalb des Knotens sammelt die Messdaten. Prometheus 
 Der \texttt{ipfs-wrapper} nimmt die Datei entgegen, publiziert sie im lokalen IPFS-Knoten und erhält eine CID zurück. Anschließend wird die CID zusammen mit der eigenen MADDR über den konfigurierten \textbf{Publish-Subscribe-Mechanismus} im privaten IPFS-Netz verbreitet. Die eigentlichen Messdaten werden dabei nicht aktiv gepusht, lediglich der Zeiger (CID) wird verteilt.
 
 \paragraph{Persistierung und Visualisierung (Cloud Dashboard)}
-Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des \texttt{ipfs-wrapper} die CID und MADDR und leitet diese per \textbf{WebSocket} an den Collector weiter. Der Collector fordert daraufhin die vollständige Datei über den lokalen IPFS-Peer an, der sie in Chunks vom Ursprungs-Peer abruft. Der \textit{File Extractor} verarbeitet die Rohdaten und persistiert die Messwerte in \textbf{InfluxDB}. Grafana greift auf InfluxDB zu und stellt die Zeitreihendaten im Dashboard dar (vgl. Abbildung~\ref{fig:cloud_dashboard}).
+Auf der Serverseite empfängt der \textit{Publish-Subscribe-Event-Listener} des \texttt{ipfs-wrapper} die CID und MADDR und leitet diese per \textbf{WebSocket} an den Collector weiter. Der Collector fordert daraufhin die vollständige Datei über den lokalen IPFS-Peer an, der sie in Chunks vom Ursprungs-Peer abruft. Der \textit{File Extractor} verarbeitet die Rohdaten und persistiert die Messwerte in \textbf{InfluxDB}. Grafana greift auf InfluxDB zu und stellt die Zeitreihendaten im Dashboard dar (siehe Abbildung~\ref{fig:cloud_dashboard}).
 
 \begin{figure}[H]
     \centering
