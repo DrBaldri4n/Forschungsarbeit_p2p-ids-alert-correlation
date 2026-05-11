@@ -54,13 +54,16 @@
 \contentsline {subsection}{\numberline {7.4.3}Einordnung und Ausblick}{27}{subsection.7.4.3}%
 \contentsline {chapter}{\numberline {8}Diskussion und Forschungslücken}{28}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Auswirkungen der Gewichtungsstrategien auf die Report-Qualität}{28}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenzial der LLM-gestützten Aufbereitung für CTI-Reports}{28}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Potenzial und Grenzen der Aggregation für die Detektionsqualität}{29}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Datenqualität vs. Datenmenge}{29}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Abtastintervall}{29}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Verschobene Zeitfenster}{29}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Echo-Chamber-Effekt}{30}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Evaluation auf öffentlichem Datensatz}{30}{subsection.8.3.5}%
-\contentsline {chapter}{\numberline {9}Quellcode}{31}{chapter.9}%
-\contentsline {chapter}{Bibliography}{43}{section*.31}%
+\contentsline {section}{\numberline {8.2}Potenzial und Grenzen der Aggregation für die Detektionsqualität}{28}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Datenqualität vs. Datenmenge}{29}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Abtastintervall}{29}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Verschobene Zeitfenster}{29}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Echo-Chamber-Effekt}{29}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Evaluation auf öffentlichem Datensatz}{30}{subsection.8.2.5}%
+\contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick}{31}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Methodik und Implementierung}{31}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Ergebnisse der Funktionsverifikation}{31}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Zukünftige Forschungsaspekte und Hypothesenbildung}{31}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Quellcode}{33}{chapter.10}%
+\contentsline {chapter}{Bibliography}{45}{section*.31}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1778147509.40597 "thesis.aux" "thesis.bbl" "thesis" 1778147512.54593 0
+["bibtex thesis"] 1778506607.13597 "thesis.aux" "thesis.bbl" "thesis" 1778506610.27065 0
   "./references.bib" 1777887672.92593 12493 3d257ad03cf0e43444ba046cf81b0d37 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "thesis.aux" 1778147512.28132 52881 f1cf3d47e43cc16bb298918274f2048d "pdflatex"
+  "thesis.aux" 1778506609.98599 54532 b4ef506230019522582aa1080f1e6c1d "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1778147509.48475 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1778147512.54615 0
+["pdflatex"] 1778506607.20739 "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" "thesis.pdf" "thesis" 1778506610.27087 0
   "/etc/texmf/web2c/texmf.cnf" 1722698732.88771 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1778142083.56978 13955 03f6b7e20472c06dd63a8971e7e76605 ""
+  "/home/yannic/Desktop/Master_rbg/Semester1/Forschungsarbeit1/Latex/thesis.tex" 1778505521.34013 13939 c8277bc7004b7893f734f12d132a9bd4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -273,11 +273,12 @@
   "Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex" 1778145321.20827 2306 863a0e7b972fb9042149ead51af8217e ""
   "Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex" 1778146991.28418 5574 e223cbf222a22c345acd9f26483be805 ""
   "Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex" 1778147501.70336 3610 5b58ee07048ae1fd40544e7ca5ae9b8f ""
-  "Chapters/07_Evaluation/01_report_generierung.tex" 1777983800.29738 12370 476b1825594cf24e3dd8d7d6c895a1fd ""
-  "Chapters/07_Evaluation/02_echo_chamber_analyse.tex" 1778143015.48537 3601 07732c0324a12d608e49507e8698af47 ""
+  "Chapters/07_Evaluation/01_report_generierung.tex" 1778502327.3312 12510 4a5f7a846eae0d1fd725ffa856fd11d7 ""
+  "Chapters/07_Evaluation/02_echo_chamber_analyse.tex" 1778502877.49002 3655 8f2f1b915e4aad17a2ce6ba1592afad1 ""
   "Chapters/08_Diskussion/01_welche_gewichtung_besser.tex" 1777882949.40288 2969 bd1c09755e414ee4277e51a42a094e72 ""
-  "Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex" 1777882988.52827 698 805b2979ede9912a0ab3090a9791062c ""
-  "Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex" 1778143119.77212 4550 f7534a3e4a85a738a0b005d443fb75ea ""
+  "Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex" 1778504074.19363 704 5b9fff900e156b1dcc17db9e97b1d0fe ""
+  "Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex" 1778504751.29338 4613 3ede762648d1bbef55218a0db19bc1c3 ""
+  "Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex" 1778506602.14201 3243 786a3a104ef80fc147aa60a4946aaccc ""
   "code_sections/aggregation.py" 1777450060.46398 4385 5a728d11d1e85f68c7ecb003464a16f4 ""
   "code_sections/attackCount.py" 1777437490.40267 1366 56142ffb03b38b71a7d063793f2adcc2 ""
   "code_sections/config.py" 1776943508.97514 1167 ce18283c3787b413d41f2ef000327d7f ""
@@ -305,11 +306,11 @@
   "figures/masking_attention_is_all_you_need.png" 1776084913.10818 142484 cc4bd145d246eba6bf0d9bade406d4ef ""
   "figures/threat_report_idle.png" 1777448602.73352 27775 d65ce1e7ba5e85bb391ffa52b653949f ""
   "logos/oth-logo.png" 1491634092 72704 28cd978a7a026ba33f822ab10581c80a ""
-  "thesis.aux" 1778147512.28132 52881 f1cf3d47e43cc16bb298918274f2048d "pdflatex"
-  "thesis.bbl" 1778147509.47933 8828 78052ea694820280e103100b596e3bff "bibtex thesis"
-  "thesis.out" 1778147510.67132 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.tex" 1778142083.56978 13955 03f6b7e20472c06dd63a8971e7e76605 ""
-  "thesis.toc" 1778147512.29032 6399 83c0a5b29f23d9902c36e6b88903e87b "pdflatex"
+  "thesis.aux" 1778506609.98599 54532 b4ef506230019522582aa1080f1e6c1d "pdflatex"
+  "thesis.bbl" 1778506607.202 8828 78052ea694820280e103100b596e3bff "bibtex thesis"
+  "thesis.out" 1778506608.404 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.tex" 1778505521.34013 13939 c8277bc7004b7893f734f12d132a9bd4 ""
+  "thesis.toc" 1778506609.99499 6664 d1d00bad55286cc9d1c9dabfc78368bf "pdflatex"
   "thesisclass.cls" 1760532836 7338 846104f6b6832a0fb61015bbee24f22d ""
   (generated)
   "thesis.aux"

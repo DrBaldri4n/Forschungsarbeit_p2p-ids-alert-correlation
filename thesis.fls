@@ -686,6 +686,9 @@ INPUT Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex
 INPUT ./Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex
 INPUT ./Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex
 INPUT Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex
+INPUT ./Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex
+INPUT ./Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex
+INPUT Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex
 INPUT ./code_sections/reporter.py
 INPUT ./code_sections/reporter.py
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aett9.tfm
