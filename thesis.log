@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  11 MAY 2026 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  14 MAY 2026 09:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1430,22 +1430,7 @@ Overfull \hbox (12.57936pt too wide) in paragraph at lines 17--18
 []\T1/ptm/m/n/11.04124 Wie in Kapi-tel []7.4[] (Anal-yse des Echo-Chamber-Effekts) for-mal-isiert, beze-ich-net der Echo-Chamber-
  []
 
-) [29] [30] (./Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex
-Overfull \hbox (4.12079pt too wide) in paragraph at lines 2--3
-\T1/ptm/m/it/11.04124 Re-ports \T1/ptm/m/n/11.04124 aus vier spezial-isierten De-tek-tion-sein-heiten: System- und Leis-tungsanoma-lien, physikalis-
- []
-
-
-Overfull \hbox (11.77255pt too wide) in paragraph at lines 4--5
-\T1/ptm/m/n/11.04124 angepasste \T1/ptm/m/it/11.04124 Neg-a-tive Ex-po-nen-tial Util-ity Func-tion \T1/ptm/m/n/11.04124 (CARA) sowie eine angepasste \T1/ptm/m/it/11.04124 Sigmoid-Funktion\T1/ptm/m/n/11.04124 .
- []
-
-
-Overfull \hbox (5.88832pt too wide) in paragraph at lines 4--5
-\T1/ptm/m/n/11.04124 Diese er-möglichen eine per-mu-ta-tion-sin-vari-ante In-for-ma-tions-fu-sion mit fes-ter Aus-gabegröÿe (fixed-
- []
-
-) [31] [32]
+) [29] [30] (./Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex) [31] [32]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 301.
  (./code_sections/reporter.py
 
@@ -1609,7 +1594,7 @@ Here is how much of TeX's memory you used:
  59 hyphenation exceptions out of 8191
  122i,18n,121p,10968b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (52 pages, 1332471 bytes).
+Output written on thesis.pdf (52 pages, 1332431 bytes).
 PDF statistics:
  1554 PDF objects out of 1728 (max. 8388607)
  1418 compressed objects within 15 object streams

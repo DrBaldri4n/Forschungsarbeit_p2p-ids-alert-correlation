@@ -1,18 +1,21 @@
 \section{Methodik und Implementierung}
-Im Rahmen dieser Arbeit wurde eine kollaborative Aggregationsinfrastruktur für das ReSiLENT-Detektionssystem konzipiert und implementiert. Jede Ladestation generiert standardisierte \textit{Threat Reports} aus vier spezialisierten Detektionseinheiten: System- und Leistungsanomalien, physikalische Signale, KI-basierte Netzwerkerkennung sowie Hardware-Ereignisse. Die Verteilung dieser Reports erfolgt über ein privates IPFS-Peer-to-Peer-Netzwerk.
+Im Rahmen dieser Arbeit wurde eine kollaborative Aggregationsinfrastruktur für das ReSiLENT-Detektionssystem konzipiert und implementiert. Jede Ladestation generiert standardisierte \textit{Threat Reports} aus vier spezialisierten Detektionseinheiten. Die Verteilung dieser Reports erfolgt über ein privates IPFS-Peer-to-Peer-Netzwerk.
 
-Zur Aggregation variabler Report-Mengen wurden zwei asymptotische Gewichtungsfunktionen implementiert, die auf den Prinzipien von Deep-Sets und Attention-Mechanismen basieren: eine angepasste \textit{Negative Exponential Utility Function} (CARA) sowie eine angepasste \textit{Sigmoid-Funktion}. Diese ermöglichen eine permutationsinvariante Informationsfusion mit fester Ausgabegröße (fixed-size).
+Zur Aggregation variabler Mengen eingehender Threat Reports wurde ein Aggregationsansatz implementiert, dessen Grundprinzip auf Deep-Sets und Attention-Mechanismen basiert. Dadurch kann eine variable Anzahl eingehender Reports in einen Merkmalsvektor fester Größe (\textit{fixed-size representation}) überführt werden.
+
+Die Relevanz einzelner Knoten wird dabei über zwei angepasste Gewichtungsfunktionen modelliert: eine modifizierte \textit{Negative Exponential Utility Function} (CARA) sowie eine angepasste \textit{Sigmoid-Funktion}. Beide Funktionen dienen der dynamischen Gewichtung der eingehenden Reports und begrenzen durch ihr asymptotisches Sättigungsverhalten den Einfluss statistischer Ausreißer.
 
 \section{Ergebnisse der Funktionsverifikation}
 Die Verifikation anhand synthetisch generierter Szenarien zeigt, dass beide Gewichtungsfunktionen die definierten Anforderungen erfüllen. Mit NaN-Werten behaftete oder zeitlich signifikant verschobene Reports werden zuverlässig vorgefiltert. Die Gewichtung konvergiert strukturell gegen den Grenzwert $W_{\max}= 3$, wodurch der Einfluss von Ausreißern effektiv gedämpft wird.
 
 Bei uniformen Detektionswerten liefern beide Funktionen identische Ergebnisse. Differenzen treten primär im Bereich geringer Detektionszahlen auf, in dem die Utility-Funktion eine stärkere Gewichtung vornimmt als die Sigmoid-Funktion. Durch das asymptotische Sättigungsverhalten wird der \textit{Echo-Chamber-Effekt} strukturell begrenzt, wenngleich eine vollständige Elimination allein durch die Gewichtung nicht erreicht wird.
 
-\section{Zukünftige Forschungsaspekte und Hypothesenbildung}
+\section{Zukünftige Forschungsaspekte}
 
 Die empirische Validierung auf Basis eines öffentlichen und unabhängigen IDS-Datensatzes stellt den nächsten notwendigen Schritt dar, um den wissenschaftlichen Mehrwert des kollaborativen Ansatzes belastbar zu quantifizieren. 
 
-Im Zentrum zukünftiger Forschungsfragen steht die Optimierung der Hyperparameter, namentlich des Skalierungsfaktors $k$, der Basisanzahl $n_0$, des Abtastintervalls sowie des Schwellenwerts \texttt{MAX\_TIME\_SKEW\_SECONDS}. Hierbei wird die \textbf{Zentralhypothese} aufgestellt, dass die optimale Konfiguration dieser Parameter eine starke Abhängigkeit von der spezifischen Systemumgebung aufweist. 
+Im Zentrum zukünftiger Forschungsfragen steht die Optimierung der Hyperparameter, namentlich des Skalierungsfaktors $k$, der Basisanzahl $n_0$, des Abtastintervalls sowie des Schwellenwerts \texttt{MAX\_TIME\_SKEW\_SECONDS}.
+% Hierbei wird die \textbf{Zentralhypothese} aufgestellt, dass die optimale Konfiguration dieser Parameter eine starke Abhängigkeit von der spezifischen Systemumgebung aufweist. 
 
 Es wird die Hypothese aufgestellt, dass die Genauigkeit der Aggregation maßgeblich davon abhängt, wie aktuell die Reports sind und wie schnell das System diese verarbeiten kann (Latenz und Durchsatz). Daher ist anzunehmen, dass eine starre Einstellung der Parameter schlechtere Ergebnisse liefert als eine adaptive Konfiguration, die sich automatisch an den Zustand des jeweiligen Systems anpasst.
 

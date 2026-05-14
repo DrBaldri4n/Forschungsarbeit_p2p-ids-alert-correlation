@@ -63,7 +63,7 @@
 \contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick}{31}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Methodik und Implementierung}{31}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Ergebnisse der Funktionsverifikation}{31}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Zukünftige Forschungsaspekte und Hypothesenbildung}{31}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Zukünftige Forschungsaspekte}{31}{section.9.3}%
 \contentsline {chapter}{\numberline {10}Quellcode}{33}{chapter.10}%
 \contentsline {chapter}{Bibliography}{45}{section*.31}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
