@@ -1,4 +1,6 @@
-    \section{Zentralisiertes Datenmanagement und Merkmalsextraktion für den Threat Report}
+In diesem Kapitel wird das konzeptionelle Fundament des Threat Reporters erarbeitet. Um eine netzwerkweite Anomalieerkennung zu ermöglichen, müssen die lokal generierten Daten zunächst einheitlich aufbereitet werden. Die folgenden Abschnitte beschreiben dazu das zentrale Datenmanagement, die zeitliche Diskretisierung der Messfenster sowie die statistische Aggregation der Merkmale.   
+   
+   \section{Zentralisiertes Datenmanagement und Merkmalsextraktion für den Threat Report}
     \label{sec:treat_report_datenmanagement}
 
     Um die Kompatibilität und Standardisierung des Threat Reports zu gewährleisten, wurde entschieden, die erforderlichen Daten zentral aus der Lokalen Prometheus-Datenbank zu extrahieren, anstatt diese einzeln von den jeweiligen Detektionseinheiten abzurufen. Hierfür wurden spezifische Prometheus-Exporter für die Detektionseinheiten entworfen und integriert. Diese stellen die Daten kontinuierlich über die lokalen Ports 2112, 2113, 2115 und 2116 bereit.

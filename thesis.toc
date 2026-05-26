@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {5.1.5}Graph Neural Networks and Pooling}{17}{subsection.5.1.5}%
 \contentsline {chapter}{\numberline {6}Methodik: Gewichtete Aggregation von Threat Reports}{18}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Anforderungen an die Gewichtungsfunktion}{18}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Auswahl der Gewichtungsfunktion}{18}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Auswahl der Gewichtungsfunktion}{19}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Utility-Theory-Funktion}{19}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Sigmoid-Funktion}{19}{subsection.6.2.2}%
 \contentsline {section}{\numberline {6.3}Implementierung des Attention-basierten Selektionsmodells}{20}{section.6.3}%
@@ -42,11 +42,11 @@
 \contentsline {section}{\numberline {7.1}Generierung der Threat Reports}{22}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Übersicht der generierten Szenarien}{22}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Szenario 1 – NaN-Werte (Fehlerbehandlung)}{23}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Szenario 2 – Verschobene Zeitreihe}{23}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}Szenario 2 – Verschobene Zeitreihe}{24}{subsection.7.2.2}%
 \contentsline {section}{\numberline {7.3}Vergleich der Gewichtungsfunktionen}{24}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Szenario 3 – Uniforme negative Detektionen}{24}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Szenario 4 – Ausreißer-Report}{25}{subsection.7.3.2}%
-\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{25}{paragraph*.28}%
+\contentsline {paragraph}{\nonumberline 1. Exponentielle Utility-Funktion:}{26}{paragraph*.28}%
 \contentsline {paragraph}{\nonumberline 2. Angepasste Sigmoid-Funktion:}{26}{paragraph*.30}%
 \contentsline {section}{\numberline {7.4}Analyse des Echo-Chamber-Effekts}{26}{section.7.4}%
 \contentsline {subsection}{\numberline {7.4.1}Definition und theoretischer Kontext}{26}{subsection.7.4.1}%

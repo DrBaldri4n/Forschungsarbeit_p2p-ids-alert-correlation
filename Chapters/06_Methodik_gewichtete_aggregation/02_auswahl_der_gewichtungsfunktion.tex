@@ -21,7 +21,7 @@ Die Gewichtung der Reports erfolgt über die folgende Funktion:
 
 Wie die Kurve (Abbildung~\ref{fig:vergleich_gewichtungsfunktionen}) verdeutlicht, erfahren CTI-Reports mit einer steigenden Anzahl positiver Detektionen ($n$) eine kontinuierlich höhere Gewichtung ($w$). Diese konvergiert gegen einen definierten Grenzwert von $W_{\text{max}} = 3$, wodurch eine übermäßige Dominanz einzelner CTI-Reports mit extrem hohen positiven Einzeldetektionen (Ausreißer) unterdrückt wird. Gleichzeitig stellt der Achsenabschnitt bei $n = 1$ sicher, dass jeder CTI-Report mit einem Basisgewicht von $W_{\text{base}} = 1$ in die Aggregation einfließt, um eine Mindestrelevanz aller vorliegenden Informationen zu gewährleisten.
 
-Die praktische Umsetzung der beschriebenen Gewichtungslogik ist in Listing~\ref{lst:aggregation} (\texttt{aggregation.py}) innerhalb der Funktion \texttt{add\_report\_weight} dokumentiert.
+Die praktische Umsetzung der beschriebenen Gewichtungslogik ist in Listing~\ref{lst:aggregation} (\texttt{ag\-gregation.py}) innerhalb der Funktion \texttt{add\_report\_weight} dokumentiert.
 
 % für geogebra:
 % utilityTheory(n)=W_{base}+(W_{max}-W_{base}) (1-ℯ^(-(K (n-1))))

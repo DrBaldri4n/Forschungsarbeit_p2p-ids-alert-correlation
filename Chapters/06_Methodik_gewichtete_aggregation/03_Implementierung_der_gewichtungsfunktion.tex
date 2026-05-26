@@ -1,7 +1,8 @@
 \section{Implementierung des Attention-basierten Selektionsmodells}
 \label{sec:implementierung_des_attention_basierten_selektionsmodells}
 
-Die im Rahmen dieser Arbeit entwickelten Gewichtungsfunktionen wurden in Python implementiert. Ein wesentliches Merkmal dieser Implementierung ist ihre hohe rechnerische Effizienz: Da die Gewichtung unabhängig für jeden einzelnen CTI-Report berechnet werden kann, ist der Prozess über alle CTI-Reports hinweg vollständig parallelisierbar. Im Gegensatz zu frühen spektralen Ansätzen in der Graph-Verarbeitung sind keine rechenintensiven Matrixoperationen wie Inversionen oder Eigenwertzerlegungen erforderlich \cite{velickovic2018gat}.
+Die Gewichtungsfunktion wird für jeden CTI-Report separat berechnet, wodurch keine wechselseitigen Abhängigkeiten zwischen den einzelnen Reports entstehen. Dadurch eignen sich sowohl die Gewichtungsberechnung als auch die anschließende Aggregation grundsätzlich für eine parallele Verarbeitung über mehrere CTI-Reports hinweg.\\
+Im Gegensatz zu frühen spektralen Ansätzen in der Graph-Verarbeitung sind keine rechenintensiven Matrixoperationen wie Inversionen oder Eigenwertzerlegungen erforderlich \cite{velickovic2018gat}.
 % es gibt keine abhängigkeiten zwischen report A und B die berechnung wird für jeden report einzeln durchgeführt und wir müssen keine komplexe graphen matrix aufbauen, somit stimmt diese aussage
 
 Die gewählten Parameter, wie beispielsweise der Steigungsfaktor $k$ oder der Wendepunkt $n_0$, dienen in der aktuellen Implementierung als Referenzwerte. Eine finale Optimierung dieser Hyperparameter erfolgt in zukünftigen Arbeiten durch eine empirische Evaluierung der Aggregationsergebnisse auf Basis realer Datensätze (siehe Kapitel~\ref{chapter:diskussion_und_forschungsluecke} (Diskussion und Forschungslücken)).

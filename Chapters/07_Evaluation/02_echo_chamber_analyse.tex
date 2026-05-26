@@ -12,6 +12,16 @@ Sei $M$ die Anzahl fehlerhafter Knoten, die fälschlicherweise einen Angriff (St
     agg = \frac{\sum_{i} \text{report}_i \cdot \text{weight}_i}{\sum_{i} \text{weight}_i}
 \end{equation}
 
+\vspace{0.2cm}
+
+\noindent
+mit:
+\begin{itemize}
+    \item \(agg\): aggregierter Wert eines einzelnen Features im \textit{Aggregierten\_CTI\_Report}
+    \item \(\text{report}_i\): Feature-Wert des \(i\)-ten CTI-Reports
+    \item \(\text{weight}_i\): Gewichtung des \(i\)-ten CTI-Reports
+\end{itemize}
+
 Sobald das gewichtete Verhältnis von $M$ zu $K$ einen kritischen Schwellenwert überschreitet, divergiert der Aggregatwert in Richtung des Angriffsstatus, ungeachtet der konsistenten Benign-Meldungen der $K$ korrekten Knoten.
 
 \begin{itemize}
