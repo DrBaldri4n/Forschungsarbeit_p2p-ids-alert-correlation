@@ -5,19 +5,17 @@
 % Acknowledgements:
 %   Adapted from ITW Thesis Template - Chair Prof. Krämer
 
-
 \documentclass[]{thesisclass}
 
-% NOTE: Use your preferred language.
- \usepackage[english]{babel}%<--- TODO: If you want to write your thesis in English don't uncomment this command by putting a % sign before the command.
-% \usepackage[ngerman]{babel}%<--- TODO: If you want to write your thesis in German, uncomment this command by removing the % sign before the command.
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % optional bei pdfLaTeX
 
-
-\usepackage{graphicx} 											
+\usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
-\graphicspath{{./figures/}} %TODO: Save your figures in the figures folder, if you want to include graphics in your thesis. This template will reference to that folder.									
-%\usepackage[natbibapa]{apacite}
-\usepackage{cite} 
+\graphicspath{{./figures/}}
+
+\usepackage{cite}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{amsmath}
@@ -26,38 +24,22 @@
 \usepackage{amsthm}
 \usepackage{soul}
 \usepackage[colorinlistoftodos]{todonotes}
-\newcommand{\todohl}[2]{\texthl{#1}\todo{#2}}
-\newcommand{\missingcite}[1]{\texthl{#1}\todo[color=orange!60]}
 \usepackage{etoolbox}
-\makeatletter
-\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-\makeatother
 \usepackage{chngcntr}
-\counterwithout{footnote}{chapter}
-\counterwithout{equation}{chapter}
-\counterwithout{table}{chapter}
-\counterwithout{figure}{chapter}
-\makeatletter
-\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-\makeatother
 \usepackage{mathptmx}
-\setkomafont{disposition}{\bfseries}
 \usepackage{pifont}
 \usepackage{adjustbox}
 \usepackage{caption}
 \usepackage{longtable}
-\usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{float}
 \usepackage{listings}
 \usepackage{xcolor}
-\usepackage[utf8]{inputenc}   % ← hier
-\usepackage[T1]{fontenc}      % ← empfohlen dazu
-\usepackage[english]{babel}
-\usepackage{amsthm} % Paket für mathematische Sätze
-\newtheorem{theorem}{Theorem} % Definiert die Umgebung "theorem"
-\emergencystretch 1em
+% \usepackage[hidelinks]{hyperref}
+% \usepackage[absolute,overlay]{textpos}
 
+\newtheorem{theorem}{Theorem}
+\emergencystretch 1em
 % TODO: Uncomment just one of the following commands, according to your thesis type. Seminar Thesis is set by default.
 \lstset{
   language=Python,
@@ -79,28 +61,15 @@
            {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
 }
 
-%\newcommand{\mytype}{\iflanguage{english}{Bachelor's Thesis}{Bachelorarbeit}} 
-\newcommand{\mytype}{\iflanguage{english}{Research work}{Masterarbeit}} 
-%\newcommand{\mytype}{\iflanguage{english}{Seminar Thesis}{Seminararbeit}} 
-
-% TODO: Enter personal information and information about your thesis.
-\newcommand{\myname}{\iflanguage{english}{Yannic Hanel} {Vorname Nachname}}
+\newcommand{\mytype}{Forschungsarbeit} 
+\newcommand{\myname}{Yannic Hanel}
 \newcommand{\matricle}{3296954}
-%\newcommand{\mytitle}{\iflanguage{english}{Studie zur verbesserten Anomalyerkennung mit erweiterter Kontextinformation} {Titel der Arbeit}}
-\newcommand{\mytitle}{\iflanguage{english}{Konzeption und Implementierung einer kontexterweiterten Aggregationsinfrastruktur zur kollaborativen Anomalieerkennung} {Titel der Arbeit}}
-\newcommand{\mycurriculum}{\iflanguage{english}{curriculum} {Studiengang}}
-\newcommand{\myinstitute}{\iflanguage{english}
-{}
-{}}
-
-% TODO:change the names of your reviewer and advisor to your actual needs.
+\newcommand{\mytitle}{Konzeption und Implementierung einer kontexterweiterten Aggregationsinfrastruktur zur kollaborativen Anomalieerkennung}
+\newcommand{\mycurriculum}{Informatik (M.Sc.)}
+\newcommand{\myinstitute}{}
 \newcommand{\reviewerone}{Prof. Dr. Sebastian Fischer}
-% \newcommand{\reviewertwo}{Prof. Dr.  \orcid{0000-0002-3173-8871}}
-% \newcommand{\advisor}{Dipl.-Ing. Alexander Gall \orcid{0000-0002-3670-5403}}
-
-
-\newcommand{\timeend}{\iflanguage{english}{Regensburg, \submissiontime}{}} % TODO: Insert submission date.
-\newcommand{\submissiontime}{04.05.2026} % TODO: Insert submission date which will be displayed in your Declaration.
+\newcommand{\timeend}{Regensburg, \submissiontime}
+\newcommand{\submissiontime}{27.05.2026}
 
 \hypersetup{
  pdfauthor={\myname},
@@ -196,13 +165,11 @@
 	P2P	      & Peer-to-Peer \\
 	CID	   	  & Content Identifier \\
 	MADDR	  & Multiaddress \\
-	CTI	      & Cyber Threat Intelligence \\
 	I2C	      & Inter-Integrated Circuit \\
 	MSE 	  & Mean Squared Error \\
 	LSTM 	  & Long Short Term Memory \\
 	GAT	 	  & Graph Attention Networks \\
 	NaN	   	  & Not a Number \\
-	CIDS	  & kollaborativer Intrusion Detection Systeme \\
 	SOC		  & Security Operations Center \\
 	CARA 	  & Constant Absolute Risk Aversion \\
 	IoT 	  & Internet of Things \\
@@ -239,7 +206,7 @@
 
 \newpage
 
-\chapter{Related Work}
+\chapter{Stand der Forschung}
 \label{sec:related_work}
 	\input{Chapters/02_related_work/01_related_work.tex}
 
@@ -316,7 +283,7 @@
 
 \lstinputlisting[
   language=Python,
-  caption={filters.py -- Logik der Filterung von CTI-Reports},
+  caption={filters.py -- Logik der Filterung von Threat-Reports},
   label={lst:filter}
 ]{code\_sections/filters.py}
 
@@ -338,9 +305,11 @@
 
 
 % References Style
-\iflanguage{english}
-{\bibliographystyle{abbrv}} % english style
-% {\bibliographystyle{abbrvnat}}	% german style
+% \iflanguage{english}
+% {\bibliographystyle{abbrv}} % english style
+% % {\bibliographystyle{abbrvnat}}	% german style
+
+\bibliographystyle{abbrv}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{\bibname}
@@ -368,8 +337,7 @@ Kapitel & KI-Tool & Version & Anwendung & Erklärung/Kommentar \\
 \bottomrule
 \endlastfoot
 % Dokumentation der Perplexity AI-Nutzung
-1.0--4.2 & Perplexity AI & 2026 & Grammatik- und Rechtschreibkorrektion & Der generierte Output wurde ausschließlich zur Überprüfung und Optimierung der Grammatik, Rechtschreibung und Lesbarkeit verwendet. Sämtliche fachlichen Inhalte, Analysen, Interpretationen und wissenschaftliche Schlussfolgerungen stammen vollständig von mir. \\
-1.0--4.2 & Gemini AI & 2026 & Verbesserung der Lesbarkeit & Umformulierung von Sätzen zur besseren Verständlichkeit und Fluss des Textes, ohne inhaltliche Veränderungen. \\
+1.0--9.3 & \shortstack[l]{Perplexity AI\\Gemini AI} & 2026 & Sprachliche Überarbeitung & Der generierte Output wurde ausschließlich zur Überprüfung und Optimierung von Grammatik, Rechtschreibung und Lesbarkeit verwendet. Sämtliche fachlichen Inhalte, Analysen, Interpretationen und wissenschaftlichen Schlussfolgerungen stammen vollständig von mir. \\
 \end{longtable}
 %% ==================
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.20)  26 MAY 2026 15:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.27)  28 MAY 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,26 +565,24 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count306
 \U@D=\dimen264
-\l@unhyphenated=\language9
+\l@unhyphenated=\language14
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count307
- (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'british' set to \l@english
-(babel)             (\language0). Reported on input line 82.
-Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
-(babel)             (\language0). Reported on input line 83.
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@english
-(babel)             (\language0). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@english
-(babel)             (\language0). Reported on input line 108.
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2024/01/19 v2.14 German support for babel (post-1996 orthography)
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2024/01/19 v2.14 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 122.
+))) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -901,7 +899,7 @@ Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \c@LT@chunks=\count343
 \LT@p@ftn=\toks57
 )
-Class scrbook Info: longtable captions redefined on input line 49.
+Class scrbook Info: longtable captions redefined on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count344
 \lst@gtempboxa=\box81
@@ -924,15 +922,13 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 112.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-))
 \c@theorem=\count352
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 82.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 
 LaTeX Warning: Unused global option(s):
@@ -945,34 +941,24 @@ LaTeX Warning: Label `fig:auszug_threat_report' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-Package scrbase Info: activating english \partname on input line 113.
-Package scrbase Info: activating english \chaptername on input line 113.
-Package scrbase Info: activating english \appendixname on input line 113.
-Package scrbase Info: activating english \figurename on input line 113.
-Package scrbase Info: activating english \tablename on input line 113.
-Package scrbase Info: activating english \contentsname on input line 113.
-Package scrbase Info: activating english \listfigurename on input line 113.
-Package scrbase Info: activating english \listtablename on input line 113.
-Package scrbase Info: activating english \bibname on input line 113.
-Package scrbase Info: activating english \indexname on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
@@ -988,17 +974,11 @@ Package scrbase Info: activating english \indexname on input line 113.
 \everyMPtoPDFconversion=\toks60
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 113.
+Package hyperref Info: Link coloring OFF on input line 82.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1010,7 +990,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 113.
+(scrbook)           before \begin{document} on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1028,39 +1008,39 @@ Package caption Info: End \AtBeginDocument code.
 <logos/oth-logo.png, id=7, 1091.5179pt x 189.5883pt>
 File: logos/oth-logo.png Graphic file (type png)
 <use logos/oth-logo.png>
-Package pdftex.def Info: logos/oth-logo.png  used on input line 130.
+Package pdftex.def Info: logos/oth-logo.png  used on input line 99.
 (pdftex.def)             Requested size: 213.71576pt x 37.11855pt.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 134.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 103.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Font Info:    Calculating math sizes for size <15.89941> on input line 167.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 167.
+LaTeX Font Info:    Calculating math sizes for size <15.89941> on input line 136.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 136.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 167.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 136.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 167.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 136.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 167.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 136.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 167.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 136.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15.89941> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 167.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.76564> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 167.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.53973> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 167.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 136.
  [1
 
 
@@ -1071,9 +1051,15 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 187.
+(scrbook)              This could result in several error messages on input line 156.
 
 (./thesis.toc
+LaTeX Font Info:    Trying to load font information for T1+aess on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <11.04124> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 2.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.04124> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
@@ -1091,7 +1077,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 190.
+(scrbook)              This could result in several error messages on input line 159.
 
 [4] (./Chapters/01_Einleitung/01_Motivation_und_Problemstellung.tex) (./Chapters/01_Einleitung/02_Zielsetzung_der_Arbeit.tex) (./Chapters/01_Einleitung/03_Aufbau_der_Arbeit.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1104,76 +1090,62 @@ l.4
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.240 \newpage
+l.207 \newpage
                [2] (./Chapters/02_related_work/01_related_work.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.12 
-      [3]
-Overfull \hbox (1.62634pt too wide) in paragraph at lines 13--13
-[]\T1/ptm/m/n/15.89941 Kollaboratives CTI-Sharing, Gewich-tungsstrate-gien und Daten-
- []
-
-)
+      [3])
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 \newpage
+l.213 \newpage
                [4]
-Overfull \hbox (4.58821pt too wide) in paragraph at lines 248--248
-[]\T1/ptm/m/n/22.8996 Systemarchitektur und De-tek-tion Frame-work 
+Overfull \hbox (4.58821pt too wide) in paragraph at lines 215--215
+[]\T1/ptm/m/n/22.8996 Systemarchitektur und De-tek-ti-on Fra-me-work 
  []
 
 (./Chapters/03_Systemarchitektur_und_Detection_Framework/01_SystemÃ¼berblick_und_verteilte_Kommunikation.tex
-Overfull \hbox (12.26968pt too wide) in paragraph at lines 1--2
-[]\T1/ptm/m/n/11.04124 In diesem Kapi-tel wird die zu-grun-deliegende Sys-temar-chitek-tur vorgestellt, die sich im Wesentlichen
- []
-
-<./figures/deployment_software_modules_v1.drawio.png, id=220, 904.37875pt x 723.70375pt>
+<./figures/deployment_software_modules_v1.drawio.png, id=219, 904.37875pt x 723.70375pt>
 File: ./figures/deployment_software_modules_v1.drawio.png Graphic file (type png)
 <use ./figures/deployment_software_modules_v1.drawio.png>
-Package pdftex.def Info: ./figures/deployment_software_modules_v1.drawio.png  used on input line 16.
+Package pdftex.def Info: ./figures/deployment_software_modules_v1.drawio.png  used on input line 11.
 (pdftex.def)             Requested size: 427.43153pt x 342.04018pt.
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 28.
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 19.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Overfull \hbox (12.76717pt too wide) in paragraph at lines 27--29
-\T1/ptm/m/n/11.04124 Kon-tex-tin-for-ma-tio-nen mit allen Net-zw-erk-teil-nehmern und kön-nten somit die sit-u-a-tive Wahrnehmung
- []
-
-[5 <./figures/deployment_software_modules_v1.drawio.png>]
-<./figures/Test-Mesh.jpg, id=234, 763.85374pt x 532.99126pt>
+) [5 <./figures/deployment_software_modules_v1.drawio.png>]
+<./figures/Test-Mesh.jpg, id=233, 763.85374pt x 532.99126pt>
 File: ./figures/Test-Mesh.jpg Graphic file (type jpg)
 <use ./figures/Test-Mesh.jpg>
-Package pdftex.def Info: ./figures/Test-Mesh.jpg  used on input line 41.
+Package pdftex.def Info: ./figures/Test-Mesh.jpg  used on input line 28.
 (pdftex.def)             Requested size: 320.57364pt x 223.684pt.
-<./figures/DataFlowIPFS.drawio.png, id=238, 624.3325pt x 462.72874pt>
+<./figures/DataFlowIPFS.drawio.png, id=237, 624.3325pt x 462.72874pt>
 File: ./figures/DataFlowIPFS.drawio.png Graphic file (type png)
 <use ./figures/DataFlowIPFS.drawio.png>
-Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 64.
+Package pdftex.def Info: ./figures/DataFlowIPFS.drawio.png  used on input line 47.
 (pdftex.def)             Requested size: 427.43153pt x 316.79782pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=239, 688.5725pt x 563.10374pt>
+<./figures/Sequenzdiagramm_Datenfluss.drawio.png, id=238, 688.5725pt x 563.10374pt>
 File: ./figures/Sequenzdiagramm_Datenfluss.drawio.png Graphic file (type png)
 <use ./figures/Sequenzdiagramm_Datenfluss.drawio.png>
-Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used on input line 71.
+Package pdftex.def Info: ./figures/Sequenzdiagramm_Datenfluss.drawio.png  used on input line 54.
 (pdftex.def)             Requested size: 363.31941pt x 297.12035pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <./figures/Test-Mesh.jpg>]
-<./figures/System.jpg, id=246, 1505.625pt x 834.11626pt>
+<./figures/System.jpg, id=245, 1505.625pt x 834.11626pt>
 File: ./figures/System.jpg Graphic file (type jpg)
 <use ./figures/System.jpg>
-Package pdftex.def Info: ./figures/System.jpg  used on input line 87.
+Package pdftex.def Info: ./figures/System.jpg  used on input line 70.
 (pdftex.def)             Requested size: 320.57364pt x 177.60054pt.
  [7 <./figures/DataFlowIPFS.drawio.png>]) (./Chapters/03_Systemarchitektur_und_Detection_Framework/02_Physische_Testumgebung.tex [8 <./figures/Sequenzdiagramm_Datenfluss.drawio.png> <./figures/System.jpg>]
-<./figures/SystemDiagramv2.drawio.png, id=266, 875.27pt x 972.63374pt>
+<./figures/SystemDiagramv2.drawio.png, id=265, 875.27pt x 972.63374pt>
 File: ./figures/SystemDiagramv2.drawio.png Graphic file (type png)
 <use ./figures/SystemDiagramv2.drawio.png>
 Package pdftex.def Info: ./figures/SystemDiagramv2.drawio.png  used on input line 11.
@@ -1189,7 +1161,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
 [12]
 Underfull \hbox (badness 3098) in paragraph at lines 23--23
-[]\T1/ptm/m/n/15.89941 Statistische Merk-mal-sag-gre-ga-tion mit-tels Sliding-Window-
+[]\T1/ptm/m/n/15.89941 Statistische Merk-mal-s-ag-gre-ga-ti-on mit-tels Sliding-Window-
  []
 
 ) [13] (./Chapters/05_theoretische_grundlagen_der_informationsfusion/01_vergleich_von_aggregationsmethoden.tex
@@ -1205,8 +1177,8 @@ File: ./figures/masking_attention_is_all_you_need.png Graphic file (type png)
 Package pdftex.def Info: ./figures/masking_attention_is_all_you_need.png  used on input line 44.
 (pdftex.def)             Requested size: 320.57364pt x 189.67633pt.
  [16 <./figures/masking_attention_is_all_you_need.png>]) [17]
-Overfull \hbox (21.74068pt too wide) in paragraph at lines 270--270
-[]\T1/ptm/m/n/22.8996 Methodik: Gewichtete Ag-gre-ga-tion von Threat
+Overfull \hbox (10.77623pt too wide) in paragraph at lines 237--237
+[]\T1/ptm/m/n/22.8996 Methodik: Ge-wich-te-te Ag-gre-ga-ti-on von Thre-
  []
 
 (./Chapters/06_Methodik_gewichtete_aggregation/01_Anforderungen_an_die_gewichtungsfunktion.tex) (./Chapters/06_Methodik_gewichtete_aggregation/02_auswahl_der_gewichtungsfunktion.tex
@@ -1215,100 +1187,101 @@ File: ./figures/agg_formel_vergleich.png Graphic file (type png)
 <use ./figures/agg_formel_vergleich.png>
 Package pdftex.def Info: ./figures/agg_formel_vergleich.png  used on input line 6.
 (pdftex.def)             Requested size: 427.43153pt x 75.01483pt.
- [18]
-Overfull \hbox (21.09277pt too wide) in paragraph at lines 24--25
-[]\T1/ptm/m/n/11.04124 Die prak-tis-che Um-set-zung der beschriebe-nen Gewich-tungslogik ist in List-ing []10.3[] (\T1/aett/m/n/11.04124 ag-gregation.py\T1/ptm/m/n/11.04124 )
+ [18] [19 <./figures/agg_formel_vergleich.png>]) (./Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex [20]
+Overfull \hbox (7.22005pt too wide) in paragraph at lines 14--16
+\T1/ptm/m/n/11.04124 in der Funk-ti-on\T1/aett/m/n/11.04124 count_attack_ongoing_per_report \T1/ptm/m/n/11.04124 (Lis-ting []10.6[] (\T1/aett/m/n/11.04124 attack_count.py\T1/ptm/m/n/11.04124 )).
  []
 
-[19 <./figures/agg_formel_vergleich.png>]) (./Chapters/06_Methodik_gewichtete_aggregation/03_Implementierung_der_gewichtungsfunktion.tex [20]) [21] (./Chapters/07_Evaluation/01_report_generierung.tex
-Overfull \hbox (8.14014pt too wide) in paragraph at lines 12--13
-[]\T1/ptm/m/n/11.04124 Dabei reagierte lediglich die \T1/ptm/m/it/11.04124 Power Tem-per-a-ture De-tec-tion \T1/ptm/m/n/11.04124 nicht, da diese auss-chlieÿlich physikalis-
- []
-
-
-Overfull \hbox (11.95pt too wide) in paragraph at lines 12--13
-\T1/ptm/m/n/11.04124 dung []13[]), die vari-ierende Feature-Werte und le-icht verän-derte Einzelde-tek-tion-sergeb-nisse aufweisen. 
- []
-
+) [21] (./Chapters/07_Evaluation/01_report_generierung.tex
 <figures/gewichtung_utility_theory_5_CTIreports.png, id=415, 761.84625pt x 139.52126pt>
 File: figures/gewichtung_utility_theory_5_CTIreports.png Graphic file (type png)
 <use figures/gewichtung_utility_theory_5_CTIreports.png>
-Package pdftex.def Info: figures/gewichtung_utility_theory_5_CTIreports.png  used on input line 16.
-(pdftex.def)             Requested size: 363.31941pt x 66.53513pt.
+Package pdftex.def Info: figures/gewichtung_utility_theory_5_CTIreports.png  used on input line 21.
+(pdftex.def)             Requested size: 320.57364pt x 58.70709pt.
 <figures/Threat_report_auszug.png, id=417, 1818.795pt x 106.3975pt>
 File: figures/Threat_report_auszug.png Graphic file (type png)
 <use figures/Threat_report_auszug.png>
-Package pdftex.def Info: figures/Threat_report_auszug.png  used on input line 29.
+Package pdftex.def Info: figures/Threat_report_auszug.png  used on input line 32.
 (pdftex.def)             Requested size: 427.43153pt x 25.0034pt.
 <figures/Threat_report_auszug_attackprobability.png, id=418, 1818.795pt x 83.31125pt>
 File: figures/Threat_report_auszug_attackprobability.png Graphic file (type png)
 <use figures/Threat_report_auszug_attackprobability.png>
-Package pdftex.def Info: figures/Threat_report_auszug_attackprobability.png  used on input line 30.
+Package pdftex.def Info: figures/Threat_report_auszug_attackprobability.png  used on input line 33.
 (pdftex.def)             Requested size: 427.43153pt x 19.57814pt.
-[22 <./figures/gewichtung_utility_theory_5_CTIreports.png>]
+ [22 <./figures/gewichtung_utility_theory_5_CTIreports.png>]
 <figures/Threat_report_Zeile0.png, id=431, 1724.4425pt x 27.10126pt>
 File: figures/Threat_report_Zeile0.png Graphic file (type png)
 <use figures/Threat_report_Zeile0.png>
-Package pdftex.def Info: figures/Threat_report_Zeile0.png  used on input line 47.
+Package pdftex.def Info: figures/Threat_report_Zeile0.png  used on input line 57.
 (pdftex.def)             Requested size: 427.43153pt x 6.71739pt.
 <figures/Threat_report_auszug_NaN.png, id=432, 1724.4425pt x 79.29625pt>
 File: figures/Threat_report_auszug_NaN.png Graphic file (type png)
 <use figures/Threat_report_auszug_NaN.png>
-Package pdftex.def Info: figures/Threat_report_auszug_NaN.png  used on input line 48.
+Package pdftex.def Info: figures/Threat_report_auszug_NaN.png  used on input line 58.
 (pdftex.def)             Requested size: 427.43153pt x 19.6546pt.
 <figures/Threat_report_auszug_NaN_aggregation.png, id=433, 982.67125pt x 245.91875pt>
 File: figures/Threat_report_auszug_NaN_aggregation.png Graphic file (type png)
 <use figures/Threat_report_auszug_NaN_aggregation.png>
-Package pdftex.def Info: figures/Threat_report_auszug_NaN_aggregation.png  used on input line 57.
-(pdftex.def)             Requested size: 427.43153pt x 106.96628pt.
- [23 <./figures/Threat_report_auszug.png> <./figures/Threat_report_auszug_attackprobability.png> <./figures/Threat_report_Zeile0.png> <./figures/Threat_report_auszug_NaN.png> <./figures/Threat_report_auszug_NaN_aggregation.png>]
-<figures/aggregation_mit_time_skew.png, id=445, 986.68625pt x 315.1775pt>
+Package pdftex.def Info: figures/Threat_report_auszug_NaN_aggregation.png  used on input line 67.
+(pdftex.def)             Requested size: 320.57364pt x 80.22282pt.
+
+Underfull \hbox (badness 1331) in paragraph at lines 68--68
+[][][]|\T1/ptm/m/n/11.04124 Aus-zug der Ag-gre-ga-ti-on aus Sze-na-rio 1 mit NaN-Werten (Utility-Theory-
+ []
+
+[23 <./figures/Threat_report_auszug.png> <./figures/Threat_report_auszug_attackprobability.png> <./figures/Threat_report_Zeile0.png> <./figures/Threat_report_auszug_NaN.png>]
+<figures/aggregation_mit_time_skew.png, id=444, 986.68625pt x 315.1775pt>
 File: figures/aggregation_mit_time_skew.png Graphic file (type png)
 <use figures/aggregation_mit_time_skew.png>
-Package pdftex.def Info: figures/aggregation_mit_time_skew.png  used on input line 73.
-(pdftex.def)             Requested size: 427.43153pt x 136.53362pt.
- [24 <./figures/aggregation_mit_time_skew.png>]
+Package pdftex.def Info: figures/aggregation_mit_time_skew.png  used on input line 83.
+(pdftex.def)             Requested size: 320.57364pt x 102.40262pt.
+ [24 <./figures/Threat_report_auszug_NaN_aggregation.png> <./figures/aggregation_mit_time_skew.png>]
 <figures/threat_report_idle.png, id=453, 561.09625pt x 162.6075pt>
 File: figures/threat_report_idle.png Graphic file (type png)
 <use figures/threat_report_idle.png>
-Package pdftex.def Info: figures/threat_report_idle.png  used on input line 111.
+Package pdftex.def Info: figures/threat_report_idle.png  used on input line 116.
 (pdftex.def)             Requested size: 320.57364pt x 92.90309pt.
 File: figures/threat_report_idle.png Graphic file (type png)
 <use figures/threat_report_idle.png>
-Package pdftex.def Info: figures/threat_report_idle.png  used on input line 117.
+Package pdftex.def Info: figures/threat_report_idle.png  used on input line 123.
 (pdftex.def)             Requested size: 320.57364pt x 92.90309pt.
 <figures/agg_cti_report_header.png, id=454, 2073.7475pt x 31.11626pt>
 File: figures/agg_cti_report_header.png Graphic file (type png)
 <use figures/agg_cti_report_header.png>
-Package pdftex.def Info: figures/agg_cti_report_header.png  used on input line 126.
+Package pdftex.def Info: figures/agg_cti_report_header.png  used on input line 132.
 (pdftex.def)             Requested size: 427.43153pt x 6.41353pt.
 <figures/agg_cti_report_utility.png, id=455, 2073.7475pt x 98.3675pt>
 File: figures/agg_cti_report_utility.png Graphic file (type png)
 <use figures/agg_cti_report_utility.png>
-Package pdftex.def Info: figures/agg_cti_report_utility.png  used on input line 127.
+Package pdftex.def Info: figures/agg_cti_report_utility.png  used on input line 133.
 (pdftex.def)             Requested size: 427.43153pt x 20.27502pt.
 File: figures/agg_cti_report_header.png Graphic file (type png)
 <use figures/agg_cti_report_header.png>
-Package pdftex.def Info: figures/agg_cti_report_header.png  used on input line 133.
+Package pdftex.def Info: figures/agg_cti_report_header.png  used on input line 140.
 (pdftex.def)             Requested size: 427.43153pt x 6.41353pt.
 <figures/agg_cti_report_sigmoid.png, id=456, 2073.7475pt x 98.3675pt>
 File: figures/agg_cti_report_sigmoid.png Graphic file (type png)
 <use figures/agg_cti_report_sigmoid.png>
-Package pdftex.def Info: figures/agg_cti_report_sigmoid.png  used on input line 134.
+Package pdftex.def Info: figures/agg_cti_report_sigmoid.png  used on input line 141.
 (pdftex.def)             Requested size: 427.43153pt x 20.27502pt.
- [25 <./figures/threat_report_idle.png> <./figures/agg_cti_report_header.png> <./figures/agg_cti_report_utility.png> <./figures/agg_cti_report_sigmoid.png>]) (./Chapters/07_Evaluation/02_echo_chamber_analyse.tex [26]) [27] (./Chapters/08_Diskussion/01_welche_gewichtung_besser.tex
-Overfull \hbox (14.02757pt too wide) in paragraph at lines 3--3
-[]\T1/ptm/m/n/15.89941 Auswirkungen der Gewich-tungsstrate-gien auf die Report-Qualität 
+ [25 <./figures/threat_report_idle.png> <./figures/agg_cti_report_header.png> <./figures/agg_cti_report_utility.png> <./figures/agg_cti_report_sigmoid.png>]) (./Chapters/07_Evaluation/02_echo_chamber_analyse.tex [26] [27]) [28] (./Chapters/08_Diskussion/01_welche_gewichtung_besser.tex
+Overfull \hbox (9.59201pt too wide) in paragraph at lines 3--3
+[]\T1/ptm/m/n/15.89941 Auswirkungen der Ge-wich-tungs-stra-te-gi-en auf die Threat-Report-
  []
 
-) (./Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex) (./Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex [28]) [29] [30] (./Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex [31]) [32]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 303.
+) (./Chapters/08_Diskussion/02_Reports_extern_nutzbar.tex) (./Chapters/08_Diskussion/03_verbessert_agg_wirklich_detection.tex [29] [30]) [31] (./Chapters/09_Ausblick/zusammenfassung_und_ausblick.tex
+Overfull \hbox (1.28708pt too wide) in paragraph at lines 4--5
+\T1/ptm/m/n/11.04124 Detektionssystem kon-zi-piert und im-ple-men-tiert. Je-de La-de-sta-ti-on ge-ne-riert stan-dar-di-sier-te \T1/ptm/m/it/11.04124 Threat-
+ []
+
+[32]) [33]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 270.
  (./code_sections/reporter.py
 
 LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
-[33] [34]) [35] (./code_sections/queries.py [36]) (./code_sections/aggregation.py [37] [38]
+[34] [35]) [36] (./code_sections/queries.py [37]) (./code_sections/aggregation.py [38] [39]
 LaTeX Font Info:    Calculating math sizes for size <9.20114> on input line 65.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.20114> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
@@ -1316,7 +1289,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.80888> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.52074> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
- [39]) (./code_sections/filters.py [40] [41]) (./code_sections/config.py [42]) (./code_sections/attackCount.py [43]) [44] (./thesis.bbl
+ [40]) (./code_sections/filters.py [41] [42]) (./code_sections/config.py [43]) (./code_sections/attackCount.py [44]) [45] (./thesis.bbl
 
 Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
@@ -1324,113 +1297,83 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              \scr@s@ct@@nn@m@ locally.
 (scrbook)              This could result in several error messages on input line 1.
 
-[45]
-Underfull \hbox (badness 1521) in paragraph at lines 63--67
-[]\T1/ptm/m/n/11.04124 PyTorch Con-trib-u-tors.  \T1/ptm/m/it/11.04124 Mul-ti-hea-dAt-ten-tion --- Py-Torch 2.4 Doc-u-men-ta-tion\T1/ptm/m/n/11.04124 .  Meta
+[46]
+Underfull \hbox (badness 1983) in paragraph at lines 63--67
+[]\T1/ptm/m/n/11.04124 PyTorch Con-tri-bu-tors.  \T1/ptm/m/it/11.04124 Mul-ti-hea-dAt-ten-ti-on --- Py-Torch 2.4 Do-cu-men-ta-ti-on\T1/ptm/m/n/11.04124 .  Me-
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 63--67
-\T1/ptm/m/n/11.04124 AI, 2024.  Zu-griff am: 13. April 2026. Of-fizielle PyTorch-Dokumentation der
+Underfull \hbox (badness 1735) in paragraph at lines 63--67
+\T1/ptm/m/n/11.04124 ta AI, 2024.  Zu-griff am: 13. April 2026. Of-fi-zi-el-le PyTorch-Dokumentation der
  []
 
-
-Underfull \hbox (badness 4634) in paragraph at lines 63--67
-\T1/aett/m/n/11.04124 torch.nn.MultiheadAttention\T1/ptm/m/n/11.04124 -Klasse. Im-ple-men-tiert Multi-Head At-ten-tion nach
- []
-
-[46]) [47]
-Overfull \hbox (22.25372pt too wide) in alignment at lines 354--359
+[47]) [48]
+Overfull \hbox (22.25372pt too wide) in alignment at lines 323--328
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 359--365
+Overfull \hbox (22.25372pt too wide) in alignment at lines 328--334
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 365--367
+Overfull \hbox (22.25372pt too wide) in alignment at lines 334--336
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (22.25372pt too wide) in alignment at lines 367--369
+Overfull \hbox (22.25372pt too wide) in alignment at lines 336--338
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--371
-[]|\T1/ptm/m/n/11.04124 Grammatik- und
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+[]|\T1/ptm/m/n/11.04124 Der ge-ne-rier-te Out-put
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-[]|\T1/ptm/m/n/11.04124 Der gener-ierte Out-put
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 wur-de aus-schlieÿ-lich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 wurde auss-chlieÿlich
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 \T1/ptm/m/n/11.04124 zur Über-prü-fung und
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 Op-ti-mierung der Gram-
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 ma-tik, Recht-schrei-bung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 matik, Rechtschrei-bung
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 und Les-bar-keit ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 und Les-barkeit ver-
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 wen-det. Sämt-li-che
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 wen-det. Sämtliche
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 ly-sen, In-ter-pre-ta-tio-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 y-sen, In-ter-pre-ta-tio-nen
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 und wis-sen-schaft-li-chen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 und wis-senschaftliche
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+\T1/ptm/m/n/11.04124 Schluss-fol-ge-run-gen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-\T1/ptm/m/n/11.04124 Schlussfol-gerun-gen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-[]|\T1/ptm/m/n/11.04124 Umformulierung von
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-\T1/ptm/m/n/11.04124 Sätzen zur besseren
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-\T1/ptm/m/n/11.04124 Ver-ständlichkeit und
- []
-
-
-Overfull \hbox (22.25372pt too wide) in alignment at lines 369--373
+Overfull \hbox (22.25372pt too wide) in alignment at lines 338--341
  [] [] [] [] [] 
  []
 
@@ -1439,7 +1382,7 @@ Class scrbook Warning: Incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 379.
+(scrbook)              This could result in several error messages on input line 347.
 
 [1] (./thesis.aux)
  ***********
@@ -1457,18 +1400,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32930 strings out of 476106
- 619660 string characters out of 5793932
+ 33033 strings out of 476056
+ 621112 string characters out of 5791604
  2184975 words of memory out of 5000000
- 53530 multiletter control sequences out of 15000+600000
- 630202 words of font info for 172 fonts, out of 8000000 for 9000
+ 53636 multiletter control sequences out of 15000+600000
+ 635322 words of font info for 178 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 122i,18n,121p,10968b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (52 pages, 1334545 bytes).
+ 122i,18n,121p,10968b,2397s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (53 pages, 1350572 bytes).
 PDF statistics:
- 1555 PDF objects out of 1728 (max. 8388607)
- 1419 compressed objects within 15 object streams
+ 1560 PDF objects out of 1728 (max. 8388607)
+ 1421 compressed objects within 15 object streams
  717 named destinations out of 1000 (max. 500000)
- 622 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 614 words of extra memory for PDF output out of 10000 (max. 10000000)
 
